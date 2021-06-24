@@ -36,3 +36,14 @@ type Tweet {
   retweetCount: Int
   quoteCount: Int
 }
+
+type Mutation {
+  submitTweet(fullText: String): SubmitTweetResponse
+}
+
+type SubmitTweetResponse {
+  id: ID
+  user: User
+  createdAt: TimeStamp
+  fullText: String
+}
