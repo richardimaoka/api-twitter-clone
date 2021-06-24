@@ -4,12 +4,18 @@ import {
   ApolloProvider,
   useQuery,
   gql,
+  createHttpLink,
 } from "@apollo/client";
 import React from "react";
 
-const client = new ApolloClient({
+const link = createHttpLink({
   uri: "http://localhost:4000",
+  credentials: "same-origin",
+});
+
+const client = new ApolloClient({
   cache: new InMemoryCache(),
+  link,
 });
 
 const EXCHANGE_RATES = gql`
