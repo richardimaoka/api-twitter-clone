@@ -43,7 +43,13 @@ const resolvers = {
       return Object.values(parent.tweets)
     }
   },
-  TimeStamp: timeStampScalar
+  TimeStamp: timeStampScalar,
+  Mutation: {
+    submitTweet: async (parent, args, context, info) {
+      console.log("args", args)
+      return {id: "s", user: "u", createdAt: "c", fullText: "f"}
+    }
+  }
 };
 
 const server = new ApolloServer({
