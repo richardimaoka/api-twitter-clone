@@ -51,11 +51,18 @@ const server = new ApolloServer({
   resolvers,
   mocks: true,
   mockEntireSchema: false,
-  context: async () => ({
-    tweets: await axios.get('http://localhost:3001/tweets'),
-    timeline: await axios.get('http://localhost:3001/timeline')
-  }) 
+  context: async ({req}) => {
+    const authToken = req.headers.authorization || '';
+    const user = getUser(authToken);
+    return ({
+      loginUser: user,
+      tweets: await axios.get('http://localhost:3001/tweets'),
+      timeline: await axios.get('http://localhost:3001/timeline')
+    })
+  }
 });
+
+const getUser = (authToken) => "2875908842"
 
 // The `listen` method launches a web server.
 server.listen().then(({ url }) => {
