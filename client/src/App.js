@@ -56,6 +56,10 @@ function App() {
   return (
     <div>
       <ApolloProvider client={client}>
+        <div>
+          <input placeholder="いまどうしてる？" />
+          <button>ツイートする</button>
+        </div>
         <header>
           <Child></Child>
         </header>
