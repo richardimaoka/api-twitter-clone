@@ -22,9 +22,6 @@ const resolvers = {
 
   },
   Timeline: {
-    tweets(parent, args, context, info) {
-      return parent.tweets
-    }
   },
   Mutation: {
     addTweet: async (parent, args, context, info) => {
