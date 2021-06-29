@@ -32,8 +32,15 @@ const resolvers = {
         quoteCount: 0
       }
 
-      // axios.post('http://localhost:3001/timeline.tweets/
-      return tweet
+      try {
+        const result = await axios.post('http://localhost:3001/timeline.tweets/', tweet)
+        console.log("returning returning returning")
+        return tweet
+      } catch (e) {
+        console.log("Server error happend on mutatoin addTweet!!!")
+        console.log(e)
+        throw e
+      }
     }
   }
 };
