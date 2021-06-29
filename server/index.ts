@@ -45,8 +45,20 @@ const resolvers = {
   },
   TimeStamp: timeStampScalar,
   Mutation: {
-    submitTweet: async (parent, args, context, info) {
-      console.log("args", args)
+    addTweet: async (parent, args, context, info) {
+      const current = new Date()
+      const tweet = {
+        id : 10,
+        user: context.loginUser,
+        createdAt: current.toISOString() ,
+        fullText: args.fullText,
+        favoriteCount: 0,
+        replyCount: 0,
+        retweetCount: 0,
+        quoteCount: 0
+      }
+
+      axios.post('http://localhost:3001/tweets/
       return {id: "s", user: "u", createdAt: "c", fullText: "f"}
     }
   }

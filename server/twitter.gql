@@ -38,10 +38,10 @@ type Tweet {
 }
 
 type Mutation {
-  submitTweet(fullText: String): SubmitTweetResponse
+  addTweet(fullText: String): AddTweetResponse
 }
 
-type SubmitTweetResponse {
+type AddTweetResponse {
   id: ID
   user: User
   createdAt: TimeStamp
