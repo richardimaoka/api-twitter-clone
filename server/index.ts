@@ -18,11 +18,6 @@ const resolvers = {
       }
     }
   },
-  Tweet: {
-
-  },
-  Timeline: {
-  },
   Mutation: {
     addTweet: async (parent, args, context, info) => {
       const current = new Date()
@@ -59,7 +54,12 @@ const server = new ApolloServer({
   }
 });
 
-const getUser = (authToken) => "2875908842"
+const getUser = (authToken) => ({
+  id: 2875908842,
+  screenName: "RichardImaokaJP",
+  url: "https://blog-jp.richardimaoka.net",
+  profileImageUrl: "http://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg"
+})
 
 // The `listen` method launches a web server.
 server.listen().then(({ url }) => {
