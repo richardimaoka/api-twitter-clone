@@ -6,1733 +6,1731 @@
       "author": "typicode"
     }
   ],
-  "timeline": {
-    "tweets": {
-      "1406771011266043908": {
-        "user": {
-          "id": 2875908842,
-          "idStr": "2875908842",
-          "name": "\u30ea\u30c1\u30e3\u30fc\u30c9 \u4f0a\u771f\u5ca1",
-          "screenName": "RichardImaokaJP",
-          "location": null,
-          "description": "\u4e2d\u5805\u30a8\u30f3\u30b8\u30cb\u30a2",
-          "url": "https://blog-jp.richardimaoka.net",
-          "entities": {
-            "url": {
-              "urls": [
-                {
-                  "url": "https://blog-jp.richardimaoka.net",
-                  "expandedUrl": "https://blog-jp.richardimaoka.net",
-                  "displayUrl": "blog-jp.richardimaoka.net",
-                  "indices": [0, 33]
-                }
-              ]
-            },
-            "description": {
-              "urls": []
-            }
-          },
-          "protected": false,
-          "followersCount": 342,
-          "friendsCount": 223,
-          "listedCount": 7,
-          "createdAt": "Sat Oct 25 00:13:42 +0000 2014",
-          "favouritesCount": 1628,
-          "utcOffset": null,
-          "timeZone": null,
-          "geoEnabled": false,
-          "verified": false,
-          "statusesCount": 3398,
-          "lang": null,
-          "contributorsEnabled": false,
-          "isTranslator": false,
-          "isTranslationEnabled": false,
-          "profileBackgroundColor": "C0DEED",
-          "profileBackgroundImageUrl": "http://abs.twimg.com/images/themes/theme1/bg.png",
-          "profileBackgroundImageUrlHttps": "https://abs.twimg.com/images/themes/theme1/bg.png",
-          "profileBackgroundTile": false,
-          "profileImageUrl": "http://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
-          "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
-          "profileBannerUrl": "https://pbs.twimg.com/profile_banners/2875908842/1568031488",
-          "profileLinkColor": "1DA1F2",
-          "profileSidebarBorderColor": "C0DEED",
-          "profileSidebarFillColor": "DDEEF6",
-          "profileTextColor": "333333",
-          "profileUseBackgroundImage": true,
-          "defaultProfile": true,
-          "defaultProfileImage": false,
-          "canMediaTag": null,
-          "following": false,
-          "followRequestSent": null,
-          "notifications": null,
-          "blocking": false,
-          "blockedBy": false,
-          "profileInterstitialType": "",
-          "translatorType": "regular",
-          "withheldInCountries": [],
-          "followedBy": false
-        },
-        "createdAt": "Mon Jun 21 00:28:40 +0000 2021",
-        "id": 1406771011266043908,
-        "idStr": "1406771011266043908",
-        "fullText": "\u4ed5\u4e8b\u3068\u304b\u3067\u81ea\u5206\u3092\u9650\u754c\u307e\u3067\u8ffd\u3044\u8fbc\u3093\u3067\u5f37\u304f\u306a\u308b\u3001\u30b5\u30a4\u30e4\u4eba\u578b\u306e\u6210\u9577\u304c\u3067\u304d\u308b\u306e\u306f\u5c11\u6570\u6d3e\u3060\u3068\u6700\u8fd1\u601d\u3063\u3066\u307e\u3059\u3002\u58f0\u306e\u5927\u304d\u3044\u4eba\u306e\u4e2d\u306b\u306f\u30b5\u30a4\u30e4\u4eba\u578b\u304c\u591a\u3044\u3057\u3001\u305d\u306e\u4f53\u9a13\u306f\u5f37\u304f\u5370\u8c61\u306b\u6b8b\u308a\u3084\u3059\u3044\u3093\u3067\u3059\u3051\u3069\u3001\u591a\u304f\u306e\u5730\u7403\u4eba\u306f\u6b7b\u306e\u6df5\u307e\u3067\u8ffd\u3044\u8fbc\u3093\u3060\u3089\u666e\u901a\u306b\u6b7b\u306b\u307e\u3059\u3002",
-        "truncated": false,
-        "displayTextRange": [0, 116],
+  "timeline.tweets": [
+    {
+      "user": {
+        "id": 2875908842,
+        "idStr": "2875908842",
+        "name": "リチャード 伊真岡",
+        "screenName": "RichardImaokaJP",
+        "location": null,
+        "description": "中堅エンジニア",
+        "url": "https://blog-jp.richardimaoka.net",
         "entities": {
-          "hashtags": [],
-          "symbols": [],
-          "userMentions": [],
-          "urls": []
+          "url": {
+            "urls": [
+              {
+                "url": "https://blog-jp.richardimaoka.net",
+                "expandedUrl": "https://blog-jp.richardimaoka.net",
+                "displayUrl": "blog-jp.richardimaoka.net",
+                "indices": [0, 33]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "inReplyToStatusId": null,
-        "inReplyToStatusIdStr": null,
-        "inReplyToUserId": null,
-        "inReplyToUserIdStr": null,
-        "inReplyToScreenName": null,
-        "userId": 2875908842,
-        "userIdStr": "2875908842",
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "isQuoteStatus": false,
-        "retweetCount": 1,
-        "favoriteCount": 14,
-        "replyCount": 0,
-        "quoteCount": 0,
-        "conversationId": 1406771011266043908,
-        "conversationIdStr": "1406771011266043908",
-        "conversationMuted": false,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "ja"
+        "protected": false,
+        "followersCount": 342,
+        "friendsCount": 223,
+        "listedCount": 7,
+        "createdAt": "Sat Oct 25 00:13:42 +0000 2014",
+        "favouritesCount": 1628,
+        "utcOffset": null,
+        "timeZone": null,
+        "geoEnabled": false,
+        "verified": false,
+        "statusesCount": 3398,
+        "lang": null,
+        "contributorsEnabled": false,
+        "isTranslator": false,
+        "isTranslationEnabled": false,
+        "profileBackgroundColor": "C0DEED",
+        "profileBackgroundImageUrl": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profileBackgroundImageUrlHttps": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profileBackgroundTile": false,
+        "profileImageUrl": "http://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
+        "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
+        "profileBannerUrl": "https://pbs.twimg.com/profile_banners/2875908842/1568031488",
+        "profileLinkColor": "1DA1F2",
+        "profileSidebarBorderColor": "C0DEED",
+        "profileSidebarFillColor": "DDEEF6",
+        "profileTextColor": "333333",
+        "profileUseBackgroundImage": true,
+        "defaultProfile": true,
+        "defaultProfileImage": false,
+        "canMediaTag": null,
+        "following": false,
+        "followRequestSent": null,
+        "notifications": null,
+        "blocking": false,
+        "blockedBy": false,
+        "profileInterstitialType": "",
+        "translatorType": "regular",
+        "withheldInCountries": [],
+        "followedBy": false
       },
-      "1393497557658075138": {
-        "user": {
-          "id": 2875908842,
-          "idStr": "2875908842",
-          "name": "\u30ea\u30c1\u30e3\u30fc\u30c9 \u4f0a\u771f\u5ca1",
-          "screenName": "RichardImaokaJP",
-          "location": null,
-          "description": "\u4e2d\u5805\u30a8\u30f3\u30b8\u30cb\u30a2",
-          "url": "https://blog-jp.richardimaoka.net",
-          "entities": {
-            "url": {
-              "urls": [
+      "createdAt": "Mon Jun 21 00:28:40 +0000 2021",
+      "id": 1406771011266044000,
+      "idStr": "1406771011266043908",
+      "fullText": "仕事とかで自分を限界まで追い込んで強くなる、サイヤ人型の成長ができるのは少数派だと最近思ってます。声の大きい人の中にはサイヤ人型が多いし、その体験は強く印象に残りやすいんですけど、多くの地球人は死の淵まで追い込んだら普通に死にます。",
+      "truncated": false,
+      "displayTextRange": [0, 116],
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "userMentions": [],
+        "urls": []
+      },
+      "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+      "inReplyToStatusId": null,
+      "inReplyToStatusIdStr": null,
+      "inReplyToUserId": null,
+      "inReplyToUserIdStr": null,
+      "inReplyToScreenName": null,
+      "userId": 2875908842,
+      "userIdStr": "2875908842",
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "isQuoteStatus": false,
+      "retweetCount": 1,
+      "favoriteCount": 14,
+      "replyCount": 0,
+      "quoteCount": 0,
+      "conversationId": 1406771011266044000,
+      "conversationIdStr": "1406771011266043908",
+      "conversationMuted": false,
+      "favorited": false,
+      "retweeted": false,
+      "lang": "ja"
+    },
+    {
+      "user": {
+        "id": 2875908842,
+        "idStr": "2875908842",
+        "name": "リチャード 伊真岡",
+        "screenName": "RichardImaokaJP",
+        "location": null,
+        "description": "中堅エンジニア",
+        "url": "https://blog-jp.richardimaoka.net",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "https://blog-jp.richardimaoka.net",
+                "expandedUrl": "https://blog-jp.richardimaoka.net",
+                "displayUrl": "blog-jp.richardimaoka.net",
+                "indices": [0, 33]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followersCount": 342,
+        "friendsCount": 223,
+        "listedCount": 7,
+        "createdAt": "Sat Oct 25 00:13:42 +0000 2014",
+        "favouritesCount": 1628,
+        "utcOffset": null,
+        "timeZone": null,
+        "geoEnabled": false,
+        "verified": false,
+        "statusesCount": 3398,
+        "lang": null,
+        "contributorsEnabled": false,
+        "isTranslator": false,
+        "isTranslationEnabled": false,
+        "profileBackgroundColor": "C0DEED",
+        "profileBackgroundImageUrl": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profileBackgroundImageUrlHttps": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profileBackgroundTile": false,
+        "profileImageUrl": "http://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
+        "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
+        "profileBannerUrl": "https://pbs.twimg.com/profile_banners/2875908842/1568031488",
+        "profileLinkColor": "1DA1F2",
+        "profileSidebarBorderColor": "C0DEED",
+        "profileSidebarFillColor": "DDEEF6",
+        "profileTextColor": "333333",
+        "profileUseBackgroundImage": true,
+        "defaultProfile": true,
+        "defaultProfileImage": false,
+        "canMediaTag": null,
+        "following": false,
+        "followRequestSent": null,
+        "notifications": null,
+        "blocking": false,
+        "blockedBy": false,
+        "profileInterstitialType": "",
+        "translatorType": "regular",
+        "withheldInCountries": [],
+        "followedBy": false
+      },
+      "createdAt": "Sat May 15 09:24:42 +0000 2021",
+      "id": 1393497557658075100,
+      "idStr": "1393497557658075138",
+      "fullText": "世の中の少なくない数の悲劇がこれで説明できる気がしています…ちゃんと時間かければうまくいくこともあるのに https://t.co/BajNH8rmmH",
+      "truncated": false,
+      "displayTextRange": [0, 52],
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "userMentions": [],
+        "urls": [],
+        "media": [
+          {
+            "id": 1393497177339490300,
+            "idStr": "1393497177339490306",
+            "indices": [53, 76],
+            "mediaUrl": "http://pbs.twimg.com/media/E1ayTLrUcAIcgfc.jpg",
+            "mediaUrlHttps": "https://pbs.twimg.com/media/E1ayTLrUcAIcgfc.jpg",
+            "url": "https://t.co/BajNH8rmmH",
+            "displayUrl": "pic.twitter.com/BajNH8rmmH",
+            "expandedUrl": "https://twitter.com/RichardImaokaJP/status/1393497557658075138/photo/1",
+            "type": "photo",
+            "originalInfo": {
+              "width": 1200,
+              "height": 670,
+              "focusRects": [
                 {
-                  "url": "https://blog-jp.richardimaoka.net",
-                  "expandedUrl": "https://blog-jp.richardimaoka.net",
-                  "displayUrl": "blog-jp.richardimaoka.net",
-                  "indices": [0, 33]
+                  "x": 4,
+                  "y": 0,
+                  "h": 670,
+                  "w": 1196
+                },
+                {
+                  "x": 530,
+                  "y": 0,
+                  "h": 670,
+                  "w": 670
+                },
+                {
+                  "x": 612,
+                  "y": 0,
+                  "h": 670,
+                  "w": 588
+                },
+                {
+                  "x": 761,
+                  "y": 0,
+                  "h": 670,
+                  "w": 335
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "h": 670,
+                  "w": 1200
                 }
               ]
             },
-            "description": {
-              "urls": []
-            }
-          },
-          "protected": false,
-          "followersCount": 342,
-          "friendsCount": 223,
-          "listedCount": 7,
-          "createdAt": "Sat Oct 25 00:13:42 +0000 2014",
-          "favouritesCount": 1628,
-          "utcOffset": null,
-          "timeZone": null,
-          "geoEnabled": false,
-          "verified": false,
-          "statusesCount": 3398,
-          "lang": null,
-          "contributorsEnabled": false,
-          "isTranslator": false,
-          "isTranslationEnabled": false,
-          "profileBackgroundColor": "C0DEED",
-          "profileBackgroundImageUrl": "http://abs.twimg.com/images/themes/theme1/bg.png",
-          "profileBackgroundImageUrlHttps": "https://abs.twimg.com/images/themes/theme1/bg.png",
-          "profileBackgroundTile": false,
-          "profileImageUrl": "http://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
-          "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
-          "profileBannerUrl": "https://pbs.twimg.com/profile_banners/2875908842/1568031488",
-          "profileLinkColor": "1DA1F2",
-          "profileSidebarBorderColor": "C0DEED",
-          "profileSidebarFillColor": "DDEEF6",
-          "profileTextColor": "333333",
-          "profileUseBackgroundImage": true,
-          "defaultProfile": true,
-          "defaultProfileImage": false,
-          "canMediaTag": null,
-          "following": false,
-          "followRequestSent": null,
-          "notifications": null,
-          "blocking": false,
-          "blockedBy": false,
-          "profileInterstitialType": "",
-          "translatorType": "regular",
-          "withheldInCountries": [],
-          "followedBy": false
-        },
-        "createdAt": "Sat May 15 09:24:42 +0000 2021",
-        "id": 1393497557658075138,
-        "idStr": "1393497557658075138",
-        "fullText": "\u4e16\u306e\u4e2d\u306e\u5c11\u306a\u304f\u306a\u3044\u6570\u306e\u60b2\u5287\u304c\u3053\u308c\u3067\u8aac\u660e\u3067\u304d\u308b\u6c17\u304c\u3057\u3066\u3044\u307e\u3059\u2026\u3061\u3083\u3093\u3068\u6642\u9593\u304b\u3051\u308c\u3070\u3046\u307e\u304f\u3044\u304f\u3053\u3068\u3082\u3042\u308b\u306e\u306b https://t.co/BajNH8rmmH",
-        "truncated": false,
-        "displayTextRange": [0, 52],
-        "entities": {
-          "hashtags": [],
-          "symbols": [],
-          "userMentions": [],
-          "urls": [],
-          "media": [
-            {
-              "id": 1393497177339490306,
-              "idStr": "1393497177339490306",
-              "indices": [53, 76],
-              "mediaUrl": "http://pbs.twimg.com/media/E1ayTLrUcAIcgfc.jpg",
-              "mediaUrlHttps": "https://pbs.twimg.com/media/E1ayTLrUcAIcgfc.jpg",
-              "url": "https://t.co/BajNH8rmmH",
-              "displayUrl": "pic.twitter.com/BajNH8rmmH",
-              "expandedUrl": "https://twitter.com/RichardImaokaJP/status/1393497557658075138/photo/1",
-              "type": "photo",
-              "originalInfo": {
-                "width": 1200,
-                "height": 670,
-                "focusRects": [
+            "sizes": {
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "large": {
+                "w": 1200,
+                "h": 670,
+                "resize": "fit"
+              },
+              "medium": {
+                "w": 1200,
+                "h": 670,
+                "resize": "fit"
+              },
+              "small": {
+                "w": 680,
+                "h": 380,
+                "resize": "fit"
+              }
+            },
+            "features": {
+              "large": {
+                "faces": [
                   {
-                    "x": 4,
-                    "y": 0,
-                    "h": 670,
-                    "w": 1196
-                  },
-                  {
-                    "x": 530,
-                    "y": 0,
-                    "h": 670,
-                    "w": 670
-                  },
-                  {
-                    "x": 612,
-                    "y": 0,
-                    "h": 670,
-                    "w": 588
-                  },
-                  {
-                    "x": 761,
-                    "y": 0,
-                    "h": 670,
-                    "w": 335
-                  },
-                  {
-                    "x": 0,
-                    "y": 0,
-                    "h": 670,
-                    "w": 1200
+                    "x": 37,
+                    "y": 180,
+                    "h": 85,
+                    "w": 85
                   }
                 ]
               },
-              "sizes": {
-                "thumb": {
-                  "w": 150,
-                  "h": 150,
-                  "resize": "crop"
-                },
-                "large": {
-                  "w": 1200,
-                  "h": 670,
-                  "resize": "fit"
-                },
-                "medium": {
-                  "w": 1200,
-                  "h": 670,
-                  "resize": "fit"
-                },
-                "small": {
-                  "w": 680,
-                  "h": 380,
-                  "resize": "fit"
-                }
-              },
-              "features": {
-                "large": {
-                  "faces": [
-                    {
-                      "x": 37,
-                      "y": 180,
-                      "h": 85,
-                      "w": 85
-                    }
-                  ]
-                },
-                "orig": {
-                  "faces": [
-                    {
-                      "x": 37,
-                      "y": 180,
-                      "h": 85,
-                      "w": 85
-                    }
-                  ]
-                },
-                "medium": {
-                  "faces": [
-                    {
-                      "x": 37,
-                      "y": 180,
-                      "h": 85,
-                      "w": 85
-                    }
-                  ]
-                },
-                "small": {
-                  "faces": [
-                    {
-                      "x": 20,
-                      "y": 102,
-                      "h": 48,
-                      "w": 48
-                    }
-                  ]
-                }
-              }
-            }
-          ]
-        },
-        "extendedEntities": {
-          "media": [
-            {
-              "id": 1393497177339490306,
-              "idStr": "1393497177339490306",
-              "indices": [53, 76],
-              "mediaUrl": "http://pbs.twimg.com/media/E1ayTLrUcAIcgfc.jpg",
-              "mediaUrlHttps": "https://pbs.twimg.com/media/E1ayTLrUcAIcgfc.jpg",
-              "url": "https://t.co/BajNH8rmmH",
-              "displayUrl": "pic.twitter.com/BajNH8rmmH",
-              "expandedUrl": "https://twitter.com/RichardImaokaJP/status/1393497557658075138/photo/1",
-              "type": "photo",
-              "originalInfo": {
-                "width": 1200,
-                "height": 670,
-                "focusRects": [
+              "orig": {
+                "faces": [
                   {
-                    "x": 4,
-                    "y": 0,
-                    "h": 670,
-                    "w": 1196
-                  },
-                  {
-                    "x": 530,
-                    "y": 0,
-                    "h": 670,
-                    "w": 670
-                  },
-                  {
-                    "x": 612,
-                    "y": 0,
-                    "h": 670,
-                    "w": 588
-                  },
-                  {
-                    "x": 761,
-                    "y": 0,
-                    "h": 670,
-                    "w": 335
-                  },
-                  {
-                    "x": 0,
-                    "y": 0,
-                    "h": 670,
-                    "w": 1200
+                    "x": 37,
+                    "y": 180,
+                    "h": 85,
+                    "w": 85
                   }
                 ]
               },
-              "sizes": {
-                "thumb": {
-                  "w": 150,
-                  "h": 150,
-                  "resize": "crop"
-                },
-                "large": {
-                  "w": 1200,
-                  "h": 670,
-                  "resize": "fit"
-                },
-                "medium": {
-                  "w": 1200,
-                  "h": 670,
-                  "resize": "fit"
-                },
-                "small": {
-                  "w": 680,
-                  "h": 380,
-                  "resize": "fit"
-                }
-              },
-              "features": {
-                "large": {
-                  "faces": [
-                    {
-                      "x": 37,
-                      "y": 180,
-                      "h": 85,
-                      "w": 85
-                    }
-                  ]
-                },
-                "orig": {
-                  "faces": [
-                    {
-                      "x": 37,
-                      "y": 180,
-                      "h": 85,
-                      "w": 85
-                    }
-                  ]
-                },
-                "medium": {
-                  "faces": [
-                    {
-                      "x": 37,
-                      "y": 180,
-                      "h": 85,
-                      "w": 85
-                    }
-                  ]
-                },
-                "small": {
-                  "faces": [
-                    {
-                      "x": 20,
-                      "y": 102,
-                      "h": 48,
-                      "w": 48
-                    }
-                  ]
-                }
-              },
-              "extMediaColor": {
-                "palette": [
+              "medium": {
+                "faces": [
                   {
-                    "rgb": {
-                      "red": 255,
-                      "green": 255,
-                      "blue": 255
-                    },
-                    "percentage": 90.4800000000000039790393202565610408782958984375
-                  },
-                  {
-                    "rgb": {
-                      "red": 252,
-                      "green": 238,
-                      "blue": 43
-                    },
-                    "percentage": 3.54999999999999982236431605997495353221893310546875
-                  },
-                  {
-                    "rgb": {
-                      "red": 225,
-                      "green": 221,
-                      "blue": 160
-                    },
-                    "percentage": 2.37999999999999989341858963598497211933135986328125
-                  },
-                  {
-                    "rgb": {
-                      "red": 241,
-                      "green": 230,
-                      "blue": 102
-                    },
-                    "percentage": 1.37999999999999989341858963598497211933135986328125
-                  },
-                  {
-                    "rgb": {
-                      "red": 255,
-                      "green": 187,
-                      "blue": 190
-                    },
-                    "percentage": 0.5300000000000000266453525910037569701671600341796875
+                    "x": 37,
+                    "y": 180,
+                    "h": 85,
+                    "w": 85
                   }
                 ]
               },
-              "extAltText": null,
-              "extMediaAvailability": {
-                "status": "available"
-              },
-              "ext": {
-                "mediaStats": {
-                  "r": "Missing",
-                  "ttl": -1
-                }
-              }
-            }
-          ]
-        },
-        "source": "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
-        "inReplyToStatusId": null,
-        "inReplyToStatusIdStr": null,
-        "inReplyToUserId": null,
-        "inReplyToUserIdStr": null,
-        "inReplyToScreenName": null,
-        "userId": 2875908842,
-        "userIdStr": "2875908842",
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "isQuoteStatus": false,
-        "retweetCount": 0,
-        "favoriteCount": 2,
-        "replyCount": 0,
-        "quoteCount": 0,
-        "conversationId": 1393497557658075138,
-        "conversationIdStr": "1393497557658075138",
-        "conversationMuted": false,
-        "favorited": false,
-        "retweeted": false,
-        "possiblySensitive": false,
-        "lang": "ja"
-      },
-      "1396681687644266500": {
-        "user": {
-          "id": 2875908842,
-          "idStr": "2875908842",
-          "name": "\u30ea\u30c1\u30e3\u30fc\u30c9 \u4f0a\u771f\u5ca1",
-          "screenName": "RichardImaokaJP",
-          "location": null,
-          "description": "\u4e2d\u5805\u30a8\u30f3\u30b8\u30cb\u30a2",
-          "url": "https://blog-jp.richardimaoka.net",
-          "entities": {
-            "url": {
-              "urls": [
-                {
-                  "url": "https://blog-jp.richardimaoka.net",
-                  "expandedUrl": "https://blog-jp.richardimaoka.net",
-                  "displayUrl": "blog-jp.richardimaoka.net",
-                  "indices": [0, 33]
-                }
-              ]
-            },
-            "description": {
-              "urls": []
-            }
-          },
-          "protected": false,
-          "followersCount": 342,
-          "friendsCount": 223,
-          "listedCount": 7,
-          "createdAt": "Sat Oct 25 00:13:42 +0000 2014",
-          "favouritesCount": 1628,
-          "utcOffset": null,
-          "timeZone": null,
-          "geoEnabled": false,
-          "verified": false,
-          "statusesCount": 3398,
-          "lang": null,
-          "contributorsEnabled": false,
-          "isTranslator": false,
-          "isTranslationEnabled": false,
-          "profileBackgroundColor": "C0DEED",
-          "profileBackgroundImageUrl": "http://abs.twimg.com/images/themes/theme1/bg.png",
-          "profileBackgroundImageUrlHttps": "https://abs.twimg.com/images/themes/theme1/bg.png",
-          "profileBackgroundTile": false,
-          "profileImageUrl": "http://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
-          "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
-          "profileBannerUrl": "https://pbs.twimg.com/profile_banners/2875908842/1568031488",
-          "profileLinkColor": "1DA1F2",
-          "profileSidebarBorderColor": "C0DEED",
-          "profileSidebarFillColor": "DDEEF6",
-          "profileTextColor": "333333",
-          "profileUseBackgroundImage": true,
-          "defaultProfile": true,
-          "defaultProfileImage": false,
-          "canMediaTag": null,
-          "following": false,
-          "followRequestSent": null,
-          "notifications": null,
-          "blocking": false,
-          "blockedBy": false,
-          "profileInterstitialType": "",
-          "translatorType": "regular",
-          "withheldInCountries": [],
-          "followedBy": false
-        },
-        "createdAt": "Mon May 24 04:17:18 +0000 2021",
-        "id": 1396681687644266500,
-        "idStr": "1396681687644266500",
-        "fullText": "\u30b9\u30dd\u30fc\u30c4\u9078\u624b\u3067\u3055\u3048\u79fb\u7c4d\u5148\u306e\u74b0\u5883\u306b\u99b4\u67d3\u3093\u3067\u672c\u6765\u306e\u529b\u3092\u767a\u63ee\u3059\u308b\u307e\u3067\u306b\u6642\u9593\u304c\u304b\u304b\u308b\u3053\u3068\u304c\u3042\u308b\u3093\u3060\u304b\u3089\u3001\u666e\u901a\u306e\u4f1a\u793e\u54e1\u304c\u8ee2\u8077\u5148\u3067\u300c\u4ee5\u524d\u306f\u51fa\u6765\u3066\u3044\u305f\u3053\u3068\u304c\u3046\u307e\u304f\u51fa\u6765\u306a\u3044\uff01\u300d\u3068\u843d\u3061\u8fbc\u3080\u5fc5\u8981\u306a\u3044\u3093\u3058\u3083\u306a\u3044\u304b\u3068\u601d\u3044\u307e\u3059\u3002\u7126\u3063\u3066\u3082\u3088\u3044\u3053\u3068\u306a\u3044\u3067\u3059\u306d\u3002",
-        "truncated": false,
-        "displayTextRange": [0, 115],
-        "entities": {
-          "hashtags": [],
-          "symbols": [],
-          "userMentions": [],
-          "urls": []
-        },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "inReplyToStatusId": null,
-        "inReplyToStatusIdStr": null,
-        "inReplyToUserId": null,
-        "inReplyToUserIdStr": null,
-        "inReplyToScreenName": null,
-        "userId": 2875908842,
-        "userIdStr": "2875908842",
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "isQuoteStatus": false,
-        "retweetCount": 2,
-        "favoriteCount": 7,
-        "replyCount": 0,
-        "quoteCount": 0,
-        "conversationId": 1396681687644266500,
-        "conversationIdStr": "1396681687644266500",
-        "conversationMuted": false,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "ja"
-      },
-      "1376071442656157699": {
-        "user": {
-          "id": 2875908842,
-          "idStr": "2875908842",
-          "name": "\u30ea\u30c1\u30e3\u30fc\u30c9 \u4f0a\u771f\u5ca1",
-          "screenName": "RichardImaokaJP",
-          "location": null,
-          "description": "\u4e2d\u5805\u30a8\u30f3\u30b8\u30cb\u30a2",
-          "url": "https://blog-jp.richardimaoka.net",
-          "entities": {
-            "url": {
-              "urls": [
-                {
-                  "url": "https://blog-jp.richardimaoka.net",
-                  "expandedUrl": "https://blog-jp.richardimaoka.net",
-                  "displayUrl": "blog-jp.richardimaoka.net",
-                  "indices": [0, 33]
-                }
-              ]
-            },
-            "description": {
-              "urls": []
-            }
-          },
-          "protected": false,
-          "followersCount": 342,
-          "friendsCount": 223,
-          "listedCount": 7,
-          "createdAt": "Sat Oct 25 00:13:42 +0000 2014",
-          "favouritesCount": 1628,
-          "utcOffset": null,
-          "timeZone": null,
-          "geoEnabled": false,
-          "verified": false,
-          "statusesCount": 3398,
-          "lang": null,
-          "contributorsEnabled": false,
-          "isTranslator": false,
-          "isTranslationEnabled": false,
-          "profileBackgroundColor": "C0DEED",
-          "profileBackgroundImageUrl": "http://abs.twimg.com/images/themes/theme1/bg.png",
-          "profileBackgroundImageUrlHttps": "https://abs.twimg.com/images/themes/theme1/bg.png",
-          "profileBackgroundTile": false,
-          "profileImageUrl": "http://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
-          "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
-          "profileBannerUrl": "https://pbs.twimg.com/profile_banners/2875908842/1568031488",
-          "profileLinkColor": "1DA1F2",
-          "profileSidebarBorderColor": "C0DEED",
-          "profileSidebarFillColor": "DDEEF6",
-          "profileTextColor": "333333",
-          "profileUseBackgroundImage": true,
-          "defaultProfile": true,
-          "defaultProfileImage": false,
-          "canMediaTag": null,
-          "following": false,
-          "followRequestSent": null,
-          "notifications": null,
-          "blocking": false,
-          "blockedBy": false,
-          "profileInterstitialType": "",
-          "translatorType": "regular",
-          "withheldInCountries": [],
-          "followedBy": false
-        },
-        "createdAt": "Sun Mar 28 07:19:32 +0000 2021",
-        "id": 1376071442656157699,
-        "idStr": "1376071442656157699",
-        "fullText": "2\u5206\u9593\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u3092\u59cb\u3081\u3066\u304b\u3089\u3001\u4eca\u307e\u3067\u516c\u5f0f\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\u3084\u672c\u3092\u8aad\u3093\u3060\u3060\u3051\u3067\u7d42\u308f\u308a\u3001\u624b\u3092\u52d5\u304b\u3057\u3066\u3044\u306a\u304b\u3063\u305f\u6280\u8853\u3092\u89e6\u308b\u6a5f\u4f1a\u304c\u5897\u3048\u307e\u3057\u305f\u3002\u76f4\u8fd1\u3067\u306fGCP\u306eCloud PubSub\u3084Cloud Functions\u3001BigQuery\u3092\u9023\u643a\u3057Twitter API\u304b\u3089\u30c7\u30fc\u30bf\u3092\u6d41\u3059\u304a\u3082\u3061\u3083\u307f\u305f\u3044\u306a\u30a2\u30d7\u30ea\u3092\u66f8\u3044\u3066\u3044\u307e\u3059\u3002https://t.co/FJaNXT06Pf",
-        "truncated": false,
-        "displayTextRange": [0, 175],
-        "entities": {
-          "hashtags": [],
-          "symbols": [],
-          "userMentions": [],
-          "urls": [
-            {
-              "url": "https://t.co/FJaNXT06Pf",
-              "expandedUrl": "https://blog-jp.richardimaoka.net/20210328",
-              "displayUrl": "blog-jp.richardimaoka.net/20210328",
-              "indices": [152, 175]
-            }
-          ]
-        },
-        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
-        "inReplyToStatusId": null,
-        "inReplyToStatusIdStr": null,
-        "inReplyToUserId": null,
-        "inReplyToUserIdStr": null,
-        "inReplyToScreenName": null,
-        "userId": 2875908842,
-        "userIdStr": "2875908842",
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "isQuoteStatus": false,
-        "retweetCount": 20,
-        "favoriteCount": 104,
-        "replyCount": 0,
-        "quoteCount": 3,
-        "conversationId": 1376071442656157699,
-        "conversationIdStr": "1376071442656157699",
-        "conversationMuted": false,
-        "favorited": false,
-        "retweeted": false,
-        "possiblySensitive": true,
-        "card": {
-          "name": "summary_large_image",
-          "url": "https://t.co/FJaNXT06Pf",
-          "cardTypeUrl": "http://card-type-url-is-deprecated.invalid",
-          "bindingValues": {
-            "vanityUrl": {
-              "type": "STRING",
-              "stringValue": "blog-jp.richardimaoka.net",
-              "scribeKey": "vanity_url"
-            },
-            "domain": {
-              "type": "STRING",
-              "stringValue": "blog-jp.richardimaoka.net"
-            },
-            "creator": {
-              "type": "USER",
-              "userValue": {
-                "idStr": "2875908842",
-                "path": []
-              }
-            },
-            "site": {
-              "type": "USER",
-              "userValue": {
-                "idStr": "2875908842",
-                "path": []
-              },
-              "scribeKey": "publisher_id"
-            },
-            "title": {
-              "type": "STRING",
-              "stringValue": "2\u5206\u9593\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u306e\u3059\u3059\u3081\u3001\u30b3\u30fc\u30c9\u3092\u66f8\u304f\u7fd2\u6163\u306e\u30cf\u30fc\u30c9\u30eb\u3092\u4e0b\u3052\u308b"
-            },
-            "description": {
-              "type": "STRING",
-              "stringValue": "\u6700\u8fd1\u79c1\u306f\u300c2\u5206\u9593\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u300d\u3068\u547c\u3093\u3067\u3044\u308b\u53d6\u308a\u7d44\u307f\u3092\u884c\u3063\u3066\u3044\u307e\u3059\u3002\u6587\u5b57\u901a\u308a2\u5206\u9593\u3067\u5b8c\u4e86\u3059\u308b\u7a0b\u5ea6\u306e\u3001\u975e\u5e38\u306b\u7c21\u5358\u306a\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u4f5c\u696d\u3092\u7e70\u308a\u8fd4\u3059\u3053\u3068\u3067\u3001\u591a\u304f\u306f\u30b3\u30d4\u30da\u3059\u308b\u3060\u3051\u3067\u7d42\u4e86\u3059\u308b\u304f\u3089\u3044\u306e\u4f5c\u696d\u91cf\u3067\u3059\u3002"
-            },
-            "thumbnailImageSmall": {
-              "type": "IMAGE",
-              "imageValue": {
-                "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=144x144",
-                "width": 144,
-                "height": 81,
-                "alt": null
-              }
-            },
-            "thumbnailImage": {
-              "type": "IMAGE",
-              "imageValue": {
-                "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=280x150",
-                "width": 267,
-                "height": 150,
-                "alt": null
-              }
-            },
-            "thumbnailImageLarge": {
-              "type": "IMAGE",
-              "imageValue": {
-                "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=800x320_1",
-                "width": 569,
-                "height": 320,
-                "alt": null
-              }
-            },
-            "thumbnailImageXLarge": {
-              "type": "IMAGE",
-              "imageValue": {
-                "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=2048x2048_2_exp",
-                "width": 1280,
-                "height": 720,
-                "alt": null
-              }
-            },
-            "thumbnailImageOriginal": {
-              "type": "IMAGE",
-              "imageValue": {
-                "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=orig",
-                "width": 1280,
-                "height": 720,
-                "alt": null
-              }
-            },
-            "summaryPhotoImageSmall": {
-              "type": "IMAGE",
-              "imageValue": {
-                "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=386x202",
-                "width": 386,
-                "height": 202,
-                "alt": null
-              }
-            },
-            "summaryPhotoImage": {
-              "type": "IMAGE",
-              "imageValue": {
-                "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=600x314",
-                "width": 600,
-                "height": 314,
-                "alt": null
-              }
-            },
-            "summaryPhotoImageLarge": {
-              "type": "IMAGE",
-              "imageValue": {
-                "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=800x419",
-                "width": 800,
-                "height": 419,
-                "alt": null
-              }
-            },
-            "summaryPhotoImageXLarge": {
-              "type": "IMAGE",
-              "imageValue": {
-                "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=2048x2048_2_exp",
-                "width": 1280,
-                "height": 720,
-                "alt": null
-              }
-            },
-            "summaryPhotoImageOriginal": {
-              "type": "IMAGE",
-              "imageValue": {
-                "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=orig",
-                "width": 1280,
-                "height": 720,
-                "alt": null
-              }
-            },
-            "photoImageFullSizeSmall": {
-              "type": "IMAGE",
-              "imageValue": {
-                "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=386x202",
-                "width": 386,
-                "height": 202,
-                "alt": null
-              }
-            },
-            "photoImageFullSize": {
-              "type": "IMAGE",
-              "imageValue": {
-                "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=600x314",
-                "width": 600,
-                "height": 314,
-                "alt": null
-              }
-            },
-            "photoImageFullSizeLarge": {
-              "type": "IMAGE",
-              "imageValue": {
-                "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=800x419",
-                "width": 800,
-                "height": 419,
-                "alt": null
-              }
-            },
-            "photoImageFullSizeXLarge": {
-              "type": "IMAGE",
-              "imageValue": {
-                "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=2048x2048_2_exp",
-                "width": 1280,
-                "height": 720,
-                "alt": null
-              }
-            },
-            "photoImageFullSizeOriginal": {
-              "type": "IMAGE",
-              "imageValue": {
-                "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=orig",
-                "width": 1280,
-                "height": 720,
-                "alt": null
-              }
-            },
-            "cardUrl": {
-              "type": "STRING",
-              "stringValue": "https://t.co/FJaNXT06Pf",
-              "scribeKey": "card_url"
-            }
-          },
-          "users": {
-            "2875908842": {
-              "id": 2875908842,
-              "idStr": "2875908842",
-              "name": "\u30ea\u30c1\u30e3\u30fc\u30c9 \u4f0a\u771f\u5ca1",
-              "screenName": "RichardImaokaJP",
-              "location": null,
-              "description": "\u4e2d\u5805\u30a8\u30f3\u30b8\u30cb\u30a2",
-              "url": "https://blog-jp.richardimaoka.net",
-              "entities": {
-                "url": {
-                  "urls": [
-                    {
-                      "url": "https://blog-jp.richardimaoka.net",
-                      "expandedUrl": "https://blog-jp.richardimaoka.net",
-                      "displayUrl": "blog-jp.richardimaoka.net",
-                      "indices": [0, 33]
-                    }
-                  ]
-                },
-                "description": {
-                  "urls": []
-                }
-              },
-              "protected": false,
-              "followersCount": 342,
-              "friendsCount": 223,
-              "listedCount": 7,
-              "createdAt": "Sat Oct 25 00:13:42 +0000 2014",
-              "favouritesCount": 1628,
-              "utcOffset": null,
-              "timeZone": null,
-              "geoEnabled": false,
-              "verified": false,
-              "statusesCount": 3398,
-              "lang": null,
-              "contributorsEnabled": false,
-              "isTranslator": false,
-              "isTranslationEnabled": false,
-              "profileBackgroundColor": "C0DEED",
-              "profileBackgroundImageUrl": "http://abs.twimg.com/images/themes/theme1/bg.png",
-              "profileBackgroundImageUrlHttps": "https://abs.twimg.com/images/themes/theme1/bg.png",
-              "profileBackgroundTile": false,
-              "profileImageUrl": "http://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
-              "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
-              "profileBannerUrl": "https://pbs.twimg.com/profile_banners/2875908842/1568031488",
-              "profileLinkColor": "1DA1F2",
-              "profileSidebarBorderColor": "C0DEED",
-              "profileSidebarFillColor": "DDEEF6",
-              "profileTextColor": "333333",
-              "profileUseBackgroundImage": true,
-              "defaultProfile": true,
-              "defaultProfileImage": false,
-              "canMediaTag": null,
-              "following": false,
-              "followRequestSent": null,
-              "notifications": null,
-              "blocking": false,
-              "blockedBy": false,
-              "profileInterstitialType": "",
-              "translatorType": "regular",
-              "withheldInCountries": [],
-              "followedBy": false
-            }
-          },
-          "cardPlatform": {
-            "platform": {
-              "device": {
-                "name": "Swift",
-                "version": "12"
-              },
-              "audience": {
-                "name": "production",
-                "bucket": null
+              "small": {
+                "faces": [
+                  {
+                    "x": 20,
+                    "y": 102,
+                    "h": 48,
+                    "w": 48
+                  }
+                ]
               }
             }
           }
-        },
-        "lang": "ja"
+        ]
       },
-      "1396430178650230784": {
-        "user": {
-          "id": 2875908842,
-          "idStr": "2875908842",
-          "name": "\u30ea\u30c1\u30e3\u30fc\u30c9 \u4f0a\u771f\u5ca1",
-          "screenName": "RichardImaokaJP",
-          "location": null,
-          "description": "\u4e2d\u5805\u30a8\u30f3\u30b8\u30cb\u30a2",
-          "url": "https://blog-jp.richardimaoka.net",
-          "entities": {
-            "url": {
-              "urls": [
+      "extendedEntities": {
+        "media": [
+          {
+            "id": 1393497177339490300,
+            "idStr": "1393497177339490306",
+            "indices": [53, 76],
+            "mediaUrl": "http://pbs.twimg.com/media/E1ayTLrUcAIcgfc.jpg",
+            "mediaUrlHttps": "https://pbs.twimg.com/media/E1ayTLrUcAIcgfc.jpg",
+            "url": "https://t.co/BajNH8rmmH",
+            "displayUrl": "pic.twitter.com/BajNH8rmmH",
+            "expandedUrl": "https://twitter.com/RichardImaokaJP/status/1393497557658075138/photo/1",
+            "type": "photo",
+            "originalInfo": {
+              "width": 1200,
+              "height": 670,
+              "focusRects": [
                 {
-                  "url": "https://blog-jp.richardimaoka.net",
-                  "expandedUrl": "https://blog-jp.richardimaoka.net",
-                  "displayUrl": "blog-jp.richardimaoka.net",
-                  "indices": [0, 33]
-                }
-              ]
-            },
-            "description": {
-              "urls": []
-            }
-          },
-          "protected": false,
-          "followersCount": 342,
-          "friendsCount": 223,
-          "listedCount": 7,
-          "createdAt": "Sat Oct 25 00:13:42 +0000 2014",
-          "favouritesCount": 1628,
-          "utcOffset": null,
-          "timeZone": null,
-          "geoEnabled": false,
-          "verified": false,
-          "statusesCount": 3398,
-          "lang": null,
-          "contributorsEnabled": false,
-          "isTranslator": false,
-          "isTranslationEnabled": false,
-          "profileBackgroundColor": "C0DEED",
-          "profileBackgroundImageUrl": "http://abs.twimg.com/images/themes/theme1/bg.png",
-          "profileBackgroundImageUrlHttps": "https://abs.twimg.com/images/themes/theme1/bg.png",
-          "profileBackgroundTile": false,
-          "profileImageUrl": "http://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
-          "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
-          "profileBannerUrl": "https://pbs.twimg.com/profile_banners/2875908842/1568031488",
-          "profileLinkColor": "1DA1F2",
-          "profileSidebarBorderColor": "C0DEED",
-          "profileSidebarFillColor": "DDEEF6",
-          "profileTextColor": "333333",
-          "profileUseBackgroundImage": true,
-          "defaultProfile": true,
-          "defaultProfileImage": false,
-          "canMediaTag": null,
-          "following": false,
-          "followRequestSent": null,
-          "notifications": null,
-          "blocking": false,
-          "blockedBy": false,
-          "profileInterstitialType": "",
-          "translatorType": "regular",
-          "withheldInCountries": [],
-          "followedBy": false
-        },
-        "createdAt": "Sun May 23 11:37:53 +0000 2021",
-        "id": 1396430178650230784,
-        "idStr": "1396430178650230784",
-        "fullText": "10\u5e74\u304f\u3089\u3044\u524d\u306eAPI\u8a2d\u8a08\u306e\u6280\u8853\u66f8\u8aad\u307f\u76f4\u3057\u3066\u3001\u73fe\u4ee3\u306eAPI\u306f\u8981\u6c42\u6c34\u6e96\u304c\u6570\u6bb5\u4e0a\u304c\u3063\u305f\u3068\u611f\u3058\u307e\u3057\u305f\u3002\u30c4\u30fc\u30eb\u306b\u3088\u308b\u88dc\u52a9\u3084\u30d9\u30b9\u30c8\u30fb\u30d7\u30e9\u30af\u30c6\u30a3\u30b9\u306e\u6d78\u900f\u3067\u3001\u6614\u306e\u672c\u3067\u63a8\u5968\u3055\u308c\u305f\u5185\u5bb9\u306f\u4eca\u3082\u91cd\u8981\u3055\u306f\u5931\u308f\u306a\u3044\u3082\u306e\u306e\u3001\u3067\u304d\u3066\u5f53\u305f\u308a\u524d\u306b\u306a\u3063\u305f\u3001\u4eca\u3067\u306f\u305d\u306e\u5148\u3092\u8981\u6c42\u3055\u308c\u308b\u3088\u3046\u306b\u306a\u3063\u305f\u3093\u3058\u3083\u306a\u3044\u3067\u3059\u304b\u306d\u3002",
-        "truncated": false,
-        "displayTextRange": [0, 138],
-        "entities": {
-          "hashtags": [],
-          "symbols": [],
-          "userMentions": [],
-          "urls": []
-        },
-        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
-        "inReplyToStatusId": null,
-        "inReplyToStatusIdStr": null,
-        "inReplyToUserId": null,
-        "inReplyToUserIdStr": null,
-        "inReplyToScreenName": null,
-        "userId": 2875908842,
-        "userIdStr": "2875908842",
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "isQuoteStatus": false,
-        "retweetCount": 0,
-        "favoriteCount": 2,
-        "replyCount": 0,
-        "quoteCount": 0,
-        "conversationId": 1396430178650230784,
-        "conversationIdStr": "1396430178650230784",
-        "conversationMuted": false,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "ja"
-      },
-      "1377603373541642240": {
-        "user": {
-          "id": 2875908842,
-          "idStr": "2875908842",
-          "name": "\u30ea\u30c1\u30e3\u30fc\u30c9 \u4f0a\u771f\u5ca1",
-          "screenName": "RichardImaokaJP",
-          "location": null,
-          "description": "\u4e2d\u5805\u30a8\u30f3\u30b8\u30cb\u30a2",
-          "url": "https://blog-jp.richardimaoka.net",
-          "entities": {
-            "url": {
-              "urls": [
-                {
-                  "url": "https://blog-jp.richardimaoka.net",
-                  "expandedUrl": "https://blog-jp.richardimaoka.net",
-                  "displayUrl": "blog-jp.richardimaoka.net",
-                  "indices": [0, 33]
-                }
-              ]
-            },
-            "description": {
-              "urls": []
-            }
-          },
-          "protected": false,
-          "followersCount": 342,
-          "friendsCount": 223,
-          "listedCount": 7,
-          "createdAt": "Sat Oct 25 00:13:42 +0000 2014",
-          "favouritesCount": 1628,
-          "utcOffset": null,
-          "timeZone": null,
-          "geoEnabled": false,
-          "verified": false,
-          "statusesCount": 3398,
-          "lang": null,
-          "contributorsEnabled": false,
-          "isTranslator": false,
-          "isTranslationEnabled": false,
-          "profileBackgroundColor": "C0DEED",
-          "profileBackgroundImageUrl": "http://abs.twimg.com/images/themes/theme1/bg.png",
-          "profileBackgroundImageUrlHttps": "https://abs.twimg.com/images/themes/theme1/bg.png",
-          "profileBackgroundTile": false,
-          "profileImageUrl": "http://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
-          "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
-          "profileBannerUrl": "https://pbs.twimg.com/profile_banners/2875908842/1568031488",
-          "profileLinkColor": "1DA1F2",
-          "profileSidebarBorderColor": "C0DEED",
-          "profileSidebarFillColor": "DDEEF6",
-          "profileTextColor": "333333",
-          "profileUseBackgroundImage": true,
-          "defaultProfile": true,
-          "defaultProfileImage": false,
-          "canMediaTag": null,
-          "following": false,
-          "followRequestSent": null,
-          "notifications": null,
-          "blocking": false,
-          "blockedBy": false,
-          "profileInterstitialType": "",
-          "translatorType": "regular",
-          "withheldInCountries": [],
-          "followedBy": false
-        },
-        "createdAt": "Thu Apr 01 12:46:53 +0000 2021",
-        "id": 1377603373541642240,
-        "idStr": "1377603373541642240",
-        "fullText": "\u3053\u3061\u3089\u591a\u304f\u306e\u4eba\u306b\u8aad\u3093\u3067\u3044\u305f\u3060\u304d\u3068\u3066\u3082\u5b09\u3057\u3044\u3067\u3059\u3002\u306f\u3066\u306a\u30d6\u30c3\u30af\u30de\u30fc\u30af\u304c600\u4ee5\u4e0a\u3064\u3044\u3066\u307e\u3057\u305f\u3002\u4eca\u5ea6\u5225\u306e\u8a18\u4e8b\u30672\u5206\u9593\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u3092\u6301\u7d9a\u3059\u308b\u3088\u308a\u7d30\u304b\u3044\u30c6\u30af\u30cb\u30c3\u30af\u3092\u7d39\u4ecb\u3059\u308b\u4e88\u5b9a\u3067\u3059\u3002\n\nhttps://t.co/FJaNXT06Pf",
-        "truncated": false,
-        "displayTextRange": [0, 112],
-        "entities": {
-          "hashtags": [],
-          "symbols": [],
-          "userMentions": [],
-          "urls": [
-            {
-              "url": "https://t.co/FJaNXT06Pf",
-              "expandedUrl": "https://blog-jp.richardimaoka.net/20210328",
-              "displayUrl": "blog-jp.richardimaoka.net/20210328",
-              "indices": [89, 112]
-            }
-          ]
-        },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "inReplyToStatusId": null,
-        "inReplyToStatusIdStr": null,
-        "inReplyToUserId": null,
-        "inReplyToUserIdStr": null,
-        "inReplyToScreenName": null,
-        "userId": 2875908842,
-        "userIdStr": "2875908842",
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "isQuoteStatus": false,
-        "retweetCount": 1,
-        "favoriteCount": 10,
-        "replyCount": 0,
-        "quoteCount": 0,
-        "conversationId": 1377603373541642240,
-        "conversationIdStr": "1377603373541642240",
-        "conversationMuted": false,
-        "favorited": false,
-        "retweeted": false,
-        "possiblySensitive": true,
-        "card": {
-          "name": "summary_large_image",
-          "url": "https://t.co/FJaNXT06Pf",
-          "cardTypeUrl": "http://card-type-url-is-deprecated.invalid",
-          "bindingValues": {
-            "vanityUrl": {
-              "type": "STRING",
-              "stringValue": "blog-jp.richardimaoka.net",
-              "scribeKey": "vanity_url"
-            },
-            "domain": {
-              "type": "STRING",
-              "stringValue": "blog-jp.richardimaoka.net"
-            },
-            "creator": {
-              "type": "USER",
-              "userValue": {
-                "idStr": "2875908842",
-                "path": []
-              }
-            },
-            "site": {
-              "type": "USER",
-              "userValue": {
-                "idStr": "2875908842",
-                "path": []
-              },
-              "scribeKey": "publisher_id"
-            },
-            "title": {
-              "type": "STRING",
-              "stringValue": "2\u5206\u9593\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u306e\u3059\u3059\u3081\u3001\u30b3\u30fc\u30c9\u3092\u66f8\u304f\u7fd2\u6163\u306e\u30cf\u30fc\u30c9\u30eb\u3092\u4e0b\u3052\u308b"
-            },
-            "description": {
-              "type": "STRING",
-              "stringValue": "\u6700\u8fd1\u79c1\u306f\u300c2\u5206\u9593\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u300d\u3068\u547c\u3093\u3067\u3044\u308b\u53d6\u308a\u7d44\u307f\u3092\u884c\u3063\u3066\u3044\u307e\u3059\u3002\u6587\u5b57\u901a\u308a2\u5206\u9593\u3067\u5b8c\u4e86\u3059\u308b\u7a0b\u5ea6\u306e\u3001\u975e\u5e38\u306b\u7c21\u5358\u306a\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u4f5c\u696d\u3092\u7e70\u308a\u8fd4\u3059\u3053\u3068\u3067\u3001\u591a\u304f\u306f\u30b3\u30d4\u30da\u3059\u308b\u3060\u3051\u3067\u7d42\u4e86\u3059\u308b\u304f\u3089\u3044\u306e\u4f5c\u696d\u91cf\u3067\u3059\u3002"
-            },
-            "thumbnailImageSmall": {
-              "type": "IMAGE",
-              "imageValue": {
-                "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=144x144",
-                "width": 144,
-                "height": 81,
-                "alt": null
-              }
-            },
-            "thumbnailImage": {
-              "type": "IMAGE",
-              "imageValue": {
-                "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=280x150",
-                "width": 267,
-                "height": 150,
-                "alt": null
-              }
-            },
-            "thumbnailImageLarge": {
-              "type": "IMAGE",
-              "imageValue": {
-                "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=800x320_1",
-                "width": 569,
-                "height": 320,
-                "alt": null
-              }
-            },
-            "thumbnailImageXLarge": {
-              "type": "IMAGE",
-              "imageValue": {
-                "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=2048x2048_2_exp",
-                "width": 1280,
-                "height": 720,
-                "alt": null
-              }
-            },
-            "thumbnailImageOriginal": {
-              "type": "IMAGE",
-              "imageValue": {
-                "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=orig",
-                "width": 1280,
-                "height": 720,
-                "alt": null
-              }
-            },
-            "summaryPhotoImageSmall": {
-              "type": "IMAGE",
-              "imageValue": {
-                "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=386x202",
-                "width": 386,
-                "height": 202,
-                "alt": null
-              }
-            },
-            "summaryPhotoImage": {
-              "type": "IMAGE",
-              "imageValue": {
-                "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=600x314",
-                "width": 600,
-                "height": 314,
-                "alt": null
-              }
-            },
-            "summaryPhotoImageLarge": {
-              "type": "IMAGE",
-              "imageValue": {
-                "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=800x419",
-                "width": 800,
-                "height": 419,
-                "alt": null
-              }
-            },
-            "summaryPhotoImageXLarge": {
-              "type": "IMAGE",
-              "imageValue": {
-                "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=2048x2048_2_exp",
-                "width": 1280,
-                "height": 720,
-                "alt": null
-              }
-            },
-            "summaryPhotoImageOriginal": {
-              "type": "IMAGE",
-              "imageValue": {
-                "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=orig",
-                "width": 1280,
-                "height": 720,
-                "alt": null
-              }
-            },
-            "photoImageFullSizeSmall": {
-              "type": "IMAGE",
-              "imageValue": {
-                "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=386x202",
-                "width": 386,
-                "height": 202,
-                "alt": null
-              }
-            },
-            "photoImageFullSize": {
-              "type": "IMAGE",
-              "imageValue": {
-                "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=600x314",
-                "width": 600,
-                "height": 314,
-                "alt": null
-              }
-            },
-            "photoImageFullSizeLarge": {
-              "type": "IMAGE",
-              "imageValue": {
-                "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=800x419",
-                "width": 800,
-                "height": 419,
-                "alt": null
-              }
-            },
-            "photoImageFullSizeXLarge": {
-              "type": "IMAGE",
-              "imageValue": {
-                "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=2048x2048_2_exp",
-                "width": 1280,
-                "height": 720,
-                "alt": null
-              }
-            },
-            "photoImageFullSizeOriginal": {
-              "type": "IMAGE",
-              "imageValue": {
-                "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=orig",
-                "width": 1280,
-                "height": 720,
-                "alt": null
-              }
-            },
-            "cardUrl": {
-              "type": "STRING",
-              "stringValue": "https://t.co/FJaNXT06Pf",
-              "scribeKey": "card_url"
-            }
-          },
-          "users": {
-            "2875908842": {
-              "id": 2875908842,
-              "idStr": "2875908842",
-              "name": "\u30ea\u30c1\u30e3\u30fc\u30c9 \u4f0a\u771f\u5ca1",
-              "screenName": "RichardImaokaJP",
-              "location": null,
-              "description": "\u4e2d\u5805\u30a8\u30f3\u30b8\u30cb\u30a2",
-              "url": "https://blog-jp.richardimaoka.net",
-              "entities": {
-                "url": {
-                  "urls": [
-                    {
-                      "url": "https://blog-jp.richardimaoka.net",
-                      "expandedUrl": "https://blog-jp.richardimaoka.net",
-                      "displayUrl": "blog-jp.richardimaoka.net",
-                      "indices": [0, 33]
-                    }
-                  ]
+                  "x": 4,
+                  "y": 0,
+                  "h": 670,
+                  "w": 1196
                 },
-                "description": {
-                  "urls": []
+                {
+                  "x": 530,
+                  "y": 0,
+                  "h": 670,
+                  "w": 670
+                },
+                {
+                  "x": 612,
+                  "y": 0,
+                  "h": 670,
+                  "w": 588
+                },
+                {
+                  "x": 761,
+                  "y": 0,
+                  "h": 670,
+                  "w": 335
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "h": 670,
+                  "w": 1200
                 }
+              ]
+            },
+            "sizes": {
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
               },
-              "protected": false,
-              "followersCount": 342,
-              "friendsCount": 223,
-              "listedCount": 7,
-              "createdAt": "Sat Oct 25 00:13:42 +0000 2014",
-              "favouritesCount": 1628,
-              "utcOffset": null,
-              "timeZone": null,
-              "geoEnabled": false,
-              "verified": false,
-              "statusesCount": 3398,
-              "lang": null,
-              "contributorsEnabled": false,
-              "isTranslator": false,
-              "isTranslationEnabled": false,
-              "profileBackgroundColor": "C0DEED",
-              "profileBackgroundImageUrl": "http://abs.twimg.com/images/themes/theme1/bg.png",
-              "profileBackgroundImageUrlHttps": "https://abs.twimg.com/images/themes/theme1/bg.png",
-              "profileBackgroundTile": false,
-              "profileImageUrl": "http://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
-              "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
-              "profileBannerUrl": "https://pbs.twimg.com/profile_banners/2875908842/1568031488",
-              "profileLinkColor": "1DA1F2",
-              "profileSidebarBorderColor": "C0DEED",
-              "profileSidebarFillColor": "DDEEF6",
-              "profileTextColor": "333333",
-              "profileUseBackgroundImage": true,
-              "defaultProfile": true,
-              "defaultProfileImage": false,
-              "canMediaTag": null,
-              "following": false,
-              "followRequestSent": null,
-              "notifications": null,
-              "blocking": false,
-              "blockedBy": false,
-              "profileInterstitialType": "",
-              "translatorType": "regular",
-              "withheldInCountries": [],
-              "followedBy": false
-            }
-          },
-          "cardPlatform": {
-            "platform": {
-              "device": {
-                "name": "Swift",
-                "version": "12"
+              "large": {
+                "w": 1200,
+                "h": 670,
+                "resize": "fit"
               },
-              "audience": {
-                "name": "production",
-                "bucket": null
+              "medium": {
+                "w": 1200,
+                "h": 670,
+                "resize": "fit"
+              },
+              "small": {
+                "w": 680,
+                "h": 380,
+                "resize": "fit"
+              }
+            },
+            "features": {
+              "large": {
+                "faces": [
+                  {
+                    "x": 37,
+                    "y": 180,
+                    "h": 85,
+                    "w": 85
+                  }
+                ]
+              },
+              "orig": {
+                "faces": [
+                  {
+                    "x": 37,
+                    "y": 180,
+                    "h": 85,
+                    "w": 85
+                  }
+                ]
+              },
+              "medium": {
+                "faces": [
+                  {
+                    "x": 37,
+                    "y": 180,
+                    "h": 85,
+                    "w": 85
+                  }
+                ]
+              },
+              "small": {
+                "faces": [
+                  {
+                    "x": 20,
+                    "y": 102,
+                    "h": 48,
+                    "w": 48
+                  }
+                ]
+              }
+            },
+            "extMediaColor": {
+              "palette": [
+                {
+                  "rgb": {
+                    "red": 255,
+                    "green": 255,
+                    "blue": 255
+                  },
+                  "percentage": 90.48
+                },
+                {
+                  "rgb": {
+                    "red": 252,
+                    "green": 238,
+                    "blue": 43
+                  },
+                  "percentage": 3.55
+                },
+                {
+                  "rgb": {
+                    "red": 225,
+                    "green": 221,
+                    "blue": 160
+                  },
+                  "percentage": 2.38
+                },
+                {
+                  "rgb": {
+                    "red": 241,
+                    "green": 230,
+                    "blue": 102
+                  },
+                  "percentage": 1.38
+                },
+                {
+                  "rgb": {
+                    "red": 255,
+                    "green": 187,
+                    "blue": 190
+                  },
+                  "percentage": 0.53
+                }
+              ]
+            },
+            "extAltText": null,
+            "extMediaAvailability": {
+              "status": "available"
+            },
+            "ext": {
+              "mediaStats": {
+                "r": "Missing",
+                "ttl": -1
               }
             }
           }
-        },
-        "lang": "ja"
+        ]
       },
-      "1397142462070550533": {
-        "user": {
-          "id": 2875908842,
-          "idStr": "2875908842",
-          "name": "\u30ea\u30c1\u30e3\u30fc\u30c9 \u4f0a\u771f\u5ca1",
-          "screenName": "RichardImaokaJP",
-          "location": null,
-          "description": "\u4e2d\u5805\u30a8\u30f3\u30b8\u30cb\u30a2",
-          "url": "https://blog-jp.richardimaoka.net",
-          "entities": {
-            "url": {
-              "urls": [
-                {
-                  "url": "https://blog-jp.richardimaoka.net",
-                  "expandedUrl": "https://blog-jp.richardimaoka.net",
-                  "displayUrl": "blog-jp.richardimaoka.net",
-                  "indices": [0, 33]
-                }
-              ]
-            },
-            "description": {
-              "urls": []
+      "source": "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
+      "inReplyToStatusId": null,
+      "inReplyToStatusIdStr": null,
+      "inReplyToUserId": null,
+      "inReplyToUserIdStr": null,
+      "inReplyToScreenName": null,
+      "userId": 2875908842,
+      "userIdStr": "2875908842",
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "isQuoteStatus": false,
+      "retweetCount": 0,
+      "favoriteCount": 2,
+      "replyCount": 0,
+      "quoteCount": 0,
+      "conversationId": 1393497557658075100,
+      "conversationIdStr": "1393497557658075138",
+      "conversationMuted": false,
+      "favorited": false,
+      "retweeted": false,
+      "possiblySensitive": false,
+      "lang": "ja"
+    },
+    {
+      "user": {
+        "id": 2875908842,
+        "idStr": "2875908842",
+        "name": "リチャード 伊真岡",
+        "screenName": "RichardImaokaJP",
+        "location": null,
+        "description": "中堅エンジニア",
+        "url": "https://blog-jp.richardimaoka.net",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "https://blog-jp.richardimaoka.net",
+                "expandedUrl": "https://blog-jp.richardimaoka.net",
+                "displayUrl": "blog-jp.richardimaoka.net",
+                "indices": [0, 33]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followersCount": 342,
+        "friendsCount": 223,
+        "listedCount": 7,
+        "createdAt": "Sat Oct 25 00:13:42 +0000 2014",
+        "favouritesCount": 1628,
+        "utcOffset": null,
+        "timeZone": null,
+        "geoEnabled": false,
+        "verified": false,
+        "statusesCount": 3398,
+        "lang": null,
+        "contributorsEnabled": false,
+        "isTranslator": false,
+        "isTranslationEnabled": false,
+        "profileBackgroundColor": "C0DEED",
+        "profileBackgroundImageUrl": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profileBackgroundImageUrlHttps": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profileBackgroundTile": false,
+        "profileImageUrl": "http://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
+        "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
+        "profileBannerUrl": "https://pbs.twimg.com/profile_banners/2875908842/1568031488",
+        "profileLinkColor": "1DA1F2",
+        "profileSidebarBorderColor": "C0DEED",
+        "profileSidebarFillColor": "DDEEF6",
+        "profileTextColor": "333333",
+        "profileUseBackgroundImage": true,
+        "defaultProfile": true,
+        "defaultProfileImage": false,
+        "canMediaTag": null,
+        "following": false,
+        "followRequestSent": null,
+        "notifications": null,
+        "blocking": false,
+        "blockedBy": false,
+        "profileInterstitialType": "",
+        "translatorType": "regular",
+        "withheldInCountries": [],
+        "followedBy": false
+      },
+      "createdAt": "Mon May 24 04:17:18 +0000 2021",
+      "id": 1396681687644266500,
+      "idStr": "1396681687644266500",
+      "fullText": "スポーツ選手でさえ移籍先の環境に馴染んで本来の力を発揮するまでに時間がかかることがあるんだから、普通の会社員が転職先で「以前は出来ていたことがうまく出来ない！」と落ち込む必要ないんじゃないかと思います。焦ってもよいことないですね。",
+      "truncated": false,
+      "displayTextRange": [0, 115],
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "userMentions": [],
+        "urls": []
+      },
+      "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+      "inReplyToStatusId": null,
+      "inReplyToStatusIdStr": null,
+      "inReplyToUserId": null,
+      "inReplyToUserIdStr": null,
+      "inReplyToScreenName": null,
+      "userId": 2875908842,
+      "userIdStr": "2875908842",
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "isQuoteStatus": false,
+      "retweetCount": 2,
+      "favoriteCount": 7,
+      "replyCount": 0,
+      "quoteCount": 0,
+      "conversationId": 1396681687644266500,
+      "conversationIdStr": "1396681687644266500",
+      "conversationMuted": false,
+      "favorited": false,
+      "retweeted": false,
+      "lang": "ja"
+    },
+    {
+      "user": {
+        "id": 2875908842,
+        "idStr": "2875908842",
+        "name": "リチャード 伊真岡",
+        "screenName": "RichardImaokaJP",
+        "location": null,
+        "description": "中堅エンジニア",
+        "url": "https://blog-jp.richardimaoka.net",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "https://blog-jp.richardimaoka.net",
+                "expandedUrl": "https://blog-jp.richardimaoka.net",
+                "displayUrl": "blog-jp.richardimaoka.net",
+                "indices": [0, 33]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followersCount": 342,
+        "friendsCount": 223,
+        "listedCount": 7,
+        "createdAt": "Sat Oct 25 00:13:42 +0000 2014",
+        "favouritesCount": 1628,
+        "utcOffset": null,
+        "timeZone": null,
+        "geoEnabled": false,
+        "verified": false,
+        "statusesCount": 3398,
+        "lang": null,
+        "contributorsEnabled": false,
+        "isTranslator": false,
+        "isTranslationEnabled": false,
+        "profileBackgroundColor": "C0DEED",
+        "profileBackgroundImageUrl": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profileBackgroundImageUrlHttps": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profileBackgroundTile": false,
+        "profileImageUrl": "http://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
+        "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
+        "profileBannerUrl": "https://pbs.twimg.com/profile_banners/2875908842/1568031488",
+        "profileLinkColor": "1DA1F2",
+        "profileSidebarBorderColor": "C0DEED",
+        "profileSidebarFillColor": "DDEEF6",
+        "profileTextColor": "333333",
+        "profileUseBackgroundImage": true,
+        "defaultProfile": true,
+        "defaultProfileImage": false,
+        "canMediaTag": null,
+        "following": false,
+        "followRequestSent": null,
+        "notifications": null,
+        "blocking": false,
+        "blockedBy": false,
+        "profileInterstitialType": "",
+        "translatorType": "regular",
+        "withheldInCountries": [],
+        "followedBy": false
+      },
+      "createdAt": "Sun Mar 28 07:19:32 +0000 2021",
+      "id": 1376071442656157700,
+      "idStr": "1376071442656157699",
+      "fullText": "2分間コーディングを始めてから、今まで公式ドキュメントや本を読んだだけで終わり、手を動かしていなかった技術を触る機会が増えました。直近ではGCPのCloud PubSubやCloud Functions、BigQueryを連携しTwitter APIからデータを流すおもちゃみたいなアプリを書いています。https://t.co/FJaNXT06Pf",
+      "truncated": false,
+      "displayTextRange": [0, 175],
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "userMentions": [],
+        "urls": [
+          {
+            "url": "https://t.co/FJaNXT06Pf",
+            "expandedUrl": "https://blog-jp.richardimaoka.net/20210328",
+            "displayUrl": "blog-jp.richardimaoka.net/20210328",
+            "indices": [152, 175]
+          }
+        ]
+      },
+      "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+      "inReplyToStatusId": null,
+      "inReplyToStatusIdStr": null,
+      "inReplyToUserId": null,
+      "inReplyToUserIdStr": null,
+      "inReplyToScreenName": null,
+      "userId": 2875908842,
+      "userIdStr": "2875908842",
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "isQuoteStatus": false,
+      "retweetCount": 20,
+      "favoriteCount": 104,
+      "replyCount": 0,
+      "quoteCount": 3,
+      "conversationId": 1376071442656157700,
+      "conversationIdStr": "1376071442656157699",
+      "conversationMuted": false,
+      "favorited": false,
+      "retweeted": false,
+      "possiblySensitive": true,
+      "card": {
+        "name": "summary_large_image",
+        "url": "https://t.co/FJaNXT06Pf",
+        "cardTypeUrl": "http://card-type-url-is-deprecated.invalid",
+        "bindingValues": {
+          "vanityUrl": {
+            "type": "STRING",
+            "stringValue": "blog-jp.richardimaoka.net",
+            "scribeKey": "vanity_url"
+          },
+          "domain": {
+            "type": "STRING",
+            "stringValue": "blog-jp.richardimaoka.net"
+          },
+          "creator": {
+            "type": "USER",
+            "userValue": {
+              "idStr": "2875908842",
+              "path": []
             }
           },
-          "protected": false,
-          "followersCount": 342,
-          "friendsCount": 223,
-          "listedCount": 7,
-          "createdAt": "Sat Oct 25 00:13:42 +0000 2014",
-          "favouritesCount": 1628,
-          "utcOffset": null,
-          "timeZone": null,
-          "geoEnabled": false,
-          "verified": false,
-          "statusesCount": 3398,
-          "lang": null,
-          "contributorsEnabled": false,
-          "isTranslator": false,
-          "isTranslationEnabled": false,
-          "profileBackgroundColor": "C0DEED",
-          "profileBackgroundImageUrl": "http://abs.twimg.com/images/themes/theme1/bg.png",
-          "profileBackgroundImageUrlHttps": "https://abs.twimg.com/images/themes/theme1/bg.png",
-          "profileBackgroundTile": false,
-          "profileImageUrl": "http://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
-          "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
-          "profileBannerUrl": "https://pbs.twimg.com/profile_banners/2875908842/1568031488",
-          "profileLinkColor": "1DA1F2",
-          "profileSidebarBorderColor": "C0DEED",
-          "profileSidebarFillColor": "DDEEF6",
-          "profileTextColor": "333333",
-          "profileUseBackgroundImage": true,
-          "defaultProfile": true,
-          "defaultProfileImage": false,
-          "canMediaTag": null,
-          "following": false,
-          "followRequestSent": null,
-          "notifications": null,
-          "blocking": false,
-          "blockedBy": false,
-          "profileInterstitialType": "",
-          "translatorType": "regular",
-          "withheldInCountries": [],
-          "followedBy": false
-        },
-        "createdAt": "Tue May 25 10:48:15 +0000 2021",
-        "id": 1397142462070550533,
-        "idStr": "1397142462070550533",
-        "fullText": "\u6587\u7ae0\u66f8\u304d\u306e\u9593\u3067\u6709\u540d\u306a\u66f8\u7c4d\u300c\u7406\u79d1\u7cfb\u306e\u4f5c\u6587\u6280\u8853\u300d\u3067\u3059\u304c\u30017\u7ae0\u300c\u4e8b\u5b9f\u3068\u610f\u898b\u300d\u306f\u81ea\u5206\u3067\u66f8\u304f\u3068\u304d\u306f\u3082\u3061\u308d\u3093\u3001\u4ed6\u4eba\u306e\u6587\u7ae0\u3092\u6279\u5224\u7684\u306b\u8aad\u3080\u306e\u306b\u5f79\u7acb\u3061\u307e\u3059\u3002\n\u3069\u3093\u306a\u306b\u5f37\u304f\u8a00\u3044\u5207\u3063\u305f\u4e3b\u5f35\u3082\u3001\u6839\u62e0\u304c\u793a\u3055\u308c\u3066\u3044\u306a\u3051\u308c\u3070\u300c\u4e8b\u5b9f\u304b\u3069\u3046\u304b\u5224\u65ad\u3057\u3088\u3046\u304c\u306a\u3044\u300d\u3068\u51b7\u9759\u306b\u53d7\u3051\u6b62\u3081\u3089\u308c\u307e\u3059\u3002\nhttps://t.co/Wm4MCSEuZe",
-        "truncated": false,
-        "displayTextRange": [0, 150],
-        "entities": {
-          "hashtags": [],
-          "symbols": [],
-          "userMentions": [],
-          "urls": [
-            {
-              "url": "https://t.co/Wm4MCSEuZe",
-              "expandedUrl": "https://www.amazon.co.jp/dp/4121006240",
-              "displayUrl": "amazon.co.jp/dp/4121006240",
-              "indices": [127, 150]
+          "site": {
+            "type": "USER",
+            "userValue": {
+              "idStr": "2875908842",
+              "path": []
+            },
+            "scribeKey": "publisher_id"
+          },
+          "title": {
+            "type": "STRING",
+            "stringValue": "2分間コーディングのすすめ、コードを書く習慣のハードルを下げる"
+          },
+          "description": {
+            "type": "STRING",
+            "stringValue": "最近私は「2分間コーディング」と呼んでいる取り組みを行っています。文字通り2分間で完了する程度の、非常に簡単なコーディング作業を繰り返すことで、多くはコピペするだけで終了するくらいの作業量です。"
+          },
+          "thumbnailImageSmall": {
+            "type": "IMAGE",
+            "imageValue": {
+              "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=144x144",
+              "width": 144,
+              "height": 81,
+              "alt": null
             }
-          ]
+          },
+          "thumbnailImage": {
+            "type": "IMAGE",
+            "imageValue": {
+              "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=280x150",
+              "width": 267,
+              "height": 150,
+              "alt": null
+            }
+          },
+          "thumbnailImageLarge": {
+            "type": "IMAGE",
+            "imageValue": {
+              "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=800x320_1",
+              "width": 569,
+              "height": 320,
+              "alt": null
+            }
+          },
+          "thumbnailImageXLarge": {
+            "type": "IMAGE",
+            "imageValue": {
+              "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=2048x2048_2_exp",
+              "width": 1280,
+              "height": 720,
+              "alt": null
+            }
+          },
+          "thumbnailImageOriginal": {
+            "type": "IMAGE",
+            "imageValue": {
+              "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=orig",
+              "width": 1280,
+              "height": 720,
+              "alt": null
+            }
+          },
+          "summaryPhotoImageSmall": {
+            "type": "IMAGE",
+            "imageValue": {
+              "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=386x202",
+              "width": 386,
+              "height": 202,
+              "alt": null
+            }
+          },
+          "summaryPhotoImage": {
+            "type": "IMAGE",
+            "imageValue": {
+              "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=600x314",
+              "width": 600,
+              "height": 314,
+              "alt": null
+            }
+          },
+          "summaryPhotoImageLarge": {
+            "type": "IMAGE",
+            "imageValue": {
+              "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=800x419",
+              "width": 800,
+              "height": 419,
+              "alt": null
+            }
+          },
+          "summaryPhotoImageXLarge": {
+            "type": "IMAGE",
+            "imageValue": {
+              "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=2048x2048_2_exp",
+              "width": 1280,
+              "height": 720,
+              "alt": null
+            }
+          },
+          "summaryPhotoImageOriginal": {
+            "type": "IMAGE",
+            "imageValue": {
+              "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=orig",
+              "width": 1280,
+              "height": 720,
+              "alt": null
+            }
+          },
+          "photoImageFullSizeSmall": {
+            "type": "IMAGE",
+            "imageValue": {
+              "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=386x202",
+              "width": 386,
+              "height": 202,
+              "alt": null
+            }
+          },
+          "photoImageFullSize": {
+            "type": "IMAGE",
+            "imageValue": {
+              "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=600x314",
+              "width": 600,
+              "height": 314,
+              "alt": null
+            }
+          },
+          "photoImageFullSizeLarge": {
+            "type": "IMAGE",
+            "imageValue": {
+              "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=800x419",
+              "width": 800,
+              "height": 419,
+              "alt": null
+            }
+          },
+          "photoImageFullSizeXLarge": {
+            "type": "IMAGE",
+            "imageValue": {
+              "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=2048x2048_2_exp",
+              "width": 1280,
+              "height": 720,
+              "alt": null
+            }
+          },
+          "photoImageFullSizeOriginal": {
+            "type": "IMAGE",
+            "imageValue": {
+              "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=orig",
+              "width": 1280,
+              "height": 720,
+              "alt": null
+            }
+          },
+          "cardUrl": {
+            "type": "STRING",
+            "stringValue": "https://t.co/FJaNXT06Pf",
+            "scribeKey": "card_url"
+          }
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "inReplyToStatusId": null,
-        "inReplyToStatusIdStr": null,
-        "inReplyToUserId": null,
-        "inReplyToUserIdStr": null,
-        "inReplyToScreenName": null,
-        "userId": 2875908842,
-        "userIdStr": "2875908842",
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "isQuoteStatus": false,
-        "retweetCount": 0,
-        "favoriteCount": 2,
-        "replyCount": 1,
-        "quoteCount": 0,
-        "conversationId": 1397142462070550533,
-        "conversationIdStr": "1397142462070550533",
-        "conversationMuted": false,
-        "favorited": false,
-        "retweeted": false,
-        "possiblySensitive": false,
-        "lang": "ja",
-        "selfThread": {
-          "id": 1397142462070550533,
-          "idStr": "1397142462070550533"
+        "users": {
+          "2875908842": {
+            "id": 2875908842,
+            "idStr": "2875908842",
+            "name": "リチャード 伊真岡",
+            "screenName": "RichardImaokaJP",
+            "location": null,
+            "description": "中堅エンジニア",
+            "url": "https://blog-jp.richardimaoka.net",
+            "entities": {
+              "url": {
+                "urls": [
+                  {
+                    "url": "https://blog-jp.richardimaoka.net",
+                    "expandedUrl": "https://blog-jp.richardimaoka.net",
+                    "displayUrl": "blog-jp.richardimaoka.net",
+                    "indices": [0, 33]
+                  }
+                ]
+              },
+              "description": {
+                "urls": []
+              }
+            },
+            "protected": false,
+            "followersCount": 342,
+            "friendsCount": 223,
+            "listedCount": 7,
+            "createdAt": "Sat Oct 25 00:13:42 +0000 2014",
+            "favouritesCount": 1628,
+            "utcOffset": null,
+            "timeZone": null,
+            "geoEnabled": false,
+            "verified": false,
+            "statusesCount": 3398,
+            "lang": null,
+            "contributorsEnabled": false,
+            "isTranslator": false,
+            "isTranslationEnabled": false,
+            "profileBackgroundColor": "C0DEED",
+            "profileBackgroundImageUrl": "http://abs.twimg.com/images/themes/theme1/bg.png",
+            "profileBackgroundImageUrlHttps": "https://abs.twimg.com/images/themes/theme1/bg.png",
+            "profileBackgroundTile": false,
+            "profileImageUrl": "http://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
+            "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
+            "profileBannerUrl": "https://pbs.twimg.com/profile_banners/2875908842/1568031488",
+            "profileLinkColor": "1DA1F2",
+            "profileSidebarBorderColor": "C0DEED",
+            "profileSidebarFillColor": "DDEEF6",
+            "profileTextColor": "333333",
+            "profileUseBackgroundImage": true,
+            "defaultProfile": true,
+            "defaultProfileImage": false,
+            "canMediaTag": null,
+            "following": false,
+            "followRequestSent": null,
+            "notifications": null,
+            "blocking": false,
+            "blockedBy": false,
+            "profileInterstitialType": "",
+            "translatorType": "regular",
+            "withheldInCountries": [],
+            "followedBy": false
+          }
+        },
+        "cardPlatform": {
+          "platform": {
+            "device": {
+              "name": "Swift",
+              "version": "12"
+            },
+            "audience": {
+              "name": "production",
+              "bucket": null
+            }
+          }
         }
       },
-      "1344856635034849282": {
-        "user": {
-          "id": 2875908842,
-          "idStr": "2875908842",
-          "name": "\u30ea\u30c1\u30e3\u30fc\u30c9 \u4f0a\u771f\u5ca1",
-          "screenName": "RichardImaokaJP",
-          "location": null,
-          "description": "\u4e2d\u5805\u30a8\u30f3\u30b8\u30cb\u30a2",
-          "url": "https://blog-jp.richardimaoka.net",
-          "entities": {
-            "url": {
-              "urls": [
-                {
-                  "url": "https://blog-jp.richardimaoka.net",
-                  "expandedUrl": "https://blog-jp.richardimaoka.net",
-                  "displayUrl": "blog-jp.richardimaoka.net",
-                  "indices": [0, 33]
-                }
-              ]
-            },
-            "description": {
-              "urls": []
-            }
-          },
-          "protected": false,
-          "followersCount": 342,
-          "friendsCount": 223,
-          "listedCount": 7,
-          "createdAt": "Sat Oct 25 00:13:42 +0000 2014",
-          "favouritesCount": 1628,
-          "utcOffset": null,
-          "timeZone": null,
-          "geoEnabled": false,
-          "verified": false,
-          "statusesCount": 3398,
-          "lang": null,
-          "contributorsEnabled": false,
-          "isTranslator": false,
-          "isTranslationEnabled": false,
-          "profileBackgroundColor": "C0DEED",
-          "profileBackgroundImageUrl": "http://abs.twimg.com/images/themes/theme1/bg.png",
-          "profileBackgroundImageUrlHttps": "https://abs.twimg.com/images/themes/theme1/bg.png",
-          "profileBackgroundTile": false,
-          "profileImageUrl": "http://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
-          "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
-          "profileBannerUrl": "https://pbs.twimg.com/profile_banners/2875908842/1568031488",
-          "profileLinkColor": "1DA1F2",
-          "profileSidebarBorderColor": "C0DEED",
-          "profileSidebarFillColor": "DDEEF6",
-          "profileTextColor": "333333",
-          "profileUseBackgroundImage": true,
-          "defaultProfile": true,
-          "defaultProfileImage": false,
-          "canMediaTag": null,
-          "following": false,
-          "followRequestSent": null,
-          "notifications": null,
-          "blocking": false,
-          "blockedBy": false,
-          "profileInterstitialType": "",
-          "translatorType": "regular",
-          "withheldInCountries": [],
-          "followedBy": false
-        },
-        "createdAt": "Fri Jan 01 04:03:02 +0000 2021",
-        "id": 1344856635034849282,
-        "idStr": "1344856635034849282",
-        "fullText": "\u4eca\u5e74\u306e\u76ee\u6a19\u306f\u81ea\u5206\u306e\u610f\u898b\u3092\u8a00\u3046\u524d\u306b\u3001\u76f8\u624b\u306e\u8a71\u3092\u805e\u304f\u3053\u3068\u3067\u3059",
-        "truncated": false,
-        "displayTextRange": [0, 28],
+      "lang": "ja"
+    },
+    {
+      "user": {
+        "id": 2875908842,
+        "idStr": "2875908842",
+        "name": "リチャード 伊真岡",
+        "screenName": "RichardImaokaJP",
+        "location": null,
+        "description": "中堅エンジニア",
+        "url": "https://blog-jp.richardimaoka.net",
         "entities": {
-          "hashtags": [],
-          "symbols": [],
-          "userMentions": [],
-          "urls": []
+          "url": {
+            "urls": [
+              {
+                "url": "https://blog-jp.richardimaoka.net",
+                "expandedUrl": "https://blog-jp.richardimaoka.net",
+                "displayUrl": "blog-jp.richardimaoka.net",
+                "indices": [0, 33]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
         },
-        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
-        "inReplyToStatusId": null,
-        "inReplyToStatusIdStr": null,
-        "inReplyToUserId": null,
-        "inReplyToUserIdStr": null,
-        "inReplyToScreenName": null,
-        "userId": 2875908842,
-        "userIdStr": "2875908842",
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "isQuoteStatus": false,
-        "retweetCount": 0,
-        "favoriteCount": 2,
-        "replyCount": 0,
-        "quoteCount": 0,
-        "conversationId": 1344856635034849282,
-        "conversationIdStr": "1344856635034849282",
-        "conversationMuted": false,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "ja"
+        "protected": false,
+        "followersCount": 342,
+        "friendsCount": 223,
+        "listedCount": 7,
+        "createdAt": "Sat Oct 25 00:13:42 +0000 2014",
+        "favouritesCount": 1628,
+        "utcOffset": null,
+        "timeZone": null,
+        "geoEnabled": false,
+        "verified": false,
+        "statusesCount": 3398,
+        "lang": null,
+        "contributorsEnabled": false,
+        "isTranslator": false,
+        "isTranslationEnabled": false,
+        "profileBackgroundColor": "C0DEED",
+        "profileBackgroundImageUrl": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profileBackgroundImageUrlHttps": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profileBackgroundTile": false,
+        "profileImageUrl": "http://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
+        "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
+        "profileBannerUrl": "https://pbs.twimg.com/profile_banners/2875908842/1568031488",
+        "profileLinkColor": "1DA1F2",
+        "profileSidebarBorderColor": "C0DEED",
+        "profileSidebarFillColor": "DDEEF6",
+        "profileTextColor": "333333",
+        "profileUseBackgroundImage": true,
+        "defaultProfile": true,
+        "defaultProfileImage": false,
+        "canMediaTag": null,
+        "following": false,
+        "followRequestSent": null,
+        "notifications": null,
+        "blocking": false,
+        "blockedBy": false,
+        "profileInterstitialType": "",
+        "translatorType": "regular",
+        "withheldInCountries": [],
+        "followedBy": false
       },
-      "1399918647003410435": {
-        "user": {
-          "id": 2875908842,
-          "idStr": "2875908842",
-          "name": "\u30ea\u30c1\u30e3\u30fc\u30c9 \u4f0a\u771f\u5ca1",
-          "screenName": "RichardImaokaJP",
-          "location": null,
-          "description": "\u4e2d\u5805\u30a8\u30f3\u30b8\u30cb\u30a2",
-          "url": "https://blog-jp.richardimaoka.net",
-          "entities": {
-            "url": {
-              "urls": [
-                {
-                  "url": "https://blog-jp.richardimaoka.net",
-                  "expandedUrl": "https://blog-jp.richardimaoka.net",
-                  "displayUrl": "blog-jp.richardimaoka.net",
-                  "indices": [0, 33]
-                }
-              ]
-            },
-            "description": {
-              "urls": []
+      "createdAt": "Sun May 23 11:37:53 +0000 2021",
+      "id": 1396430178650230800,
+      "idStr": "1396430178650230784",
+      "fullText": "10年くらい前のAPI設計の技術書読み直して、現代のAPIは要求水準が数段上がったと感じました。ツールによる補助やベスト・プラクティスの浸透で、昔の本で推奨された内容は今も重要さは失わないものの、できて当たり前になった、今ではその先を要求されるようになったんじゃないですかね。",
+      "truncated": false,
+      "displayTextRange": [0, 138],
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "userMentions": [],
+        "urls": []
+      },
+      "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+      "inReplyToStatusId": null,
+      "inReplyToStatusIdStr": null,
+      "inReplyToUserId": null,
+      "inReplyToUserIdStr": null,
+      "inReplyToScreenName": null,
+      "userId": 2875908842,
+      "userIdStr": "2875908842",
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "isQuoteStatus": false,
+      "retweetCount": 0,
+      "favoriteCount": 2,
+      "replyCount": 0,
+      "quoteCount": 0,
+      "conversationId": 1396430178650230800,
+      "conversationIdStr": "1396430178650230784",
+      "conversationMuted": false,
+      "favorited": false,
+      "retweeted": false,
+      "lang": "ja"
+    },
+    {
+      "user": {
+        "id": 2875908842,
+        "idStr": "2875908842",
+        "name": "リチャード 伊真岡",
+        "screenName": "RichardImaokaJP",
+        "location": null,
+        "description": "中堅エンジニア",
+        "url": "https://blog-jp.richardimaoka.net",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "https://blog-jp.richardimaoka.net",
+                "expandedUrl": "https://blog-jp.richardimaoka.net",
+                "displayUrl": "blog-jp.richardimaoka.net",
+                "indices": [0, 33]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followersCount": 342,
+        "friendsCount": 223,
+        "listedCount": 7,
+        "createdAt": "Sat Oct 25 00:13:42 +0000 2014",
+        "favouritesCount": 1628,
+        "utcOffset": null,
+        "timeZone": null,
+        "geoEnabled": false,
+        "verified": false,
+        "statusesCount": 3398,
+        "lang": null,
+        "contributorsEnabled": false,
+        "isTranslator": false,
+        "isTranslationEnabled": false,
+        "profileBackgroundColor": "C0DEED",
+        "profileBackgroundImageUrl": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profileBackgroundImageUrlHttps": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profileBackgroundTile": false,
+        "profileImageUrl": "http://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
+        "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
+        "profileBannerUrl": "https://pbs.twimg.com/profile_banners/2875908842/1568031488",
+        "profileLinkColor": "1DA1F2",
+        "profileSidebarBorderColor": "C0DEED",
+        "profileSidebarFillColor": "DDEEF6",
+        "profileTextColor": "333333",
+        "profileUseBackgroundImage": true,
+        "defaultProfile": true,
+        "defaultProfileImage": false,
+        "canMediaTag": null,
+        "following": false,
+        "followRequestSent": null,
+        "notifications": null,
+        "blocking": false,
+        "blockedBy": false,
+        "profileInterstitialType": "",
+        "translatorType": "regular",
+        "withheldInCountries": [],
+        "followedBy": false
+      },
+      "createdAt": "Thu Apr 01 12:46:53 +0000 2021",
+      "id": 1377603373541642200,
+      "idStr": "1377603373541642240",
+      "fullText": "こちら多くの人に読んでいただきとても嬉しいです。はてなブックマークが600以上ついてました。今度別の記事で2分間コーディングを持続するより細かいテクニックを紹介する予定です。\n\nhttps://t.co/FJaNXT06Pf",
+      "truncated": false,
+      "displayTextRange": [0, 112],
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "userMentions": [],
+        "urls": [
+          {
+            "url": "https://t.co/FJaNXT06Pf",
+            "expandedUrl": "https://blog-jp.richardimaoka.net/20210328",
+            "displayUrl": "blog-jp.richardimaoka.net/20210328",
+            "indices": [89, 112]
+          }
+        ]
+      },
+      "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+      "inReplyToStatusId": null,
+      "inReplyToStatusIdStr": null,
+      "inReplyToUserId": null,
+      "inReplyToUserIdStr": null,
+      "inReplyToScreenName": null,
+      "userId": 2875908842,
+      "userIdStr": "2875908842",
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "isQuoteStatus": false,
+      "retweetCount": 1,
+      "favoriteCount": 10,
+      "replyCount": 0,
+      "quoteCount": 0,
+      "conversationId": 1377603373541642200,
+      "conversationIdStr": "1377603373541642240",
+      "conversationMuted": false,
+      "favorited": false,
+      "retweeted": false,
+      "possiblySensitive": true,
+      "card": {
+        "name": "summary_large_image",
+        "url": "https://t.co/FJaNXT06Pf",
+        "cardTypeUrl": "http://card-type-url-is-deprecated.invalid",
+        "bindingValues": {
+          "vanityUrl": {
+            "type": "STRING",
+            "stringValue": "blog-jp.richardimaoka.net",
+            "scribeKey": "vanity_url"
+          },
+          "domain": {
+            "type": "STRING",
+            "stringValue": "blog-jp.richardimaoka.net"
+          },
+          "creator": {
+            "type": "USER",
+            "userValue": {
+              "idStr": "2875908842",
+              "path": []
             }
           },
-          "protected": false,
-          "followersCount": 342,
-          "friendsCount": 223,
-          "listedCount": 7,
-          "createdAt": "Sat Oct 25 00:13:42 +0000 2014",
-          "favouritesCount": 1628,
-          "utcOffset": null,
-          "timeZone": null,
-          "geoEnabled": false,
-          "verified": false,
-          "statusesCount": 3398,
-          "lang": null,
-          "contributorsEnabled": false,
-          "isTranslator": false,
-          "isTranslationEnabled": false,
-          "profileBackgroundColor": "C0DEED",
-          "profileBackgroundImageUrl": "http://abs.twimg.com/images/themes/theme1/bg.png",
-          "profileBackgroundImageUrlHttps": "https://abs.twimg.com/images/themes/theme1/bg.png",
-          "profileBackgroundTile": false,
-          "profileImageUrl": "http://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
-          "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
-          "profileBannerUrl": "https://pbs.twimg.com/profile_banners/2875908842/1568031488",
-          "profileLinkColor": "1DA1F2",
-          "profileSidebarBorderColor": "C0DEED",
-          "profileSidebarFillColor": "DDEEF6",
-          "profileTextColor": "333333",
-          "profileUseBackgroundImage": true,
-          "defaultProfile": true,
-          "defaultProfileImage": false,
-          "canMediaTag": null,
-          "following": false,
-          "followRequestSent": null,
-          "notifications": null,
-          "blocking": false,
-          "blockedBy": false,
-          "profileInterstitialType": "",
-          "translatorType": "regular",
-          "withheldInCountries": [],
-          "followedBy": false
+          "site": {
+            "type": "USER",
+            "userValue": {
+              "idStr": "2875908842",
+              "path": []
+            },
+            "scribeKey": "publisher_id"
+          },
+          "title": {
+            "type": "STRING",
+            "stringValue": "2分間コーディングのすすめ、コードを書く習慣のハードルを下げる"
+          },
+          "description": {
+            "type": "STRING",
+            "stringValue": "最近私は「2分間コーディング」と呼んでいる取り組みを行っています。文字通り2分間で完了する程度の、非常に簡単なコーディング作業を繰り返すことで、多くはコピペするだけで終了するくらいの作業量です。"
+          },
+          "thumbnailImageSmall": {
+            "type": "IMAGE",
+            "imageValue": {
+              "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=144x144",
+              "width": 144,
+              "height": 81,
+              "alt": null
+            }
+          },
+          "thumbnailImage": {
+            "type": "IMAGE",
+            "imageValue": {
+              "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=280x150",
+              "width": 267,
+              "height": 150,
+              "alt": null
+            }
+          },
+          "thumbnailImageLarge": {
+            "type": "IMAGE",
+            "imageValue": {
+              "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=800x320_1",
+              "width": 569,
+              "height": 320,
+              "alt": null
+            }
+          },
+          "thumbnailImageXLarge": {
+            "type": "IMAGE",
+            "imageValue": {
+              "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=2048x2048_2_exp",
+              "width": 1280,
+              "height": 720,
+              "alt": null
+            }
+          },
+          "thumbnailImageOriginal": {
+            "type": "IMAGE",
+            "imageValue": {
+              "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=orig",
+              "width": 1280,
+              "height": 720,
+              "alt": null
+            }
+          },
+          "summaryPhotoImageSmall": {
+            "type": "IMAGE",
+            "imageValue": {
+              "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=386x202",
+              "width": 386,
+              "height": 202,
+              "alt": null
+            }
+          },
+          "summaryPhotoImage": {
+            "type": "IMAGE",
+            "imageValue": {
+              "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=600x314",
+              "width": 600,
+              "height": 314,
+              "alt": null
+            }
+          },
+          "summaryPhotoImageLarge": {
+            "type": "IMAGE",
+            "imageValue": {
+              "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=800x419",
+              "width": 800,
+              "height": 419,
+              "alt": null
+            }
+          },
+          "summaryPhotoImageXLarge": {
+            "type": "IMAGE",
+            "imageValue": {
+              "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=2048x2048_2_exp",
+              "width": 1280,
+              "height": 720,
+              "alt": null
+            }
+          },
+          "summaryPhotoImageOriginal": {
+            "type": "IMAGE",
+            "imageValue": {
+              "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=orig",
+              "width": 1280,
+              "height": 720,
+              "alt": null
+            }
+          },
+          "photoImageFullSizeSmall": {
+            "type": "IMAGE",
+            "imageValue": {
+              "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=386x202",
+              "width": 386,
+              "height": 202,
+              "alt": null
+            }
+          },
+          "photoImageFullSize": {
+            "type": "IMAGE",
+            "imageValue": {
+              "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=600x314",
+              "width": 600,
+              "height": 314,
+              "alt": null
+            }
+          },
+          "photoImageFullSizeLarge": {
+            "type": "IMAGE",
+            "imageValue": {
+              "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=800x419",
+              "width": 800,
+              "height": 419,
+              "alt": null
+            }
+          },
+          "photoImageFullSizeXLarge": {
+            "type": "IMAGE",
+            "imageValue": {
+              "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=2048x2048_2_exp",
+              "width": 1280,
+              "height": 720,
+              "alt": null
+            }
+          },
+          "photoImageFullSizeOriginal": {
+            "type": "IMAGE",
+            "imageValue": {
+              "url": "https://pbs.twimg.com/card_img/1406529113658036227/hGFPQPHG?format=png&name=orig",
+              "width": 1280,
+              "height": 720,
+              "alt": null
+            }
+          },
+          "cardUrl": {
+            "type": "STRING",
+            "stringValue": "https://t.co/FJaNXT06Pf",
+            "scribeKey": "card_url"
+          }
         },
-        "createdAt": "Wed Jun 02 02:39:49 +0000 2021",
-        "id": 1399918647003410435,
-        "idStr": "1399918647003410435",
-        "fullText": "\u6e2c\u5b9a\u3055\u308c\u3066\u3044\u306a\u3044\u3082\u306e\u306f\u6539\u5584\u3067\u304d\u306a\u3044\u3063\u3066\u3088\u304f\u8a00\u308f\u308c\u307e\u3059\u304c\u3001\u8a2d\u8a08\u3055\u308c\u3066\u3044\u306a\u3044\u3082\u306e\u306f\u30ea\u30d5\u30a1\u30af\u30bf\u30ea\u30f3\u30b0\u3067\u304d\u306a\u3044\u3082\u8a00\u3048\u308b\u6c17\u304c\u3057\u3066\u3044\u307e\u3059\u3002",
-        "truncated": false,
-        "displayTextRange": [0, 63],
+        "users": {
+          "2875908842": {
+            "id": 2875908842,
+            "idStr": "2875908842",
+            "name": "リチャード 伊真岡",
+            "screenName": "RichardImaokaJP",
+            "location": null,
+            "description": "中堅エンジニア",
+            "url": "https://blog-jp.richardimaoka.net",
+            "entities": {
+              "url": {
+                "urls": [
+                  {
+                    "url": "https://blog-jp.richardimaoka.net",
+                    "expandedUrl": "https://blog-jp.richardimaoka.net",
+                    "displayUrl": "blog-jp.richardimaoka.net",
+                    "indices": [0, 33]
+                  }
+                ]
+              },
+              "description": {
+                "urls": []
+              }
+            },
+            "protected": false,
+            "followersCount": 342,
+            "friendsCount": 223,
+            "listedCount": 7,
+            "createdAt": "Sat Oct 25 00:13:42 +0000 2014",
+            "favouritesCount": 1628,
+            "utcOffset": null,
+            "timeZone": null,
+            "geoEnabled": false,
+            "verified": false,
+            "statusesCount": 3398,
+            "lang": null,
+            "contributorsEnabled": false,
+            "isTranslator": false,
+            "isTranslationEnabled": false,
+            "profileBackgroundColor": "C0DEED",
+            "profileBackgroundImageUrl": "http://abs.twimg.com/images/themes/theme1/bg.png",
+            "profileBackgroundImageUrlHttps": "https://abs.twimg.com/images/themes/theme1/bg.png",
+            "profileBackgroundTile": false,
+            "profileImageUrl": "http://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
+            "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
+            "profileBannerUrl": "https://pbs.twimg.com/profile_banners/2875908842/1568031488",
+            "profileLinkColor": "1DA1F2",
+            "profileSidebarBorderColor": "C0DEED",
+            "profileSidebarFillColor": "DDEEF6",
+            "profileTextColor": "333333",
+            "profileUseBackgroundImage": true,
+            "defaultProfile": true,
+            "defaultProfileImage": false,
+            "canMediaTag": null,
+            "following": false,
+            "followRequestSent": null,
+            "notifications": null,
+            "blocking": false,
+            "blockedBy": false,
+            "profileInterstitialType": "",
+            "translatorType": "regular",
+            "withheldInCountries": [],
+            "followedBy": false
+          }
+        },
+        "cardPlatform": {
+          "platform": {
+            "device": {
+              "name": "Swift",
+              "version": "12"
+            },
+            "audience": {
+              "name": "production",
+              "bucket": null
+            }
+          }
+        }
+      },
+      "lang": "ja"
+    },
+    {
+      "user": {
+        "id": 2875908842,
+        "idStr": "2875908842",
+        "name": "リチャード 伊真岡",
+        "screenName": "RichardImaokaJP",
+        "location": null,
+        "description": "中堅エンジニア",
+        "url": "https://blog-jp.richardimaoka.net",
         "entities": {
-          "hashtags": [],
-          "symbols": [],
-          "userMentions": [],
-          "urls": []
+          "url": {
+            "urls": [
+              {
+                "url": "https://blog-jp.richardimaoka.net",
+                "expandedUrl": "https://blog-jp.richardimaoka.net",
+                "displayUrl": "blog-jp.richardimaoka.net",
+                "indices": [0, 33]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "inReplyToStatusId": null,
-        "inReplyToStatusIdStr": null,
-        "inReplyToUserId": null,
-        "inReplyToUserIdStr": null,
-        "inReplyToScreenName": null,
-        "userId": 2875908842,
-        "userIdStr": "2875908842",
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "isQuoteStatus": false,
-        "retweetCount": 0,
-        "favoriteCount": 1,
-        "replyCount": 0,
-        "quoteCount": 0,
-        "conversationId": 1399918647003410435,
-        "conversationIdStr": "1399918647003410435",
-        "conversationMuted": false,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "ja"
+        "protected": false,
+        "followersCount": 342,
+        "friendsCount": 223,
+        "listedCount": 7,
+        "createdAt": "Sat Oct 25 00:13:42 +0000 2014",
+        "favouritesCount": 1628,
+        "utcOffset": null,
+        "timeZone": null,
+        "geoEnabled": false,
+        "verified": false,
+        "statusesCount": 3398,
+        "lang": null,
+        "contributorsEnabled": false,
+        "isTranslator": false,
+        "isTranslationEnabled": false,
+        "profileBackgroundColor": "C0DEED",
+        "profileBackgroundImageUrl": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profileBackgroundImageUrlHttps": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profileBackgroundTile": false,
+        "profileImageUrl": "http://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
+        "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
+        "profileBannerUrl": "https://pbs.twimg.com/profile_banners/2875908842/1568031488",
+        "profileLinkColor": "1DA1F2",
+        "profileSidebarBorderColor": "C0DEED",
+        "profileSidebarFillColor": "DDEEF6",
+        "profileTextColor": "333333",
+        "profileUseBackgroundImage": true,
+        "defaultProfile": true,
+        "defaultProfileImage": false,
+        "canMediaTag": null,
+        "following": false,
+        "followRequestSent": null,
+        "notifications": null,
+        "blocking": false,
+        "blockedBy": false,
+        "profileInterstitialType": "",
+        "translatorType": "regular",
+        "withheldInCountries": [],
+        "followedBy": false
+      },
+      "createdAt": "Tue May 25 10:48:15 +0000 2021",
+      "id": 1397142462070550500,
+      "idStr": "1397142462070550533",
+      "fullText": "文章書きの間で有名な書籍「理科系の作文技術」ですが、7章「事実と意見」は自分で書くときはもちろん、他人の文章を批判的に読むのに役立ちます。\nどんなに強く言い切った主張も、根拠が示されていなければ「事実かどうか判断しようがない」と冷静に受け止められます。\nhttps://t.co/Wm4MCSEuZe",
+      "truncated": false,
+      "displayTextRange": [0, 150],
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "userMentions": [],
+        "urls": [
+          {
+            "url": "https://t.co/Wm4MCSEuZe",
+            "expandedUrl": "https://www.amazon.co.jp/dp/4121006240",
+            "displayUrl": "amazon.co.jp/dp/4121006240",
+            "indices": [127, 150]
+          }
+        ]
+      },
+      "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+      "inReplyToStatusId": null,
+      "inReplyToStatusIdStr": null,
+      "inReplyToUserId": null,
+      "inReplyToUserIdStr": null,
+      "inReplyToScreenName": null,
+      "userId": 2875908842,
+      "userIdStr": "2875908842",
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "isQuoteStatus": false,
+      "retweetCount": 0,
+      "favoriteCount": 2,
+      "replyCount": 1,
+      "quoteCount": 0,
+      "conversationId": 1397142462070550500,
+      "conversationIdStr": "1397142462070550533",
+      "conversationMuted": false,
+      "favorited": false,
+      "retweeted": false,
+      "possiblySensitive": false,
+      "lang": "ja",
+      "selfThread": {
+        "id": 1397142462070550500,
+        "idStr": "1397142462070550533"
       }
+    },
+    {
+      "user": {
+        "id": 2875908842,
+        "idStr": "2875908842",
+        "name": "リチャード 伊真岡",
+        "screenName": "RichardImaokaJP",
+        "location": null,
+        "description": "中堅エンジニア",
+        "url": "https://blog-jp.richardimaoka.net",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "https://blog-jp.richardimaoka.net",
+                "expandedUrl": "https://blog-jp.richardimaoka.net",
+                "displayUrl": "blog-jp.richardimaoka.net",
+                "indices": [0, 33]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followersCount": 342,
+        "friendsCount": 223,
+        "listedCount": 7,
+        "createdAt": "Sat Oct 25 00:13:42 +0000 2014",
+        "favouritesCount": 1628,
+        "utcOffset": null,
+        "timeZone": null,
+        "geoEnabled": false,
+        "verified": false,
+        "statusesCount": 3398,
+        "lang": null,
+        "contributorsEnabled": false,
+        "isTranslator": false,
+        "isTranslationEnabled": false,
+        "profileBackgroundColor": "C0DEED",
+        "profileBackgroundImageUrl": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profileBackgroundImageUrlHttps": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profileBackgroundTile": false,
+        "profileImageUrl": "http://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
+        "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
+        "profileBannerUrl": "https://pbs.twimg.com/profile_banners/2875908842/1568031488",
+        "profileLinkColor": "1DA1F2",
+        "profileSidebarBorderColor": "C0DEED",
+        "profileSidebarFillColor": "DDEEF6",
+        "profileTextColor": "333333",
+        "profileUseBackgroundImage": true,
+        "defaultProfile": true,
+        "defaultProfileImage": false,
+        "canMediaTag": null,
+        "following": false,
+        "followRequestSent": null,
+        "notifications": null,
+        "blocking": false,
+        "blockedBy": false,
+        "profileInterstitialType": "",
+        "translatorType": "regular",
+        "withheldInCountries": [],
+        "followedBy": false
+      },
+      "createdAt": "Fri Jan 01 04:03:02 +0000 2021",
+      "id": 1344856635034849300,
+      "idStr": "1344856635034849282",
+      "fullText": "今年の目標は自分の意見を言う前に、相手の話を聞くことです",
+      "truncated": false,
+      "displayTextRange": [0, 28],
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "userMentions": [],
+        "urls": []
+      },
+      "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+      "inReplyToStatusId": null,
+      "inReplyToStatusIdStr": null,
+      "inReplyToUserId": null,
+      "inReplyToUserIdStr": null,
+      "inReplyToScreenName": null,
+      "userId": 2875908842,
+      "userIdStr": "2875908842",
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "isQuoteStatus": false,
+      "retweetCount": 0,
+      "favoriteCount": 2,
+      "replyCount": 0,
+      "quoteCount": 0,
+      "conversationId": 1344856635034849300,
+      "conversationIdStr": "1344856635034849282",
+      "conversationMuted": false,
+      "favorited": false,
+      "retweeted": false,
+      "lang": "ja"
+    },
+    {
+      "user": {
+        "id": 2875908842,
+        "idStr": "2875908842",
+        "name": "リチャード 伊真岡",
+        "screenName": "RichardImaokaJP",
+        "location": null,
+        "description": "中堅エンジニア",
+        "url": "https://blog-jp.richardimaoka.net",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "https://blog-jp.richardimaoka.net",
+                "expandedUrl": "https://blog-jp.richardimaoka.net",
+                "displayUrl": "blog-jp.richardimaoka.net",
+                "indices": [0, 33]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followersCount": 342,
+        "friendsCount": 223,
+        "listedCount": 7,
+        "createdAt": "Sat Oct 25 00:13:42 +0000 2014",
+        "favouritesCount": 1628,
+        "utcOffset": null,
+        "timeZone": null,
+        "geoEnabled": false,
+        "verified": false,
+        "statusesCount": 3398,
+        "lang": null,
+        "contributorsEnabled": false,
+        "isTranslator": false,
+        "isTranslationEnabled": false,
+        "profileBackgroundColor": "C0DEED",
+        "profileBackgroundImageUrl": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profileBackgroundImageUrlHttps": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profileBackgroundTile": false,
+        "profileImageUrl": "http://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
+        "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
+        "profileBannerUrl": "https://pbs.twimg.com/profile_banners/2875908842/1568031488",
+        "profileLinkColor": "1DA1F2",
+        "profileSidebarBorderColor": "C0DEED",
+        "profileSidebarFillColor": "DDEEF6",
+        "profileTextColor": "333333",
+        "profileUseBackgroundImage": true,
+        "defaultProfile": true,
+        "defaultProfileImage": false,
+        "canMediaTag": null,
+        "following": false,
+        "followRequestSent": null,
+        "notifications": null,
+        "blocking": false,
+        "blockedBy": false,
+        "profileInterstitialType": "",
+        "translatorType": "regular",
+        "withheldInCountries": [],
+        "followedBy": false
+      },
+      "createdAt": "Wed Jun 02 02:39:49 +0000 2021",
+      "id": 1399918647003410400,
+      "idStr": "1399918647003410435",
+      "fullText": "測定されていないものは改善できないってよく言われますが、設計されていないものはリファクタリングできないも言える気がしています。",
+      "truncated": false,
+      "displayTextRange": [0, 63],
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "userMentions": [],
+        "urls": []
+      },
+      "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+      "inReplyToStatusId": null,
+      "inReplyToStatusIdStr": null,
+      "inReplyToUserId": null,
+      "inReplyToUserIdStr": null,
+      "inReplyToScreenName": null,
+      "userId": 2875908842,
+      "userIdStr": "2875908842",
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "isQuoteStatus": false,
+      "retweetCount": 0,
+      "favoriteCount": 1,
+      "replyCount": 0,
+      "quoteCount": 0,
+      "conversationId": 1399918647003410400,
+      "conversationIdStr": "1399918647003410435",
+      "conversationMuted": false,
+      "favorited": false,
+      "retweeted": false,
+      "lang": "ja"
     }
-  },
+  ],
   "tweets": [
     {
       "createdAt": "2021-06-18T01:50:00+09:00",

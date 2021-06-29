@@ -7,45 +7,27 @@ const typeDefs = gql`
   ${fs.readFileSync(__dirname.concat("/twitter.gql"), "utf8")}
 `;
 
-const timeStampScalar = new GraphQLScalarType({
-  name: 'TimeStamp',
-  description: 'TimeStamp scalar type',
-  serialize(stringValue) {
-    return stringValue ; // Convert to outgoing JSON value
-  },
-  parseValue(stringValue) {
-    return stringValue; // Convert incoming JSON value to backend representation
-  },
-  parseLiteral(ast) {
-    if (ast.kind === Kind.STRING) {
-      return new Date(parseInt(ast.value, 10)); // Convert hard-coded AST string to backend representation
-    }
-    return null; // Invalid hard-coded value (not an integer)
-  },
-});
-
 const resolvers = {
   Query: {
     tweets(parent, args, context, info) {
       return context.tweets.data
     },
     timeline(parent, args, context, info) {
-      return context.timeline.data
+      return {
+        tweets: context.timelineTweets.data
+      }
     }
   },
   Tweet: {
-    user(parent) {
-      return parent.user
-    }
+
   },
   Timeline: {
     tweets(parent, args, context, info) {
-      return Object.values(parent.tweets)
+      return parent.tweets
     }
   },
-  TimeStamp: timeStampScalar,
   Mutation: {
-    addTweet: async (parent, args, context, info) {
+    addTweet: async (parent, args, context, info) => {
       const current = new Date()
       const tweet = {
         id : 10,
@@ -58,8 +40,8 @@ const resolvers = {
         quoteCount: 0
       }
 
-      axios.post('http://localhost:3001/tweets/
-      return {id: "s", user: "u", createdAt: "c", fullText: "f"}
+      // axios.post('http://localhost:3001/timeline.tweets/
+      return tweet
     }
   }
 };
@@ -75,7 +57,7 @@ const server = new ApolloServer({
     return ({
       loginUser: user,
       tweets: await axios.get('http://localhost:3001/tweets'),
-      timeline: await axios.get('http://localhost:3001/timeline')
+      timelineTweets: await axios.get('http://localhost:3001/timeline.tweets')
     })
   }
 });
