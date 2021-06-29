@@ -4,8 +4,6 @@ type Query {
   timeline: Timeline
 }
 
-scalar TimeStamp
-
 type Timeline {
   tweets: [Tweet]
 }
@@ -29,7 +27,7 @@ type Topic {
 type Tweet {
   id: ID
   user: User
-  createdAt: TimeStamp
+  createdAt: String
   fullText: String
   favoriteCount: Int
   replyCount: Int
@@ -44,6 +42,6 @@ type Mutation {
 type AddTweetResponse {
   id: ID
   user: User
-  createdAt: TimeStamp
+  createdAt: String
   fullText: String
 }
