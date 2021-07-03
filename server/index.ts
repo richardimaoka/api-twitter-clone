@@ -10,20 +10,21 @@ const typeDefs = gql`
 const resolvers = {
   Query: {
     tweets(parent, args, context, info) {
-      return context.tweets.data
+      return context.tweets
     },
     timeline(parent, args, context, info) {
       return {
-        tweets: context.timelineTweets.data
+        tweets: context.timelineTweets
       }
     }
   },
   Mutation: {
     addTweet: async (parent, args, context, info) => {
       console.log("maxTweetId = ", context.maxTweetId)
+      console.log("newTweetId = ", context.maxTweetId + 1)
       const current = new Date()
       const tweet = {
-        id : context.maxTweetId,
+        id : context.maxTweetId + 1,
         user: context.loginUser,
         createdAt: current.toISOString() ,
         fullText: args.fullText,
@@ -53,25 +54,21 @@ const server = new ApolloServer({
   context: async ({req}) => {
     const authToken = req.headers.authorization || '';
     const user = getUser(authToken);
-    const tweets =  (await axios.get('http://localhost:3001/tweets'));
-   
-    const toIdNumber = number => {
-      const parsed = Number.parseInt(number)
-      console.log("parsed = ", parsed)
-      if(Number.isNaN(parsed)) return 0
-      else return parsed
-    }
-    const maxTweetId = tweets.data.reduce((x, y) => {
-      console.log("x = ", x)
-      console.log("y = ", y)
-      return Math.max(toIdNumber(x.id), toIdNumber(y.id))
-    });
+    const tweets =  (await axios.get('http://localhost:3001/tweets')).data;
+    const timelineTweets =  (await axios.get('http://localhost:3001/timeline.tweets')).data;
+
+    const maxTweetId = timelineTweets.map(tw => {
+       if(tw.id > Number.MAX_SAFE_INTEGER) return 0
+       else return tw.id } 
+    ).reduce(
+      (accumulator, current) => Math.max(accumulator, current)
+    )
 
     return ({
       loginUser: user,
       tweets: tweets,
       maxTweetId: maxTweetId,
-      timelineTweets: await axios.get('http://localhost:3001/timeline.tweets')
+      timelineTweets: timelineTweets
     })
   }
 });
