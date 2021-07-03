@@ -56,10 +56,7 @@ function App() {
   return (
     <div>
       <ApolloProvider client={client}>
-        <div>
-          <input placeholder="いまどうしてる？" />
-          <button>ツイートする</button>
-        </div>
+        <AddTweetBox />
         <header>
           <Child></Child>
         </header>
@@ -68,12 +65,20 @@ function App() {
   );
 }
 
+const AddTweetBox = (fullText) => {
+  return (
+    <div>
+      <input placeholder="いまどうしてる？" />
+      <button>ツイートする</button>
+    </div>
+  );
+};
+
 const Child = () => {
   const { loading, error, data } = useQuery(EXCHANGE_RATES);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
-  console.log(data);
 
   return data.timeline.tweets.map(
     ({
