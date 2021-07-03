@@ -54,13 +54,14 @@ const server = new ApolloServer({
   context: async ({req}) => {
     const authToken = req.headers.authorization || '';
     const user = getUser(authToken);
-    const tweets =  (await axios.get('http://localhost:3001/tweets')).data;
-    const timelineTweets =  (await axios.get('http://localhost:3001/timeline.tweets')).data;
+    const tweets =  (await axios.get('http://localhost:3001/tweets')).data.sort((x, y) => Date.parse(y.createdAt) - Date.parse(x.createdAt));
+    const timelineTweets =  (await axios.get('http://localhost:3001/timeline.tweets')).data.sort((x, y) => Date.parse(y.createdAt) - Date.parse(x.createdAt));
+    console.log(timelineTweets.map(tw => Date.parse(tw.createdAt)))
 
     const maxTweetId = timelineTweets.map(tw => {
        if(tw.id > Number.MAX_SAFE_INTEGER) return 0
-       else return tw.id } 
-    ).reduce(
+       else return tw.id 
+    }).reduce(
       (accumulator, current) => Math.max(accumulator, current)
     )
 
