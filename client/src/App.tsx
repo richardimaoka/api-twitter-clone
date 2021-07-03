@@ -65,7 +65,7 @@ function App() {
   );
 }
 
-const AddTweetBox = (fullText) => {
+const AddTweetBox = ({}) => {
   return (
     <div>
       <input placeholder="いまどうしてる？" />
