@@ -52,6 +52,7 @@ const QUERY = gql`
 `;
 
 const App = () => {
+    console.log("App")
     return (
       <div>
         <ApolloProvider client={client}>
@@ -69,10 +70,12 @@ type AddTweet = (t: Tweet) => void
 
 const useContentState = (): [ ContentState, AddTweet ]  => {
   const { loading, error, data } = useQuery<QueryData>(QUERY);
-  let [ tweets , setTweets] = useState<Tweet[]>([]);
+  //let [ tweets , setTweets] = useState<Tweet[]>([]);
+  let tweets: Tweet[] = []
+  console.log("useContentState", { loading: loading, error: error, data: data} )
 
   const addTweet = (tweet: Tweet): void => {
-    setTweets([tweet].concat(tweets))
+    tweets = [tweet].concat(tweets)
   };
 
   if ( loading ) {
@@ -97,14 +100,13 @@ const useContentState = (): [ ContentState, AddTweet ]  => {
      }       
      return [contentState, addTweet]
   } else {
-    setTweets(data.timeline.tweets)
      const contentState: ContentState =  {
        queryState: 'success',
        error: undefined,
        tweets:tweets
      }       
      return [contentState, addTweet]
-  }
+   }
 }
 
 const Content = () => {
@@ -116,7 +118,7 @@ const Content = () => {
     case 'loading':
       return <p>Loading ...</p>;
     case 'success' :
-      return (
+      return ( 
           <React.Fragment>
             <AddTweetBox />
             <header>
