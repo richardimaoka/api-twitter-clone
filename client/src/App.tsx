@@ -8,6 +8,7 @@ import {
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
 import React from "react";
+import { useEffect } from "react";
 import { useState } from "react";
 import { QueryData, Tweet } from "./Twitter"
 
@@ -66,16 +67,23 @@ interface ContentState {
   error: Error | undefined
   tweets: Tweet[]
 }  
+
 type AddTweet = (t: Tweet) => void
 
 const useContentState = (): [ ContentState, AddTweet ]  => {
   const { loading, error, data } = useQuery<QueryData>(QUERY);
-  //let [ tweets , setTweets] = useState<Tweet[]>([]);
-  let tweets: Tweet[] = []
+  const [ tweets , setTweets] = useState<Tweet[]>([]);
+  useEffect(() => {
+    console.log("useContentState.useEffect run")
+    if(data?.timeline) {
+      console.log("setTweets")
+      setTweets(data.timeline.tweets)
+    }
+  }, [data])
   console.log("useContentState", { loading: loading, error: error, data: data} )
 
   const addTweet = (tweet: Tweet): void => {
-    tweets = [tweet].concat(tweets)
+    setTweets([tweet].concat(tweets))
   };
 
   if ( loading ) {
@@ -120,7 +128,7 @@ const Content = () => {
     case 'success' :
       return ( 
           <React.Fragment>
-            <AddTweetBox />
+            <AddTweetBox addTweet={addTweet}/>
             <header>
               <Child tweets={contentState.tweets}></Child>
             </header>
@@ -129,11 +137,32 @@ const Content = () => {
   }
 }
 
-const AddTweetBox = () => {
+let i = 2300;
+const AddTweetBox = ({addTweet} : {addTweet: AddTweet}) => {
+  const [inputValue, setValue] = useState<string>("")
+  const addTweetCallback = (fullText: string): void => {
+    const user = {
+        id: "fakeUserId",
+        screenName: "fakeScreenName",
+        url: "https://example.com",
+        profileImageUrl: "https://example.com",
+      }
+    const tweet : Tweet = {
+      id: (i++).toString(),
+      user : user,
+      createdAt: "",
+      fullText: fullText,
+      favoriteCount: 0,
+      replyCount: 0,
+      retweetCount: 0,
+      quoteCount: 0,
+    }
+    addTweet(tweet)
+  }
   return (
     <div>
-      <input placeholder="いまどうしてる？" />
-      <button>ツイートする</button>
+      <input placeholder="いまどうしてる？" value={inputValue} onChange={input => setValue(input.target.value)}/>
+      <button onClick={() => addTweetCallback(inputValue)}>ツイートする</button>
     </div>
   );
 };
