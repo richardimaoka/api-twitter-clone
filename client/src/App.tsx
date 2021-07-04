@@ -8,7 +8,8 @@ import {
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
 import React from "react";
-import { QueryData, Timeline } from "./Twitter"
+import { useState } from "react";
+import { QueryData, Tweet } from "./Twitter"
 
 const httpLink = createHttpLink({
   uri: "http://localhost:4000",
@@ -59,25 +60,71 @@ const App = () => {
       </div>
     );
 }
+interface ContentState {
+  queryState: 'success' | 'error' | 'loading'
+  error: Error | undefined
+  tweets: Tweet[]
+}  
+type AddTweet = (t: Tweet) => void
+
+const useContentState = (): [ ContentState, AddTweet ]  => {
+  const { loading, error, data } = useQuery<QueryData>(QUERY);
+  let [ tweets , setTweets] = useState<Tweet[]>([]);
+
+  const addTweet = (tweet: Tweet): void => {
+    setTweets([tweet].concat(tweets))
+  };
+
+  if ( loading ) {
+     const contentState: ContentState =  {
+       queryState: 'loading',
+       error: undefined,
+       tweets: []
+     }       
+     return [contentState, addTweet]
+  } else if (error){
+     const contentState: ContentState =  {
+       queryState: 'error',
+       error: error,
+       tweets: []
+     }       
+     return [contentState, addTweet]
+  } else if (typeof data == "undefined" ) {
+     const contentState: ContentState =  {
+       queryState: 'error',
+       error: { name: "InternalError", message: "GraphQL query returned undefined" },
+       tweets: []
+     }       
+     return [contentState, addTweet]
+  } else {
+    setTweets(data.timeline.tweets)
+     const contentState: ContentState =  {
+       queryState: 'success',
+       error: undefined,
+       tweets:tweets
+     }       
+     return [contentState, addTweet]
+  }
+}
 
 const Content = () => {
-  const { loading, error, data } = useQuery<QueryData>(QUERY);
+  const [contentState, addTweet] = useContentState()
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error :(</p>;
-  if (typeof data == "undefined") {
-    return <p>data wrong</p>;    
-  } else {
-    return (
-      <React.Fragment>
-        <AddTweetBox />
-        <header>
-          <Child timeline={data.timeline}></Child>
-        </header>
-      </React.Fragment>
-    )
+  switch(contentState.queryState) {
+    case 'error':
+      return <p>Error :(</p>;
+    case 'loading':
+      return <p>Loading ...</p>;
+    case 'success' :
+      return (
+          <React.Fragment>
+            <AddTweetBox />
+            <header>
+              <Child tweets={contentState.tweets}></Child>
+            </header>
+          </React.Fragment>
+      );
   }
-
 }
 
 const AddTweetBox = () => {
@@ -89,10 +136,10 @@ const AddTweetBox = () => {
   );
 };
 
-const Child = ({timeline}: {timeline: Timeline}) => {
+const Child = ({tweets}: {tweets: Tweet[]}) => {
     return (
       <div>{
-        timeline.tweets.map(
+        tweets.map(
           ({
             id,
             createdAt,
