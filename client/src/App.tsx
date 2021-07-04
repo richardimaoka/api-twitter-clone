@@ -10,6 +10,32 @@ import React from "react";
 
 import { setContext } from "@apollo/client/link/context";
 
+interface User {
+  id: string;
+  screenName: string;
+  url: string;
+  profileImageUrl: string;
+}
+
+interface Tweet {
+  id: string;
+  user : User;
+  createdAt: string;
+  fullText: string;
+  favoriteCount: number;
+  replyCount: number;
+  retweetCount: number;
+  quoteCount: number;
+}
+
+interface Timeline {
+  tweets: Tweet[];
+}
+
+interface QueryData {
+  timeline: Timeline
+}
+
 const httpLink = createHttpLink({
   uri: "http://localhost:4000",
 });
@@ -31,7 +57,7 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-const EXCHANGE_RATES = gql`
+const QUERY = gql`
   query {
     timeline {
       tweets {
@@ -75,31 +101,40 @@ const AddTweetBox = ({}) => {
 };
 
 const Child = () => {
-  const { loading, error, data } = useQuery(EXCHANGE_RATES);
+  const { loading, error, data } = useQuery<QueryData>(QUERY);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
 
-  return data.timeline.tweets.map(
-    ({
-      id,
-      createdAt,
-      user,
-      fullText,
-      favoriteCount,
-      replyCount,
-      retweetCount,
-    }) => (
-      <div key={id}>
-        <div>{user.screenName}</div>
-        <div>{createdAt}</div>
-        <p>{fullText}</p>
-        <p>
-          <span>reply: {replyCount}</span>,<span>retweet: {retweetCount}</span>{" "}
-          ,<span>favorite: {favoriteCount}</span>
-        </p>
-      </div>
+  if(data?.timeline) {
+    return (
+      <div>{
+        data.timeline.tweets.map(
+          ({
+            id,
+            createdAt,
+            user,
+            fullText,
+            favoriteCount,
+            replyCount,
+            retweetCount,
+          }) => (
+            <div key={id}>
+              <div>{user.screenName}</div>
+              <div>{createdAt}</div>
+              <p>{fullText}</p>
+              <p>
+                <span>reply: {replyCount}</span>,<span>retweet: {retweetCount}</span>{" "}
+                ,<span>favorite: {favoriteCount}</span>
+              </p>
+            </div>
+          )
+        )}
+      </div> 
     )
-  );
+  } else {
+    return <div>nothing</div>
+  }
 };
+
 export default App;
