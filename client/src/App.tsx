@@ -6,35 +6,9 @@ import {
   gql,
   createHttpLink,
 } from "@apollo/client";
-import React from "react";
-
 import { setContext } from "@apollo/client/link/context";
-
-interface User {
-  id: string;
-  screenName: string;
-  url: string;
-  profileImageUrl: string;
-}
-
-interface Tweet {
-  id: string;
-  user : User;
-  createdAt: string;
-  fullText: string;
-  favoriteCount: number;
-  replyCount: number;
-  retweetCount: number;
-  quoteCount: number;
-}
-
-interface Timeline {
-  tweets: Tweet[];
-}
-
-interface QueryData {
-  timeline: Timeline
-}
+import React from "react";
+import { QueryData, Timeline } from "./Twitter"
 
 const httpLink = createHttpLink({
   uri: "http://localhost:4000",
@@ -76,22 +50,37 @@ const QUERY = gql`
   }
 `;
 
-function App() {
-  const a = "Learn react for greater good";
-
-  return (
-    <div>
-      <ApolloProvider client={client}>
-        <AddTweetBox />
-        <header>
-          <Child></Child>
-        </header>
-      </ApolloProvider>
-    </div>
-  );
+const App = () => {
+    return (
+      <div>
+        <ApolloProvider client={client}>
+          <Content />
+        </ApolloProvider>
+      </div>
+    );
 }
 
-const AddTweetBox = ({}) => {
+const Content = () => {
+  const { loading, error, data } = useQuery<QueryData>(QUERY);
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error :(</p>;
+  if (typeof data == "undefined") {
+    return <p>data wrong</p>;    
+  } else {
+    return (
+      <React.Fragment>
+        <AddTweetBox />
+        <header>
+          <Child timeline={data.timeline}></Child>
+        </header>
+      </React.Fragment>
+    )
+  }
+
+}
+
+const AddTweetBox = () => {
   return (
     <div>
       <input placeholder="いまどうしてる？" />
@@ -100,16 +89,10 @@ const AddTweetBox = ({}) => {
   );
 };
 
-const Child = () => {
-  const { loading, error, data } = useQuery<QueryData>(QUERY);
-
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error :(</p>;
-
-  if(data?.timeline) {
+const Child = ({timeline}: {timeline: Timeline}) => {
     return (
       <div>{
-        data.timeline.tweets.map(
+        timeline.tweets.map(
           ({
             id,
             createdAt,
@@ -132,9 +115,6 @@ const Child = () => {
         )}
       </div> 
     )
-  } else {
-    return <div>nothing</div>
-  }
 };
 
 export default App;
