@@ -20,8 +20,6 @@ const resolvers = {
   },
   Mutation: {
     addTweet: async (parent, args, context, info) => {
-      console.log("maxTweetId = ", context.maxTweetId)
-      console.log("newTweetId = ", context.maxTweetId + 1)
       const current = new Date()
       const tweet = {
         id : context.maxTweetId + 1,
@@ -56,7 +54,6 @@ const server = new ApolloServer({
     const user = getUser(authToken);
     const tweets =  (await axios.get('http://localhost:3001/tweets')).data.sort((x, y) => Date.parse(y.createdAt) - Date.parse(x.createdAt));
     const timelineTweets =  (await axios.get('http://localhost:3001/timeline.tweets')).data.sort((x, y) => Date.parse(y.createdAt) - Date.parse(x.createdAt));
-    console.log(timelineTweets.map(tw => Date.parse(tw.createdAt)))
 
     const maxTweetId = timelineTweets.map(tw => {
        if(tw.id > Number.MAX_SAFE_INTEGER) return 0

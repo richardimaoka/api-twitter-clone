@@ -36,12 +36,5 @@ type Tweet {
 }
 
 type Mutation {
-  addTweet(fullText: String): AddTweetResponse
-}
-
-type AddTweetResponse {
-  id: ID
-  user: User
-  createdAt: String
-  fullText: String
+  addTweet(fullText: String): Tweet
 }
