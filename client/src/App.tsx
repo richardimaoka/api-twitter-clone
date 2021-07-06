@@ -3,9 +3,12 @@ import {
   InMemoryCache,
   ApolloProvider,
   useQuery,
+  useMutation,
   gql,
   createHttpLink,
+  from,
 } from "@apollo/client";
+import { onError } from "@apollo/client/link/error";
 import { setContext } from "@apollo/client/link/context";
 import React from "react";
 import { useEffect } from "react";
@@ -28,8 +31,19 @@ const authLink = setContext((_, { headers }) => {
   };
 });
 
+const errorLink = onError(({ graphQLErrors, networkError }) => {
+  if (graphQLErrors)
+    graphQLErrors.forEach(({ message, locations, path }) =>
+      console.log(
+        `[GraphQL error]: Message: ${message}, Location: ${locations}, Path: ${path}`,
+      ),
+    );
+
+  if (networkError) console.log(`[Network error]: ${networkError}`);
+});
+
 const client = new ApolloClient({
-  link: authLink.concat(httpLink),
+  link: from([errorLink, authLink.concat(httpLink)]),
   cache: new InMemoryCache(),
 });
 
@@ -51,6 +65,20 @@ const QUERY = gql`
     }
   }
 `;
+
+const MUTATION = gql`
+  mutation ($fullText: String!) {
+    addTweet(fullText: $fullText) {
+      id
+      createdAt
+      fullText
+      favoriteCount
+      replyCount
+      retweetCount
+      quoteCount
+    }
+  }
+`
 
 const App = () => {
     console.log("App")
@@ -140,6 +168,7 @@ const Content = () => {
 let i = 2300;
 const AddTweetBox = ({addTweet} : {addTweet: AddTweet}) => {
   const [inputValue, setValue] = useState<string>("")
+  const [addTweetMutation] = useMutation(MUTATION)
   const addTweetCallback = (fullText: string): void => {
     const user = {
         id: "fakeUserId",
@@ -158,6 +187,7 @@ const AddTweetBox = ({addTweet} : {addTweet: AddTweet}) => {
       quoteCount: 0,
     }
     addTweet(tweet)
+    addTweetMutation({variables: {fullText: fullText}})
   }
   return (
     <div>
