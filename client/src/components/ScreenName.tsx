@@ -1,6 +1,2 @@
-export const ScreenName = ({screenName}: ScreenNameProps) => 
-  <div>{screenName}</div>
-
-interface ScreenNameProps {
-  screenName: string
-}
+export const ScreenName = ({name}: {name: string}) => 
+  <div>{name}</div>

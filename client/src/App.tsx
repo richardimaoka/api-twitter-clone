@@ -219,7 +219,7 @@ const Child = ({tweets}: {tweets: Tweet[]}) => {
             retweetCount,
           }) => (
             <div key={id}>
-              <ScreenName screenName={user.screenName} />
+              <ScreenName name={user.screenName} />
               <div>{createdAt}</div>
               <p>{fullText}</p>
               <p>
