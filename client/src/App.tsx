@@ -14,6 +14,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { QueryData, Tweet } from "./Twitter"
+import { LikeIcon } from './components/LikeIcon'
 
 const httpLink = createHttpLink({
   uri: "http://localhost:4000",
@@ -81,9 +82,9 @@ const MUTATION = gql`
 `
 
 const App = () => {
-    console.log("App")
     return (
       <div>
+        <LikeIcon />
         <ApolloProvider client={client}>
           <Content />
         </ApolloProvider>
@@ -168,7 +169,7 @@ const Content = () => {
 let i = 2300;
 const AddTweetBox = ({addTweet} : {addTweet: AddTweet}) => {
   const [inputValue, setValue] = useState<string>("")
-  const [addTweetMutation] = useMutation(MUTATION)
+  const [addTweetMutation, { loading: mutationLoading, error: mutationError } ] = useMutation(MUTATION)
   const addTweetCallback = (fullText: string): void => {
     const user = {
         id: "fakeUserId",
