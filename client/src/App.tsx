@@ -18,6 +18,7 @@ import { ReplyIcon } from './components/ReplyIcon'
 import { RetweetIcon } from './components/RetweetIcon'
 import { LikeIcon } from './components/LikeIcon'
 import { ShareIcon } from './components/ShareIcon'
+import { ScreenName } from './components/ScreenName'
 
 const httpLink = createHttpLink({
   uri: "http://localhost:4000",
@@ -218,7 +219,7 @@ const Child = ({tweets}: {tweets: Tweet[]}) => {
             retweetCount,
           }) => (
             <div key={id}>
-              <div>{user.screenName}</div>
+              <ScreenName screenName={user.screenName} />
               <div>{createdAt}</div>
               <p>{fullText}</p>
               <p>
