@@ -14,11 +14,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { QueryData, Tweet } from "./Twitter"
-import { ReplyIcon } from './components/ReplyIcon'
-import { RetweetIcon } from './components/RetweetIcon'
-import { LikeIcon } from './components/LikeIcon'
-import { ShareIcon } from './components/ShareIcon'
-import { ScreenName } from './components/ScreenName'
+import { Tweet as TweetBox } from './components/Tweet'
 
 const httpLink = createHttpLink({
   uri: "http://localhost:4000",
@@ -88,10 +84,6 @@ const MUTATION = gql`
 const App = () => {
     return (
       <div>
-        <ReplyIcon />
-        <RetweetIcon />
-        <LikeIcon />
-        <ShareIcon />
         <ApolloProvider client={client}>
           <Content />
         </ApolloProvider>
@@ -219,13 +211,15 @@ const Child = ({tweets}: {tweets: Tweet[]}) => {
             retweetCount,
           }) => (
             <div key={id}>
-              <ScreenName name={user.screenName} />
-              <div>{createdAt}</div>
-              <p>{fullText}</p>
-              <p>
-                <span>reply: {replyCount}</span>,<span>retweet: {retweetCount}</span>{" "}
-                ,<span>favorite: {favoriteCount}</span>
-              </p>
+              <TweetBox
+                displayName={user.screenName}
+                screenName={user.screenName}
+                tweetTime={createdAt}
+                fullText={fullText}
+                replyCount={replyCount}
+                likeCount={favoriteCount}
+                retweetCount={retweetCount}
+                />
             </div>
           )
         )}
