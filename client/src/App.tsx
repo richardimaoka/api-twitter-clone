@@ -14,7 +14,10 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { QueryData, Tweet } from "./Twitter"
+import { ReplyIcon } from './components/ReplyIcon'
+import { RetweetIcon } from './components/RetweetIcon'
 import { LikeIcon } from './components/LikeIcon'
+import { ShareIcon } from './components/ShareIcon'
 
 const httpLink = createHttpLink({
   uri: "http://localhost:4000",
@@ -84,7 +87,10 @@ const MUTATION = gql`
 const App = () => {
     return (
       <div>
+        <ReplyIcon />
+        <RetweetIcon />
         <LikeIcon />
+        <ShareIcon />
         <ApolloProvider client={client}>
           <Content />
         </ApolloProvider>
