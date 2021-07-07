@@ -2,11 +2,11 @@ import { DisplayName } from "./DisplayName";
 import { TweetTime } from "./TweetTime";
 import { ScreenName } from "./ScreenName"
 
-export const TweetProfileBar = (props: TweetProfileBarProps) =>
+export const TweetProfileBar = ({displayName, screenName, tweetTime}: TweetProfileBarProps) =>
   <div>
-    <DisplayName name={props.displayName} />
-    <ScreenName name={props.screenName}/>
-    <TweetTime time={props.tweetTime} />
+    <DisplayName name={displayName} />
+    <ScreenName name={screenName}/>
+    <TweetTime time={tweetTime} />
   </div>
 
 interface TweetProfileBarProps {

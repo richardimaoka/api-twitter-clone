@@ -2,14 +2,14 @@ import { ReplyIcon } from "./ReplyIcon"
 import { RetweetIcon } from "./RetweetIcon"
 import { LikeIcon } from "./LikeIcon"
 
-export const TweetActionBar = (props: TweetActionBarProps) => 
+export const TweetActionBar = ({replyCount, retweetCount, likeCount}: TweetActionBarProps) => 
   <div>
     <ReplyIcon />
-    <div>{props.replyCount}</div>
+    <div>{replyCount}</div>
     <RetweetIcon />
-    <div>{props.retweetCount}</div>
+    <div>{retweetCount}</div>
     <LikeIcon />
-    <div>{props.likeCount}</div>
+    <div>{likeCount}</div>
   </div>
 
 interface TweetActionBarProps {
