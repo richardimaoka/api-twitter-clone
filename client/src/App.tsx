@@ -200,25 +200,16 @@ const AddTweetBox = ({addTweet} : {addTweet: AddTweet}) => {
 const Child = ({tweets}: {tweets: Tweet[]}) => {
     return (
       <div>{
-        tweets.map(
-          ({
-            id,
-            createdAt,
-            user,
-            fullText,
-            favoriteCount,
-            replyCount,
-            retweetCount,
-          }) => (
-            <div key={id}>
+        tweets.map(t => (
+            <div key={t.id}>
               <TweetBox
-                displayName={user.screenName}
-                screenName={user.screenName}
-                tweetTime={createdAt}
-                fullText={fullText}
-                replyCount={replyCount}
-                likeCount={favoriteCount}
-                retweetCount={retweetCount}
+                displayName={t.user.screenName}
+                screenName={t.user.screenName}
+                tweetTime={t.createdAt}
+                fullText={t.fullText}
+                replyCount={t.replyCount}
+                likeCount={t.favoriteCount}
+                retweetCount={t.retweetCount}
                 />
             </div>
           )
