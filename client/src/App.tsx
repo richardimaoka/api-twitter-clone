@@ -14,7 +14,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { QueryData, Tweet } from "./Twitter"
-import { Tweet as TweetBox } from './Tweet'
+import { TweetList } from './TweetList'
 
 const httpLink = createHttpLink({
   uri: "http://localhost:4000",
@@ -158,7 +158,7 @@ const Content = () => {
           <React.Fragment>
             <AddTweetBox addTweet={addTweet}/>
             <header>
-              <Child tweets={contentState.tweets}></Child>
+              <TweetList tweets={contentState.tweets} />
             </header>
           </React.Fragment>
       );
@@ -195,27 +195,6 @@ const AddTweetBox = ({addTweet} : {addTweet: AddTweet}) => {
       <button onClick={() => addTweetCallback(inputValue)}>ツイートする</button>
     </div>
   );
-};
-
-const Child = ({tweets}: {tweets: Tweet[]}) => {
-    return (
-      <div>{
-        tweets.map(t => (
-            <div key={t.id}>
-              <TweetBox
-                displayName={t.user.screenName}
-                screenName={t.user.screenName}
-                tweetTime={t.createdAt}
-                fullText={t.fullText}
-                replyCount={t.replyCount}
-                likeCount={t.favoriteCount}
-                retweetCount={t.retweetCount}
-                />
-            </div>
-          )
-        )}
-      </div> 
-    )
 };
 
 export default App;

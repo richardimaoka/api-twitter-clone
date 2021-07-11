@@ -1,16 +1,15 @@
-import { DisplayName } from "./DisplayName";
 import { TweetActionBar } from "./TweetActionBar";
 import { TweetBody } from "./TweetBody";
 import { TweetProfileBar } from "./TweetProfilerBar";
 
-export const Tweet = ({displayName, screenName, tweetTime, fullText, replyCount, retweetCount, likeCount}: TweetProps) => 
+export const TweetBox = ({displayName, screenName, tweetTime, fullText, replyCount, retweetCount, likeCount}: TweetBoxProps) => 
   <div>
     <TweetProfileBar displayName={displayName} screenName={screenName} tweetTime={tweetTime}/>
     <TweetBody text={fullText}/>
     <TweetActionBar replyCount={replyCount} retweetCount={retweetCount} likeCount={likeCount}  />
   </div>
 
-interface TweetProps {
+interface TweetBoxProps {
   displayName: string;
   screenName: string;
   tweetTime: string;
