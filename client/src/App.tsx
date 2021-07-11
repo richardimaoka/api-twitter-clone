@@ -175,7 +175,7 @@ const AddTweetBox = ({addTweet} : {addTweet: AddTweet}) => {
         screenName: "fakeScreenName",
         url: "https://example.com",
         profileImageUrl: "https://example.com",
-      }
+      }    
     const tweet : Tweet = {
       id: (i++).toString(),
       user : user,
