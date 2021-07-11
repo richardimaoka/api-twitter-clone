@@ -14,7 +14,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { QueryData, Tweet } from "./Twitter"
-import { Tweet as TweetBox } from './components/Tweet'
+import { Tweet as TweetBox } from './Tweet'
 
 const httpLink = createHttpLink({
   uri: "http://localhost:4000",

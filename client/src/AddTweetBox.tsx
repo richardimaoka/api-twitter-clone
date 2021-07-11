@@ -1,4 +1,4 @@
-import { User, Tweet } from '../Twitter' 
+import { User, Tweet } from './Twitter' 
 import {useState } from "react"
 import {useMutation, gql} from "@apollo/client"
 
