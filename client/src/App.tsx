@@ -98,82 +98,29 @@ interface ContentState {
 
 type AddTweet = (t: Tweet) => void;
 
-const useContentState = (): [ContentState, AddTweet] => {
+const Content = () => {
   const { loading, error, data } = useQuery<QueryData>(QUERY);
-  const [tweets, setTweets] = useState<Tweet[]>([]);
-  useEffect(() => {
-    console.log("useContentState.useEffect run");
-    if (data?.timeline) {
-      console.log("setTweets");
-      setTweets(data.timeline.tweets);
-    }
-  }, [data]);
-  console.log("useContentState", {
-    loading: loading,
-    error: error,
-    data: data,
-  });
-
-  const addTweet = (tweet: Tweet): void => {
-    setTweets([tweet].concat(tweets));
-  };
 
   if (loading) {
-    const contentState: ContentState = {
-      queryState: "loading",
-      error: undefined,
-      tweets: [],
-    };
-    return [contentState, addTweet];
+    return <p>Loading ...</p>;
   } else if (error) {
-    const contentState: ContentState = {
-      queryState: "error",
-      error: error,
-      tweets: [],
-    };
-    return [contentState, addTweet];
+    return <p>Remote Server Error :(</p>;
   } else if (typeof data == "undefined") {
-    const contentState: ContentState = {
-      queryState: "error",
-      error: {
-        name: "InternalError",
-        message: "GraphQL query returned undefined",
-      },
-      tweets: [],
-    };
-    return [contentState, addTweet];
+    return <p>Remote Server Error :(</p>;
   } else {
-    const contentState: ContentState = {
-      queryState: "success",
-      error: undefined,
-      tweets: tweets,
-    };
-    return [contentState, addTweet];
-  }
-};
-
-const Content = () => {
-  const [contentState, addTweet] = useContentState();
-
-  switch (contentState.queryState) {
-    case "error":
-      return <p>Error :(</p>;
-    case "loading":
-      return <p>Loading ...</p>;
-    case "success":
-      return (
-        <React.Fragment>
-          <AddTweetBox addTweet={addTweet} />
-          <header>
-            <TweetList tweets={contentState.tweets} />
-          </header>
-        </React.Fragment>
-      );
+    return (
+      <React.Fragment>
+        <AddTweetBox />
+        <header>
+          <TweetList tweets={data.timeline.tweets} />
+        </header>
+      </React.Fragment>
+    );
   }
 };
 
 let i = 2300;
-const AddTweetBox = ({ addTweet }: { addTweet: AddTweet }) => {
+const AddTweetBox = () => {
   const [inputValue, setValue] = useState<string>("");
   const [addTweetMutation, { loading: mutationLoading, error: mutationError }] =
     useMutation(MUTATION);
@@ -194,7 +141,6 @@ const AddTweetBox = ({ addTweet }: { addTweet: AddTweet }) => {
       retweetCount: 0,
       quoteCount: 0,
     };
-    addTweet(tweet);
     addTweetMutation({ variables: { fullText: fullText } });
   };
   return (
