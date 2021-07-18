@@ -15,6 +15,7 @@ import { useState } from "react";
 import { QueryData, Tweet } from "./Twitter";
 import { TweetList } from "./TweetList";
 import { User } from "./Twitter";
+import { AddTweetBox } from "./AddTweetBox";
 
 const httpLink = createHttpLink({
   uri: "http://localhost:4000",
@@ -123,36 +124,6 @@ const Content = () => {
       </React.Fragment>
     );
   }
-};
-
-let i = 2300;
-const AddTweetBox = ({ user }: { user: User }) => {
-  const [inputValue, setValue] = useState<string>("");
-  const [addTweetMutation, { loading: mutationLoading, error: mutationError }] =
-    useMutation(MUTATION);
-  const addTweetCallback = (fullText: string): void => {
-    const tweet: Tweet = {
-      id: (i++).toString(),
-      user: user,
-      createdAt: "",
-      fullText: fullText,
-      favoriteCount: 0,
-      replyCount: 0,
-      retweetCount: 0,
-      quoteCount: 0,
-    };
-    addTweetMutation({ variables: { fullText: fullText } });
-  };
-  return (
-    <div>
-      <input
-        placeholder="いまどうしてる？"
-        value={inputValue}
-        onChange={(input) => setValue(input.target.value)}
-      />
-      <button onClick={() => addTweetCallback(inputValue)}>ツイートする</button>
-    </div>
-  );
 };
 
 export default App;
