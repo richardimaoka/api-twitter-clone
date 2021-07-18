@@ -11,10 +11,10 @@ import {
 import { onError } from "@apollo/client/link/error";
 import { setContext } from "@apollo/client/link/context";
 import React from "react";
-import { useEffect } from "react";
 import { useState } from "react";
 import { QueryData, Tweet } from "./Twitter";
 import { TweetList } from "./TweetList";
+import { User } from "./Twitter";
 
 const httpLink = createHttpLink({
   uri: "http://localhost:4000",
@@ -101,6 +101,12 @@ type AddTweet = (t: Tweet) => void;
 const Content = () => {
   const { loading, error, data } = useQuery<QueryData>(QUERY);
 
+  const user = {
+    id: "fakeUserId",
+    screenName: "fakeScreenName",
+    url: "https://example.com",
+    profileImageUrl: "https://example.com",
+  };
   if (loading) {
     return <p>Loading ...</p>;
   } else if (error) {
@@ -110,7 +116,7 @@ const Content = () => {
   } else {
     return (
       <React.Fragment>
-        <AddTweetBox />
+        <AddTweetBox user={user} />
         <header>
           <TweetList tweets={data.timeline.tweets} />
         </header>
@@ -120,17 +126,11 @@ const Content = () => {
 };
 
 let i = 2300;
-const AddTweetBox = () => {
+const AddTweetBox = ({ user }: { user: User }) => {
   const [inputValue, setValue] = useState<string>("");
   const [addTweetMutation, { loading: mutationLoading, error: mutationError }] =
     useMutation(MUTATION);
   const addTweetCallback = (fullText: string): void => {
-    const user = {
-      id: "fakeUserId",
-      screenName: "fakeScreenName",
-      url: "https://example.com",
-      profileImageUrl: "https://example.com",
-    };
     const tweet: Tweet = {
       id: (i++).toString(),
       user: user,
