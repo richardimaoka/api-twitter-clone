@@ -13,8 +13,8 @@ import { setContext } from "@apollo/client/link/context";
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import { QueryData, Tweet } from "./Twitter"
-import { TweetList } from './TweetList'
+import { QueryData, Tweet } from "./Twitter";
+import { TweetList } from "./TweetList";
 
 const httpLink = createHttpLink({
   uri: "http://localhost:4000",
@@ -36,8 +36,8 @@ const errorLink = onError(({ graphQLErrors, networkError }) => {
   if (graphQLErrors)
     graphQLErrors.forEach(({ message, locations, path }) =>
       console.log(
-        `[GraphQL error]: Message: ${message}, Location: ${locations}, Path: ${path}`,
-      ),
+        `[GraphQL error]: Message: ${message}, Location: ${locations}, Path: ${path}`
+      )
     );
 
   if (networkError) console.log(`[Network error]: ${networkError}`);
@@ -79,119 +79,131 @@ const MUTATION = gql`
       quoteCount
     }
   }
-`
+`;
 
 const App = () => {
-    return (
-      <div>
-        <ApolloProvider client={client}>
-          <Content />
-        </ApolloProvider>
-      </div>
-    );
-}
+  return (
+    <div>
+      <ApolloProvider client={client}>
+        <Content />
+      </ApolloProvider>
+    </div>
+  );
+};
 interface ContentState {
-  queryState: 'success' | 'error' | 'loading'
-  error: Error | undefined
-  tweets: Tweet[]
-}  
+  queryState: "success" | "error" | "loading";
+  error: Error | undefined;
+  tweets: Tweet[];
+}
 
-type AddTweet = (t: Tweet) => void
+type AddTweet = (t: Tweet) => void;
 
-const useContentState = (): [ ContentState, AddTweet ]  => {
+const useContentState = (): [ContentState, AddTweet] => {
   const { loading, error, data } = useQuery<QueryData>(QUERY);
-  const [ tweets , setTweets] = useState<Tweet[]>([]);
+  const [tweets, setTweets] = useState<Tweet[]>([]);
   useEffect(() => {
-    console.log("useContentState.useEffect run")
-    if(data?.timeline) {
-      console.log("setTweets")
-      setTweets(data.timeline.tweets)
+    console.log("useContentState.useEffect run");
+    if (data?.timeline) {
+      console.log("setTweets");
+      setTweets(data.timeline.tweets);
     }
-  }, [data])
-  console.log("useContentState", { loading: loading, error: error, data: data} )
+  }, [data]);
+  console.log("useContentState", {
+    loading: loading,
+    error: error,
+    data: data,
+  });
 
   const addTweet = (tweet: Tweet): void => {
-    setTweets([tweet].concat(tweets))
+    setTweets([tweet].concat(tweets));
   };
 
-  if ( loading ) {
-     const contentState: ContentState =  {
-       queryState: 'loading',
-       error: undefined,
-       tweets: []
-     }       
-     return [contentState, addTweet]
-  } else if (error){
-     const contentState: ContentState =  {
-       queryState: 'error',
-       error: error,
-       tweets: []
-     }       
-     return [contentState, addTweet]
-  } else if (typeof data == "undefined" ) {
-     const contentState: ContentState =  {
-       queryState: 'error',
-       error: { name: "InternalError", message: "GraphQL query returned undefined" },
-       tweets: []
-     }       
-     return [contentState, addTweet]
+  if (loading) {
+    const contentState: ContentState = {
+      queryState: "loading",
+      error: undefined,
+      tweets: [],
+    };
+    return [contentState, addTweet];
+  } else if (error) {
+    const contentState: ContentState = {
+      queryState: "error",
+      error: error,
+      tweets: [],
+    };
+    return [contentState, addTweet];
+  } else if (typeof data == "undefined") {
+    const contentState: ContentState = {
+      queryState: "error",
+      error: {
+        name: "InternalError",
+        message: "GraphQL query returned undefined",
+      },
+      tweets: [],
+    };
+    return [contentState, addTweet];
   } else {
-     const contentState: ContentState =  {
-       queryState: 'success',
-       error: undefined,
-       tweets:tweets
-     }       
-     return [contentState, addTweet]
-   }
-}
+    const contentState: ContentState = {
+      queryState: "success",
+      error: undefined,
+      tweets: tweets,
+    };
+    return [contentState, addTweet];
+  }
+};
 
 const Content = () => {
-  const [contentState, addTweet] = useContentState()
+  const [contentState, addTweet] = useContentState();
 
-  switch(contentState.queryState) {
-    case 'error':
+  switch (contentState.queryState) {
+    case "error":
       return <p>Error :(</p>;
-    case 'loading':
+    case "loading":
       return <p>Loading ...</p>;
-    case 'success' :
-      return ( 
-          <React.Fragment>
-            <AddTweetBox addTweet={addTweet}/>
-            <header>
-              <TweetList tweets={contentState.tweets} />
-            </header>
-          </React.Fragment>
+    case "success":
+      return (
+        <React.Fragment>
+          <AddTweetBox addTweet={addTweet} />
+          <header>
+            <TweetList tweets={contentState.tweets} />
+          </header>
+        </React.Fragment>
       );
   }
-}
+};
 
 let i = 2300;
-const AddTweetBox = ({addTweet} : {addTweet: AddTweet}) => {
-  const [inputValue, setValue] = useState<string>("")
-  const [addTweetMutation, { loading: mutationLoading, error: mutationError } ] = useMutation(MUTATION)
+const AddTweetBox = ({ addTweet }: { addTweet: AddTweet }) => {
+  const [inputValue, setValue] = useState<string>("");
+  const [addTweetMutation, { loading: mutationLoading, error: mutationError }] =
+    useMutation(MUTATION);
   const addTweetCallback = (fullText: string): void => {
     const user = {
-        id: "fakeUserId",
-        screenName: "fakeScreenName",
-        url: "https://example.com",
-        profileImageUrl: "https://example.com",
-      }    
-    const tweet : Tweet = {
+      id: "fakeUserId",
+      screenName: "fakeScreenName",
+      url: "https://example.com",
+      profileImageUrl: "https://example.com",
+    };
+    const tweet: Tweet = {
       id: (i++).toString(),
-      user : user,
+      user: user,
       createdAt: "",
       fullText: fullText,
       favoriteCount: 0,
       replyCount: 0,
       retweetCount: 0,
       quoteCount: 0,
-    }
-    addTweet(tweet)
-    addTweetMutation({variables: {fullText: fullText}})
-  }
+    };
+    addTweet(tweet);
+    addTweetMutation({ variables: { fullText: fullText } });
+  };
   return (
     <div>
-      <input placeholder="いまどうしてる？" value={inputValue} onChange={input => setValue(input.target.value)}/>
+      <input
+        placeholder="いまどうしてる？"
+        value={inputValue}
+        onChange={(input) => setValue(input.target.value)}
+      />
       <button onClick={() => addTweetCallback(inputValue)}>ツイートする</button>
     </div>
   );

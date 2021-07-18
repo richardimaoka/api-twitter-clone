@@ -1,18 +1,24 @@
 /** @jsxImportSource @emotion/react */
-import { css } from '@emotion/react'
+import { css } from "@emotion/react";
 import { DisplayName } from "./DisplayName";
 import { TweetTime } from "./TweetTime";
-import { ScreenName } from "./ScreenName"
+import { ScreenName } from "./ScreenName";
 
-export const TweetProfileBar = ({displayName, screenName, tweetTime}: TweetProfileBarProps) =>
+export const TweetProfileBar = ({
+  displayName,
+  screenName,
+  tweetTime,
+}: TweetProfileBarProps) => (
   <div
     css={css`
-    display: flex;
-  `}>
+      display: flex;
+    `}
+  >
     <DisplayName name={displayName} />
-    <ScreenName name={screenName}/>
+    <ScreenName name={screenName} />
     <TweetTime time={tweetTime} />
   </div>
+);
 
 interface TweetProfileBarProps {
   displayName: string;

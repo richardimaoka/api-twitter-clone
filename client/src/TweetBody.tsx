@@ -1,2 +1,1 @@
-export const TweetBody = ({text} : {text: string}) =>
-  <div>{text}</div>
+export const TweetBody = ({ text }: { text: string }) => <div>{text}</div>;

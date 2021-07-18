@@ -1,2 +1,1 @@
-export const TweetProfilePicture = () => 
-  <div>pic</div>
+export const TweetProfilePicture = () => <div>pic</div>;

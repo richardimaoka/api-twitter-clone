@@ -1,2 +1,1 @@
-export const DisplayName = ({name}: {name: string}) => 
-  <div>{name}</div>
+export const DisplayName = ({ name }: { name: string }) => <div>{name}</div>;

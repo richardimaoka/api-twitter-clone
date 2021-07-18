@@ -7,7 +7,7 @@ export interface User {
 
 export interface Tweet {
   id: string;
-  user : User;
+  user: User;
   createdAt: string;
   fullText: string;
   favoriteCount: number;
@@ -21,5 +21,5 @@ export interface Timeline {
 }
 
 export interface QueryData {
-  timeline: Timeline
+  timeline: Timeline;
 }

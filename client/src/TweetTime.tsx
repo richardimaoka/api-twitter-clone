@@ -1,2 +1,1 @@
-export const TweetTime = ({time}: {time: string}) => 
-  <div>{time}</div>
+export const TweetTime = ({ time }: { time: string }) => <div>{time}</div>;

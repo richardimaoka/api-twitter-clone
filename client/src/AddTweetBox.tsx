@@ -1,6 +1,6 @@
-import { User, Tweet } from './Twitter' 
-import {useState } from "react"
-import {useMutation, gql} from "@apollo/client"
+import { User, Tweet } from "./Twitter";
+import { useState } from "react";
+import { useMutation, gql } from "@apollo/client";
 
 const MUTATION = gql`
   mutation ($fullText: String!) {
@@ -14,31 +14,31 @@ const MUTATION = gql`
       quoteCount
     }
   }
-`
+`;
 
-export const AddTweetBox = ({
-  fullText, user, prependTweetToModel 
-} : AddTweetBoxProps ) => {
-  const [inputValue, setValue] = useState<string>("")
-  const [addTweetMutation, { loading: mutationLoading, error: mutationError } ] =
-    useMutation<Tweet>(
-      MUTATION, { onCompleted: (tweet: Tweet) => prependTweetToModel(tweet) }
-    )
-  
+export const AddTweetBox = ({ user }: AddTweetBoxProps) => {
+  const [inputValue, setValue] = useState<string>("");
+  const [addTweetMutation, { loading: mutationLoading, error: mutationError }] =
+    useMutation<Tweet>(MUTATION, {
+      onCompleted: (tweet: Tweet) => prependTweetToModel(tweet),
+    });
+
   const addTweetCallback = (fullText: string): void => {
-    addTweetMutation({variables: {fullText: fullText}})
-  }
+    addTweetMutation({ variables: { fullText: fullText } });
+  };
 
   return (
     <div>
-      <input placeholder="いまどうしてる？" value={inputValue} onChange={input => setValue(input.target.value)}/>
+      <input
+        placeholder="いまどうしてる？"
+        value={inputValue}
+        onChange={(input) => setValue(input.target.value)}
+      />
       <button onClick={() => addTweetCallback(inputValue)}>ツイートする</button>
     </div>
   );
 };
 
 interface AddTweetBoxProps {
-  fullText: string,
-  user: User,
-  prependTweetToModel: (t: Tweet) => void
+  user: User;
 }
