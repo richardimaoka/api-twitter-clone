@@ -1,4 +1,4 @@
-import { User, Tweet } from "./Twitter";
+import { User, Tweet, QueryData } from "./Twitter";
 import { useState } from "react";
 import { useMutation, gql } from "@apollo/client";
 
@@ -21,7 +21,59 @@ export const AddTweetBox = ({ user }: AddTweetBoxProps) => {
         }
       `,
       {
-        update: () => {}, // TODO: implement this
+        update: (cache, { data }) => {
+          if (data) {
+            const addedTweet = data;
+            const queryData = cache.readQuery<QueryData>({
+              query: gql`
+                query {
+                  timeline {
+                    tweets {
+                      id
+                      createdAt
+                      fullText
+                      favoriteCount
+                      retweetCount
+                      replyCount
+                      user {
+                        screenName
+                        profileImageUrl
+                      }
+                    }
+                  }
+                }
+              `,
+            });
+            if (queryData) {
+              const existingTweets = queryData.timeline.tweets;
+              cache.writeQuery({
+                query: gql`
+                  query {
+                    timeline {
+                      tweets {
+                        id
+                        createdAt
+                        fullText
+                        favoriteCount
+                        retweetCount
+                        replyCount
+                        user {
+                          screenName
+                          profileImageUrl
+                        }
+                      }
+                    }
+                  }
+                `,
+                data: {
+                  timeline: {
+                    tweets: [...existingTweets, addedTweet],
+                  },
+                },
+              });
+            }
+          }
+        },
       }
     );
 
