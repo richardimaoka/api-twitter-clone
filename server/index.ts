@@ -31,7 +31,7 @@ const resolvers = {
 
       try {
         const result = await axios.post(
-          "http://localhost:3001/timeline.tweets/",
+          "http://localhost:3001/profile.tweets/",
           tweet
         );
         return tweet;

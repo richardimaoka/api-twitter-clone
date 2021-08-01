@@ -4,7 +4,7 @@ import { useMutation, gql } from "@apollo/client";
 
 const queryGql = gql`
   query {
-    timeline {
+    profile {
       tweets {
         id
         createdAt
@@ -48,11 +48,11 @@ export const AddTweetBox = ({ user }: AddTweetBoxProps) => {
           query: queryGql,
         });
         if (queryData) {
-          const existingTweets = queryData.timeline.tweets;
+          const existingTweets = queryData.profile.tweets;
           cache.writeQuery({
             query: queryGql,
             data: {
-              timeline: {
+              profile: {
                 tweets: [...existingTweets, addedTweet],
               },
             },

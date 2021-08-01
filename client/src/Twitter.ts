@@ -16,10 +16,10 @@ export interface Tweet {
   quoteCount: number;
 }
 
-export interface Timeline {
+export interface Profile {
   tweets: Tweet[];
 }
 
 export interface QueryData {
-  timeline: Timeline;
+  profile: Profile;
 }

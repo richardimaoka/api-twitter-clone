@@ -8,7 +8,7 @@ export const TweetList = ({ user }: TweetListProps) => {
   const { loading, error, data } = useQuery<QueryData>(
     gql`
       query {
-        timeline {
+        profile {
           tweets {
             id
             createdAt
@@ -37,7 +37,7 @@ export const TweetList = ({ user }: TweetListProps) => {
       <React.Fragment>
         <AddTweetBox user={user} />
         <header>
-          {data.timeline.tweets.map((t) => (
+          {data.profile.tweets.map((t) => (
             <div key={t.id}>
               <TweetBox
                 displayName={t.user.screenName}

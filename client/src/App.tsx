@@ -51,7 +51,7 @@ const App = () => {
   return (
     <div>
       <ApolloProvider client={client}>
-        <TweetList user={user} />;
+        <TweetList user={user} />
       </ApolloProvider>
     </div>
   );
