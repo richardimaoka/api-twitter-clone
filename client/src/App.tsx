@@ -45,6 +45,7 @@ const client = new ApolloClient({
 const App = () => {
   const user = {
     id: "fakeUserId",
+    name: "FakeDisplayName",
     screenName: "fakeScreenName",
     url: "https://example.com",
     profileImageUrl: "https://example.com",
@@ -53,7 +54,6 @@ const App = () => {
     <div>
       <ApolloProvider client={client}>
         <TweetList user={user} />
-        <Recommended />
       </ApolloProvider>
     </div>
   );

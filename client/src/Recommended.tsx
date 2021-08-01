@@ -1,27 +1,16 @@
-export const Recommended = () => {
+import { RecommendedUserList } from "./RecommendedUserList";
+import { RecommendedUserTitle } from "./RecommendedUserTitle";
+import { User } from "./Twitter";
+
+export const Recommended = ({ users }: RecommendedProps) => {
   return (
     <div>
-      <div>
-        <div>おすすめユーザー</div>
-      </div>
-      <div>
-        <div>img</div>
-        <div>リチャード伊真岡</div>
-        <div>@RichardImaoka</div>
-        <div>フォロー</div>
-      </div>
-      <div>
-        <div>img</div>
-        <div>リチャード伊真岡</div>
-        <div>@RichardImaoka</div>
-        <div>フォロー</div>
-      </div>
-      <div>
-        <div>img</div>
-        <div>リチャード伊真岡</div>
-        <div>@RichardImaoka</div>
-        <div>フォロー</div>
-      </div>
+      <RecommendedUserTitle />
+      <RecommendedUserList users={users} />
     </div>
   );
 };
+
+interface RecommendedProps {
+  users: User[];
+}
