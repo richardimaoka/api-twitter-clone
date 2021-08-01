@@ -12,6 +12,7 @@ const resolvers = {
     profile(parent, args, context, info) {
       return {
         tweets: context.profileTweets,
+        recommendedUsers: context.profileRecommendedUsers,
       };
     },
   },
@@ -55,6 +56,9 @@ const server = new ApolloServer({
     const profileTweets = (
       await axios.get("http://localhost:3001/profile.tweets")
     ).data.sort((x, y) => Date.parse(y.createdAt) - Date.parse(x.createdAt));
+    const profileRecommendedUsers = (
+      await axios.get("http://localhost:3001/profile.recommendedUsers")
+    ).data;
 
     const maxTweetId = profileTweets
       .map((tw) => {
@@ -67,6 +71,7 @@ const server = new ApolloServer({
       loginUser: user,
       maxTweetId: maxTweetId,
       profileTweets: profileTweets,
+      profileRecommendedUsers: profileRecommendedUsers,
     };
   },
 });
