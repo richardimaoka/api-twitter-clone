@@ -1,10 +1,10 @@
 type Query {
   recommendedUsers: [User]
   tweets: [Tweet]
-  timeline: Timeline
+  profile: Profile
 }
 
-type Timeline {
+type Profile {
   tweets: [Tweet]
 }
 
