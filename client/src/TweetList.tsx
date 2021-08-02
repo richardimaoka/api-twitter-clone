@@ -3,6 +3,7 @@ import { TweetBox } from "./TweetBox";
 import { useQuery, gql } from "@apollo/client";
 import { AddTweetBox } from "./AddTweetBox";
 import React from "react";
+import { Tweet } from "./Twitter";
 
 export const TweetList = ({ user }: TweetListProps) => {
   const { loading, error, data } = useQuery<QueryData>(
@@ -37,24 +38,36 @@ export const TweetList = ({ user }: TweetListProps) => {
       <React.Fragment>
         <AddTweetBox user={user} />
         <header>
-          {data.profile.tweets.map((t) => (
-            <div key={t.id}>
-              <TweetBox
-                displayName={t.user.screenName}
-                screenName={t.user.screenName}
-                tweetTime={t.createdAt}
-                fullText={t.fullText}
-                replyCount={t.replyCount}
-                likeCount={t.favoriteCount}
-                retweetCount={t.retweetCount}
-              />
-            </div>
-          ))}
+          <TweetListInternal tweets={data.profile.tweets} />
         </header>
       </React.Fragment>
     );
   }
 };
+
+const TweetListInternal = ({ tweets }: TweetListInternalProps) => {
+  return (
+    <React.Fragment>
+      {tweets.map((t) => (
+        <div key={t.id}>
+          <TweetBox
+            displayName={t.user.screenName}
+            screenName={t.user.screenName}
+            tweetTime={t.createdAt}
+            fullText={t.fullText}
+            replyCount={t.replyCount}
+            likeCount={t.favoriteCount}
+            retweetCount={t.retweetCount}
+          />
+        </div>
+      ))}
+    </React.Fragment>
+  );
+};
+
+interface TweetListInternalProps {
+  tweets: Tweet[];
+}
 
 interface TweetListProps {
   user: User;
