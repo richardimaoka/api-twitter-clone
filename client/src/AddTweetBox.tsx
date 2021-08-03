@@ -41,27 +41,8 @@ export const AddTweetBox = ({ user }: AddTweetBoxProps) => {
   const [
     triggerMutation /*, { loading: mutationLoading, error: mutationError }*/,
   ] = useMutation<Tweet>(mutationGql, {
-    update: (cache, { data }) => {
-      if (data) {
-        const addedTweet = data;
-        const queryData = cache.readQuery<QueryData>({
-          query: queryGql,
-        });
-        if (queryData) {
-          const existingTweets = queryData.profile.tweets;
-          cache.writeQuery({
-            query: queryGql,
-            data: {
-              profile: {
-                tweets: [...existingTweets, addedTweet],
-              },
-            },
-          });
-        }
-      }
-    },
+    refetchQueries: [{ query: queryGql }],
   });
-
   const tweetButtonCallback = (inputTextValue: string): void => {
     triggerMutation({ variables: { fullText: inputTextValue } });
   };
