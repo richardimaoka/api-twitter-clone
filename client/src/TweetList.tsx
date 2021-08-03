@@ -4,28 +4,10 @@ import { useQuery, gql } from "@apollo/client";
 import { AddTweetBox } from "./AddTweetBox";
 import React from "react";
 import { Tweet } from "./Twitter";
-
-const queryGql = gql`
-  query {
-    profile {
-      tweets {
-        id
-        createdAt
-        fullText
-        favoriteCount
-        retweetCount
-        replyCount
-        user {
-          screenName
-          profileImageUrl
-        }
-      }
-    }
-  }
-`;
+import { gqlQuery } from "./GqlQuery";
 
 export const TweetList = ({ user }: TweetListProps) => {
-  const { loading, error, data } = useQuery<QueryData>(queryGql);
+  const { loading, error, data } = useQuery<QueryData>(gqlQuery);
 
   if (loading) {
     return <p>Loading ...</p>;

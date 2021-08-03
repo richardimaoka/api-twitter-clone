@@ -1,8 +1,6 @@
-import { useMutation, gql } from "@apollo/client";
+import { gql } from "@apollo/client";
 
-export const state = "";
-
-const queryGql = gql`
+export const gqlQuery = gql`
   query {
     profile {
       tweets {
@@ -21,7 +19,7 @@ const queryGql = gql`
   }
 `;
 
-const mutationGql = gql`
+export const gqlMutationAddTweet = gql`
   # fullText supplied by GraphQL Variables
   mutation ($fullText: String!) {
     addTweet(fullText: $fullText) {
