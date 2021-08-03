@@ -19,6 +19,7 @@ export interface Tweet {
 
 export interface Profile {
   tweets: Tweet[];
+  //recommendedUser: User[]
 }
 
 export interface QueryData {
