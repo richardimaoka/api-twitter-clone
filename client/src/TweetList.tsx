@@ -5,27 +5,27 @@ import { AddTweetBox } from "./AddTweetBox";
 import React from "react";
 import { Tweet } from "./Twitter";
 
-export const TweetList = ({ user }: TweetListProps) => {
-  const { loading, error, data } = useQuery<QueryData>(
-    gql`
-      query {
-        profile {
-          tweets {
-            id
-            createdAt
-            fullText
-            favoriteCount
-            retweetCount
-            replyCount
-            user {
-              screenName
-              profileImageUrl
-            }
-          }
+const queryGql = gql`
+  query {
+    profile {
+      tweets {
+        id
+        createdAt
+        fullText
+        favoriteCount
+        retweetCount
+        replyCount
+        user {
+          screenName
+          profileImageUrl
         }
       }
-    `
-  );
+    }
+  }
+`;
+
+export const TweetList = ({ user }: TweetListProps) => {
+  const { loading, error, data } = useQuery<QueryData>(queryGql);
 
   if (loading) {
     return <p>Loading ...</p>;

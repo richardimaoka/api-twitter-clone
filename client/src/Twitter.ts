@@ -24,3 +24,5 @@ export interface Profile {
 export interface QueryData {
   profile: Profile;
 }
+
+export interface AppState {}
