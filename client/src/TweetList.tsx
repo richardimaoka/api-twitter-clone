@@ -7,7 +7,12 @@ import { Tweet } from "./Twitter";
 import { gqlQuery } from "./GqlQuery";
 
 export const TweetList = ({ user }: TweetListProps) => {
-  const { loading, error, data } = useQuery<QueryData>(gqlQuery);
+  const { loading, error, data } = useQuery<QueryData>(gqlQuery, {
+    variables: {
+      offset: 0,
+      limit: 2,
+    },
+  });
 
   if (loading) {
     return <p>Loading ...</p>;
