@@ -1,5 +1,24 @@
 <html>
   <style>
+    div {
+      border: solid 1px;
+    }
+    .recommended-box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 350px;
+      padding: 10px;
+    }
+    .recommended-box-left-col {
+      display: flex;
+    }
+    .recommended-box-right-col {
+      padding-top: 10px;
+    }
+    .img-box {
+      padding-right: 10px;
+    }
     .img1 {
       width: 50px;
       height: 50px;
@@ -33,23 +52,25 @@
     }
   </style>
   <body>
-    <div>
-      <div>
-        <img
-          class="img1"
-          src="https://pbs.twimg.com/profile_images/1423634844710445062/qOvd9wDN_400x400.jpg"
-        />
+    <div class="recommended-box">
+      <div class="recommended-box-left-col">
+        <div class="img-box">
+          <img
+            class="img1"
+            src="https://pbs.twimg.com/profile_images/1423634844710445062/qOvd9wDN_400x400.jpg"
+          />
+        </div>
+        <div>
+          <div class="name">リチャード 伊真岡</div>
+          <div class="screen-name">@RichardImaokaJP</div>
+        </div>
       </div>
-    </div>
-    <div>
-      <div>
-        <div class="name">リチャード 伊真岡</div>
-        <div class="screen-name">@RichardImaokaJP</div>
-      </div>
-      <div>
-        <button class="button">
-          <span class="button-text">フォロー</span>
-        </button>
+      <div class="recommended-box-right-col">
+        <div>
+          <button class="button">
+            <span class="button-text">フォロー</span>
+          </button>
+        </div>
       </div>
     </div>
   </body>
