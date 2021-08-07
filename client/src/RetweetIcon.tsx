@@ -1,9 +1,15 @@
+/** @jsxImportSource @emotion/react */
+import { css } from "@emotion/react";
+
 export const RetweetIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="16px"
     height="16px"
     viewBox="0 0 160 160"
+    css={css`
+      fill: rgb(83, 100, 113);
+    `}
   >
     <g>
       <path d="M120.42,22.13,146.69,17,145.3,10l-34.75,7a3.48,3.48,0,0,0-2.78,3.47V55.17h7V26.65a64.38,64.38,0,0,1,27.8,52.85A62.54,62.54,0,0,1,80,142.05V149a69.5,69.5,0,0,0,69.5-69.5A71.6,71.6,0,0,0,120.42,22.13Z" />

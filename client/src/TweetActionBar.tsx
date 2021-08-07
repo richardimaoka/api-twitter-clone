@@ -19,15 +19,17 @@ export const TweetActionBar = ({
       css={css`
         flex-grow: 1;
         display: flex;
+        align-items: flex-end;
       `}
     >
       <ReplyIcon />
-      <div>{replyCount}</div>
+      <div css={css``}>{replyCount}</div>
     </div>
     <div
       css={css`
         flex-grow: 1;
         display: flex;
+        align-items: flex-end;
       `}
     >
       <RetweetIcon />
@@ -37,6 +39,7 @@ export const TweetActionBar = ({
       css={css`
         flex-grow: 1;
         display: flex;
+        align-items: flex-end;
       `}
     >
       <LikeIcon />
@@ -45,6 +48,8 @@ export const TweetActionBar = ({
     <div
       css={css`
         flex-grow: 1;
+        display: flex;
+        align-items: flex-end;
       `}
     >
       <ShareIcon />
