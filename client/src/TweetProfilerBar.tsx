@@ -12,6 +12,7 @@ export const TweetProfileBar = ({
   <div
     css={css`
       display: flex;
+      padding-bottom: 2px;
     `}
   >
     <DisplayName name={displayName} />

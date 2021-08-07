@@ -45,6 +45,7 @@ const TweetListInternal = ({ tweets }: TweetListInternalProps) => {
             replyCount={t.replyCount}
             likeCount={t.favoriteCount}
             retweetCount={t.retweetCount}
+            profileImageUrl={t.user.profileImageUrl}
           />
         </div>
       ))}

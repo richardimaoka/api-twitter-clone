@@ -13,6 +13,7 @@ export const TweetBox = ({
   replyCount,
   retweetCount,
   likeCount,
+  profileImageUrl,
 }: TweetBoxProps) => (
   <div
     css={css`
@@ -20,10 +21,15 @@ export const TweetBox = ({
       background: #ffffff 0% 0% no-repeat padding-box;
       border: 1px solid #cecece;
       width: 600px;
+      padding: 10px;
     `}
   >
-    <TweetProfilePicture />
-    <div>
+    <TweetProfilePicture imageUrl={profileImageUrl} />
+    <div
+      css={css`
+        padding-bottom: 5px;
+      `}
+    >
       <TweetProfileBar
         displayName={displayName}
         screenName={screenName}
@@ -47,4 +53,5 @@ interface TweetBoxProps {
   replyCount: number;
   retweetCount: number;
   likeCount: number;
+  profileImageUrl: string;
 }

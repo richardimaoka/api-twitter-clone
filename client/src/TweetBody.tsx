@@ -8,6 +8,7 @@ export const TweetBody = ({ text }: { text: string }) => (
       font: normal normal normal 16px/24px Source Han Sans JP;
       letter-spacing: 0px;
       color: #333333;
+      padding-bottom: 10px;
     `}
   >
     {text}
