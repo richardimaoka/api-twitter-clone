@@ -1,6 +1,6 @@
 import { User, QueryData } from "./Twitter";
 import { TweetBox } from "./TweetBox";
-import { useQuery, gql } from "@apollo/client";
+import { useQuery } from "@apollo/client";
 import { AddTweetBox } from "./AddTweetBox";
 import React from "react";
 import { Tweet } from "./Twitter";

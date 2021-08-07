@@ -1,6 +1,6 @@
-import { User, Tweet, QueryData } from "./Twitter";
+import { User, Tweet } from "./Twitter";
 import { useState } from "react";
-import { useMutation, gql } from "@apollo/client";
+import { useMutation } from "@apollo/client";
 import { gqlMutationAddTweet, gqlQuery } from "./GqlQuery";
 
 export const AddTweetBox = ({ user }: AddTweetBoxProps) => {

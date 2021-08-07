@@ -54,6 +54,7 @@ const App = () => {
     <div>
       <ApolloProvider client={client}>
         <TweetList user={user} />
+        <Recommended users={[user]} />
       </ApolloProvider>
     </div>
   );
