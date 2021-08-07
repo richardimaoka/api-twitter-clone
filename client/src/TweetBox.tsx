@@ -19,7 +19,7 @@ export const TweetBox = ({
     css={css`
       display: flex;
       background: #ffffff 0% 0% no-repeat padding-box;
-      border: 1px solid #cecece;
+      border-bottom: 1px solid #cecece;
       width: 600px;
       padding: 10px;
     `}

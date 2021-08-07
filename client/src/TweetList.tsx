@@ -1,3 +1,5 @@
+/** @jsxImportSource @emotion/react */
+import { css } from "@emotion/react";
 import { User, QueryData } from "./Twitter";
 import { TweetBox } from "./TweetBox";
 import { useQuery } from "@apollo/client";
@@ -22,19 +24,22 @@ export const TweetList = ({ user }: TweetListProps) => {
     return <p>Remote Server Error :(</p>;
   } else {
     return (
-      <React.Fragment>
+      <div>
         <AddTweetBox user={user} />
-        <header>
-          <TweetListInternal tweets={data.profile.tweets} />
-        </header>
-      </React.Fragment>
+        <TweetListInternal tweets={data.profile.tweets} />
+      </div>
     );
   }
 };
 
 const TweetListInternal = ({ tweets }: TweetListInternalProps) => {
   return (
-    <React.Fragment>
+    <div
+      css={css`
+        border-left: 1px solid #cecece;
+        border-right: 1px solid #cecece;
+      `}
+    >
       {tweets.map((t) => (
         <div key={t.id}>
           <TweetBox
@@ -49,7 +54,7 @@ const TweetListInternal = ({ tweets }: TweetListInternalProps) => {
           />
         </div>
       ))}
-    </React.Fragment>
+    </div>
   );
 };
 

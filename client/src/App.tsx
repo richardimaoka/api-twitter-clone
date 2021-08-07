@@ -1,3 +1,5 @@
+/** @jsxImportSource @emotion/react */
+import { css } from "@emotion/react";
 import {
   ApolloClient,
   InMemoryCache,
@@ -52,12 +54,16 @@ const App = () => {
       "https://pbs.twimg.com/profile_images/1423634844710445062/qOvd9wDN_400x400.jpg",
   };
   return (
-    <div>
-      <ApolloProvider client={client}>
+    <ApolloProvider client={client}>
+      <div
+        css={css`
+          display: flex;
+        `}
+      >
         <TweetList user={user} />
         <Recommended users={[user]} />
-      </ApolloProvider>
-    </div>
+      </div>
+    </ApolloProvider>
   );
 };
 
