@@ -17,6 +17,9 @@ export const TweetBox = ({
   <div
     css={css`
       display: flex;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border: 1px solid #cecece;
+      width: 600px;
     `}
   >
     <TweetProfilePicture />
