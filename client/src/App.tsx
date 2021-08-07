@@ -48,7 +48,8 @@ const App = () => {
     name: "FakeDisplayName",
     screenName: "fakeScreenName",
     url: "https://example.com",
-    profileImageUrl: "https://example.com",
+    profileImageUrl:
+      "https://pbs.twimg.com/profile_images/1423634844710445062/qOvd9wDN_400x400.jpg",
   };
   return (
     <div>
