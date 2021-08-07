@@ -28,6 +28,7 @@ export const TweetBox = ({
     <div
       css={css`
         padding-bottom: 5px;
+        width: 100%;
       `}
     >
       <TweetProfileBar
