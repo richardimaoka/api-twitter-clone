@@ -1,17 +1,26 @@
 import { BirdIcon } from "./BirdIcon";
+import { SidebarItemBookmarks } from "./SidebarItemBookmarks";
+import { SidebarItemHome } from "./SidebarItemHome";
+import { SidebarItemLists } from "./SidebarItemLists";
+import { SidebarItemMessages } from "./SidebarItemMessages";
+import { SidebarItemNotification } from "./SidebarItemNotification";
+import { SidebarItemProfile } from "./SidebarItemProfile";
+import { SidebarItemSearchTopics } from "./SidebarItemSearchTopics";
+import { SidebarItemSeeMore } from "./SidebarItemSeeMore";
+
 export const Sidebar = () => (
   <div>
     <div>
       <BirdIcon />
     </div>
-    <div>ホーム</div>
-    <div>話題を検索</div>
-    <div>通知</div>
-    <div>メッセージ</div>
-    <div>ブックマーク</div>
-    <div>リスト</div>
-    <div>プロフィール</div>
-    <div>もっと見る</div>
-    <button>ツイートする</button>
+    <SidebarItemHome />
+    <SidebarItemSearchTopics />
+    <SidebarItemNotification />
+    <SidebarItemMessages />
+    <SidebarItemBookmarks />
+    <SidebarItemLists />
+    <SidebarItemProfile />
+    <SidebarItemSeeMore />
+    <button>ツイート</button>
   </div>
 );
