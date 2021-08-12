@@ -11,6 +11,7 @@ import { onError } from "@apollo/client/link/error";
 import { setContext } from "@apollo/client/link/context";
 import { TweetList } from "./TweetList";
 import { Recommended } from "./Recommended";
+import { Sidebar } from "./Sidebar";
 
 const httpLink = createHttpLink({
   uri: "http://localhost:4000",
@@ -60,6 +61,7 @@ const App = () => {
           display: flex;
         `}
       >
+        <Sidebar />
         <TweetList user={user} />
         <Recommended users={[user]} />
       </div>
