@@ -19,7 +19,8 @@ export const TweetList = ({ user }: TweetListProps) => {
   if (loading) {
     return <p>Loading ...</p>;
   } else if (error) {
-    return <p>Remote Server Error :(</p>;
+    console.log(error);
+    return <p>Remote Server Error :( </p>;
   } else if (typeof data == "undefined") {
     return <p>Remote Server Error :(</p>;
   } else {

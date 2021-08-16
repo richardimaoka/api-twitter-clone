@@ -15,6 +15,11 @@ export const gqlQuery = gql`
           profileImageUrl
         }
       }
+      recommendedUsers {
+        id
+        screenName
+        profileImageUrl
+      }
     }
   }
 `;
