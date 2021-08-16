@@ -31,6 +31,7 @@ export const RecommendedUser = ({ user }: RecommendedUserProps) => {
                 height: 50px;
                 border-radius: 25px;
               `}
+              alt={user.name}
               src={user.profileImageUrl}
             />
           </div>

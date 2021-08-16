@@ -15,7 +15,7 @@ export const TweetTime = ({ time }: { time: string }) => {
     timeRepresentation = `${diffMillSeconds / (60 * 1000)}分前`;
   } else if (diffMillSeconds < 24 * 60 * 60 * 1000 /*24 hours*/) {
     timeRepresentation = `${diffMillSeconds / (60 * 60 * 1000)}時間前"`;
-  } else if (date.getFullYear() == now.getFullYear()) {
+  } else if (date.getFullYear() === now.getFullYear()) {
     timeRepresentation = `${date.getMonth() + 1}月${date.getDate()}日`;
   } else {
     timeRepresentation = `${date.getFullYear()}年${

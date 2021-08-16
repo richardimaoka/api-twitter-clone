@@ -13,6 +13,7 @@ export const TweetProfilePicture = ({ imageUrl }: { imageUrl: string }) => (
         height: 48px;
         border-radius: 24px;
       `}
+      alt="user profile"
       src={imageUrl}
     />
   </div>
