@@ -11,6 +11,7 @@ type User {
   id: String
   screenName: String
   url: String
+  name: String
   profileImageUrl: String
 }
 

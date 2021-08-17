@@ -18,6 +18,7 @@ export const gqlQuery = gql`
       recommendedUsers {
         id
         screenName
+        name
         profileImageUrl
       }
     }

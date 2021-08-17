@@ -81,6 +81,7 @@ const Contents = () => {
   } else if (typeof data == "undefined") {
     return <p>Remote Server Error :(</p>;
   } else {
+    console.log(data.profile.recommendedUsers);
     return (
       <div
         css={css`
