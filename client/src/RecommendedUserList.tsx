@@ -2,10 +2,12 @@ import React from "react";
 import { RecommendedUser } from "./RecommendedUser";
 import { User } from "./Twitter";
 
-export const RecommendedUserList = ({ users }: RecommendedUserListProps) => {
+export const RecommendedUserList = ({
+  recommendedUsers,
+}: RecommendedUserListProps) => {
   return (
     <React.Fragment>
-      {users.map((user) => (
+      {recommendedUsers.map((user) => (
         <RecommendedUser user={user}></RecommendedUser>
       ))}
     </React.Fragment>
@@ -13,5 +15,5 @@ export const RecommendedUserList = ({ users }: RecommendedUserListProps) => {
 };
 
 interface RecommendedUserListProps {
-  users: User[];
+  recommendedUsers: User[];
 }

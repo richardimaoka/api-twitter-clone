@@ -6,12 +6,15 @@ import {
   ApolloProvider,
   createHttpLink,
   from,
+  useQuery,
 } from "@apollo/client";
 import { onError } from "@apollo/client/link/error";
 import { setContext } from "@apollo/client/link/context";
 import { TweetList } from "./TweetList";
 import { Recommended } from "./Recommended";
 import { Sidebar } from "./Sidebar";
+import { QueryData } from "./Twitter";
+import { gqlQuery } from "./GqlQuery";
 
 const httpLink = createHttpLink({
   uri: "http://localhost:4000",
@@ -46,6 +49,14 @@ const client = new ApolloClient({
 });
 
 const App = () => {
+  return (
+    <ApolloProvider client={client}>
+      <Contents />
+    </ApolloProvider>
+  );
+};
+
+const Contents = () => {
   const user = {
     id: "fakeUserId",
     name: "FakeDisplayName",
@@ -54,8 +65,23 @@ const App = () => {
     profileImageUrl:
       "https://pbs.twimg.com/profile_images/1423634844710445062/qOvd9wDN_400x400.jpg",
   };
-  return (
-    <ApolloProvider client={client}>
+
+  const { loading, error, data } = useQuery<QueryData>(gqlQuery, {
+    variables: {
+      offset: 0,
+      limit: 2,
+    },
+  });
+
+  if (loading) {
+    return <p>Loading ...</p>;
+  } else if (error) {
+    console.log(error);
+    return <p>Remote Server Error :( </p>;
+  } else if (typeof data == "undefined") {
+    return <p>Remote Server Error :(</p>;
+  } else {
+    return (
       <div
         css={css`
           display: flex;
@@ -63,10 +89,10 @@ const App = () => {
       >
         <Sidebar />
         <TweetList user={user} />
-        <Recommended users={[user]} />
+        <Recommended recommendedUsers={data.profile.recommendedUsers} />
       </div>
-    </ApolloProvider>
-  );
+    );
+  }
 };
 
 export default App;
