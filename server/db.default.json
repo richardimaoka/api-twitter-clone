@@ -6,6 +6,69 @@
       "author": "typicode"
     }
   ],
+  "profile.user": {
+    "id": 2875908842,
+    "idStr": "2875908842",
+    "name": "リチャード 伊真岡",
+    "screenName": "RichardImaokaJP",
+    "location": null,
+    "description": "中堅エンジニア",
+    "url": "https://blog-jp.richardimaoka.net",
+    "entities": {
+      "url": {
+        "urls": [
+          {
+            "url": "https://blog-jp.richardimaoka.net",
+            "expandedUrl": "https://blog-jp.richardimaoka.net",
+            "displayUrl": "blog-jp.richardimaoka.net",
+            "indices": [0, 33]
+          }
+        ]
+      },
+      "description": {
+        "urls": []
+      }
+    },
+    "protected": false,
+    "followersCount": 342,
+    "friendsCount": 223,
+    "listedCount": 7,
+    "createdAt": "Sat Oct 25 00:13:42 +0000 2014",
+    "favouritesCount": 1628,
+    "utcOffset": null,
+    "timeZone": null,
+    "geoEnabled": false,
+    "verified": false,
+    "statusesCount": 3398,
+    "lang": null,
+    "contributorsEnabled": false,
+    "isTranslator": false,
+    "isTranslationEnabled": false,
+    "profileBackgroundColor": "C0DEED",
+    "profileBackgroundImageUrl": "http://abs.twimg.com/images/themes/theme1/bg.png",
+    "profileBackgroundImageUrlHttps": "https://abs.twimg.com/images/themes/theme1/bg.png",
+    "profileBackgroundTile": false,
+    "profileImageUrl": "http://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1208118895741001728/-t2DIJt-_normal.jpg",
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/2875908842/1568031488",
+    "profileLinkColor": "1DA1F2",
+    "profileSidebarBorderColor": "C0DEED",
+    "profileSidebarFillColor": "DDEEF6",
+    "profileTextColor": "333333",
+    "profileUseBackgroundImage": true,
+    "defaultProfile": true,
+    "defaultProfileImage": false,
+    "canMediaTag": null,
+    "following": false,
+    "followRequestSent": null,
+    "notifications": null,
+    "blocking": false,
+    "blockedBy": false,
+    "profileInterstitialType": "",
+    "translatorType": "regular",
+    "withheldInCountries": [],
+    "followedBy": false
+  },
   "profile.tweets": [
     {
       "user": {
