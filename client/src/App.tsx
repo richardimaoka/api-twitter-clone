@@ -12,6 +12,7 @@ import { onError } from "@apollo/client/link/error";
 import { setContext } from "@apollo/client/link/context";
 import { TweetList } from "./TweetList";
 import { Recommended } from "./Recommended";
+import { SampleComponent } from "./components/SampleComponent";
 import { Sidebar } from "./Sidebar";
 import { QueryData } from "./Twitter";
 import { gqlQuery } from "./GqlQuery";
@@ -89,6 +90,7 @@ const Contents = () => {
         `}
       >
         <Sidebar />
+        <SampleComponent />
         <TweetList user={user} />
         <Recommended recommendedUsers={data.profile.recommendedUsers} />
       </div>
