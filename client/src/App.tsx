@@ -10,9 +10,8 @@ import {
 } from "@apollo/client";
 import { onError } from "@apollo/client/link/error";
 import { setContext } from "@apollo/client/link/context";
-import { TweetList } from "./TweetList";
+import { Center } from "./Center";
 import { Recommended } from "./Recommended";
-import { SampleComponent } from "./components/SampleComponent";
 import { Sidebar } from "./Sidebar";
 import { QueryData } from "./Twitter";
 import { gqlQuery } from "./GqlQuery";
@@ -90,8 +89,7 @@ const Contents = () => {
         `}
       >
         <Sidebar />
-        <SampleComponent />
-        <TweetList user={user} />
+        <Center user={user} />
         <Recommended recommendedUsers={data.profile.recommendedUsers} />
       </div>
     );
