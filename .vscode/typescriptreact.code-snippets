@@ -6,7 +6,17 @@
   // Example:
   "Export a Functional Component": {
     "prefix": "export functional component",
-    "body": ["export const ${TM_FILENAME_BASE}Component = () => "],
+    "body": [
+      "export const ${TM_FILENAME_BASE}Component = ({$2} : ${TM_FILENAME_BASE}Props) => {",
+      "  return (",
+      "    <div>$1</div>",
+      "  )",
+      "}",
+      "",
+      "interface ${TM_FILENAME_BASE}Props {",
+      "  $3",
+      "}"
+    ],
     "description": "Log output to console"
   }
 }
