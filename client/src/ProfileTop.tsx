@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-
+import { ProfileBackgroundImage } from "./ProfileBackgroundImage";
 interface ProfileTopProps {}
 
 export const ProfileTop = ({}: ProfileTopProps) => {
@@ -11,7 +11,7 @@ export const ProfileTop = ({}: ProfileTopProps) => {
         border: 1px solid #cecece;
       `}
     >
-      <img src="" alt="" />
+      <ProfileBackgroundImage />
     </div>
   );
 };
