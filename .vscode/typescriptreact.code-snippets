@@ -18,5 +18,12 @@
       "}"
     ],
     "description": "Log output to console"
+  },
+  "Import from" : {
+    "prefix": "import from",
+    "body": [
+      "import {$1} from \"./$1\""
+    ],
+    "description": "Import from a file"
   }
 }
