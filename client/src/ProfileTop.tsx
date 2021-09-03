@@ -1,6 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import { ProfileBackgroundImage } from "./ProfileBackgroundImage";
+import { ProfileTopContent } from "./ProfileTopContent";
 interface ProfileTopProps {}
 
 export const ProfileTop = ({}: ProfileTopProps) => {
@@ -12,6 +13,7 @@ export const ProfileTop = ({}: ProfileTopProps) => {
       `}
     >
       <ProfileBackgroundImage />
+      <ProfileTopContent />
     </div>
   );
 };
