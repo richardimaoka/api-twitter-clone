@@ -14,9 +14,3 @@ export const Center = ({ user }: CenterProps) => (
 interface CenterProps {
   user: User;
 }
-
-export const CenterComponent = ({}: CenterProps) => {
-  return <div>sf</div>;
-};
-
-interface CenterProps {}

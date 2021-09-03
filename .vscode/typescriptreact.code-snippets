@@ -7,15 +7,15 @@
   "Export a Functional Component": {
     "prefix": "export functional component",
     "body": [
+      "interface ${TM_FILENAME_BASE}Props {",
+      "  $3",
+      "}",
       "export const ${TM_FILENAME_BASE}Component = ({$2} : ${TM_FILENAME_BASE}Props) => {",
       "  return (",
       "    <div>$1</div>",
       "  )",
       "}",
-      "",
-      "interface ${TM_FILENAME_BASE}Props {",
-      "  $3",
-      "}"
+      ""
     ],
     "description": "Log output to console"
   },
@@ -25,5 +25,18 @@
       "import {$1} from \"./$1\""
     ],
     "description": "Import from a file"
-  }
+  },
+  "emotion.css import": {
+    "prefix": "emotion css import",
+    "body": [
+      "/** @jsxImportSource @emotion/react */",
+      "import { css } from \"@emotion/react\"",
+    ],
+    "description": "Macro and Import for emotion.css"
+  },
+  "emotion.css attribute": {
+    "prefix": "emotion css attribute",
+    "body": [ "css={css`$1`}" ],
+    "description": "emotion.css attribute inside a JSX tag"
+  }      
 }
