@@ -24,12 +24,7 @@ export const TweetList = ({ user }: TweetListProps) => {
   } else if (typeof data == "undefined") {
     return <p>Remote Server Error :(</p>;
   } else {
-    return (
-      <div>
-        <AddTweetBox user={user} />
-        <TweetListInternal tweets={data.profile.tweets} />
-      </div>
-    );
+    return <TweetListInternal tweets={data.profile.tweets} />;
   }
 };
 
