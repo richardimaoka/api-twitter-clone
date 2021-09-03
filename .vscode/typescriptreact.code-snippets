@@ -10,7 +10,8 @@
       "interface ${TM_FILENAME_BASE}Props {",
       "  $3",
       "}",
-      "export const ${TM_FILENAME_BASE}Component = ({$2} : ${TM_FILENAME_BASE}Props) => {",
+      "",
+      "export const ${TM_FILENAME_BASE} = ({$2} : ${TM_FILENAME_BASE}Props) => {",
       "  return (",
       "    <div>$1</div>",
       "  )",
@@ -27,10 +28,11 @@
     "description": "Import from a file"
   },
   "emotion.css import": {
-    "prefix": "emotion css import",
+    "prefix": "import emotion css",
     "body": [
       "/** @jsxImportSource @emotion/react */",
       "import { css } from \"@emotion/react\"",
+      "",
     ],
     "description": "Macro and Import for emotion.css"
   },

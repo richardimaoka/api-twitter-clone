@@ -3,6 +3,10 @@ import { TweetList } from "./TweetList";
 import { AddTweetBox } from "./AddTweetBox";
 import { ProfileTop } from "./ProfileTop";
 
+interface CenterProps {
+  user: User;
+}
+
 export const Center = ({ user }: CenterProps) => (
   <div>
     <ProfileTop />
@@ -10,7 +14,3 @@ export const Center = ({ user }: CenterProps) => (
     <TweetList user={user} />
   </div>
 );
-
-interface CenterProps {
-  user: User;
-}
