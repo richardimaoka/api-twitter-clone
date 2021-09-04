@@ -5,13 +5,25 @@
   // same ids are connected.
   // Example:
   "Export a Functional Component": {
-    "prefix": "export functional component",
+    "prefix": "rfc export",
     "body": [
       "interface ${TM_FILENAME_BASE}Props {",
       "  $3",
       "}",
       "",
       "export const ${TM_FILENAME_BASE} = ({$2} : ${TM_FILENAME_BASE}Props) => {",
+      "  return (",
+      "    <div>$1</div>",
+      "  )",
+      "}",
+      ""
+    ],
+    "description": "Log output to console"
+  },
+  "Export an empty React Function Component": {
+    "prefix": "rfc export empty",
+    "body": [
+      "export const ${TM_FILENAME_BASE} = () => {",
       "  return (",
       "    <div>$1</div>",
       "  )",
