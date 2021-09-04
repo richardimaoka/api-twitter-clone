@@ -1,12 +1,11 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 
-interface ProfileBackgroundImageProps {}
-
-export const ProfileBackgroundImage = ({}: ProfileBackgroundImageProps) => {
+export const ProfileBackgroundImage = () => {
   return (
     <div>
       <img
+        alt="profile bg img"
         css={css`
           height: 200px;
           width: 100%;
