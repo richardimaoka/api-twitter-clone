@@ -1,6 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import { ProfileTopCircleImage } from "./ProfileTopCircleImage";
+import { ProfileTopNames } from "./ProfileTopNames";
 
 export const ProfileTopContent = () => {
   return (
@@ -16,6 +17,7 @@ export const ProfileTopContent = () => {
         `}
       >
         <ProfileTopCircleImage />
+        <ProfileTopNames />
       </div>
     </div>
   );

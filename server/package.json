@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc": "tsc -w",
     "json-server": "json-server --watch db.json --port 3001",
-    "start": "ts-node-dev --watch twitter.gql index.ts"
+    "start": "ts-node-dev --watch twitter.gql index.ts",
+    "everything": "npm run tsc && npm run json-server && npm run start"
   },
   "repository": {
     "type": "git",
